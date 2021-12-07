@@ -14,7 +14,7 @@ Here are the zip file permalinks:
 * [Cudahy](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/cudahy-ca-us/cudahy-ca-us.zip)
 * [Downey](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/downey-ca-us/downey-ca-us.zip)
 * [Get Around Town Express (South Gate)](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/getaroundtownexpress-ca-us/getaroundtownexpress-ca-us.zip)
-* [Glendora](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/glendora-ca-us/glendora-ca-us.zip)
+* [Glendora](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/glendora-ca-us/glendora-ca-us.zip) - Trillium was able to get Glendora into Google Maps.
 * [Huntington Park](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/huntingtonpark-ca-us/huntingtonpark-ca-us.zip)
 * [La Campana (Bell)](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/lacampana-ca-us/lacampana-ca-us.zip)
 * [Montebello](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/montebello-ca-us/montebello-ca-us.zip)
