@@ -1,0 +1,32 @@
+stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,position,direction,wheelchair_boarding
+2734174,,,Grandview & Mountain Trail,,34.1668959565133,-118.047943234523,,,0,,America/Los_Angeles,,,0
+2734175,,,Mt Wilson Trail Park,,34.1695312727436,-118.048823159614,,,0,,America/Los_Angeles,,,0
+2734176,,,Mira Monte & Baldwin,,34.1692755678275,-118.052349294038,,,0,,America/Los_Angeles,,,0
+2734177,,,Baldwin & Grandview,,34.1668403730573,-118.05271833502,,,0,,America/Los_Angeles,,,0
+2734178,,,Grandview & Lima,,34.1668122457652,-118.059620994908,,,0,,America/Los_Angeles,,,0
+2734179,,,Grandview & Sunnyside,,34.1667831739118,-118.064432451254,,,0,,America/Los_Angeles,,,0
+2734180,,,Grandview & Michillinda,,34.1667702520866,-118.067702191428,,,0,,America/Los_Angeles,,,0
+2734181,,,Michillinda & SM Blvd,,34.1617004413529,-118.067335009261,,,0,,America/Los_Angeles,,,0
+2734182,,,SM Blvd & Sunnyside,,34.1615335668848,-118.064748126403,,,0,,America/Los_Angeles,,,0
+2734183,,,Sunnyside & Ramona,,34.1596203153896,-118.064720934311,,,0,,America/Los_Angeles,,,0
+2734184,,,Sunnyside & Orange Grove,,34.1569565042076,-118.065073881416,,,0,,America/Los_Angeles,,,0
+2734185,,,Ralphs,,34.150285558358,-118.074908013661,,,0,,America/Los_Angeles,,,0
+2734186,,,Canon & Grandview,,34.166916720713,-118.045192330139,,,0,,America/Los_Angeles,,,0
+2734187,,,SM School Upper Campus,,34.1644570979429,-118.044894988758,,,0,,America/Los_Angeles,,,0
+2734188,,,SM Blvd & Canon,,34.1619808594039,-118.044759646135,,,0,,America/Los_Angeles,,,0
+2734189,,,Recreation Center,,34.1619178294085,-118.040285635729,,,0,,America/Los_Angeles,,,0
+2734190,,,SM Blvd & Sunnyside,,34.1617368011563,-118.064938580361,,,0,,America/Los_Angeles,,,0
+2734191,,,Sierra Madre Library,,34.1617586914567,-118.062130218961,,,0,,America/Los_Angeles,,,0
+2734192,,,Lima & SM Blvd,,34.1617833565163,-118.060071763796,,,0,,America/Los_Angeles,,,0
+2734193,,,Memorial Park/Senior Center,,34.1617914519654,-118.057281345675,,,0,,America/Los_Angeles,,,0
+2734194,,,Post Office,,34.1609093212105,-118.052994249983,,,0,,America/Los_Angeles,,,0
+2734195,,,Senior Housing Project,,34.1601418767242,-118.05447844063,,,0,,America/Los_Angeles,,,0
+2734196,,,Lima & Mariposa,,34.1606380501095,-118.059512668293,,,0,,America/Los_Angeles,,,0
+2734197,,,Lima & Grandview,,34.1665972259312,-118.059785635116,,,0,,America/Los_Angeles,,,0
+2734198,,,Auburn & Highland,,34.1645713856847,-118.055076696067,,,0,,America/Los_Angeles,,,0
+2734199,,,Highland & Baldwin,,34.1643028858784,-118.052854134328,,,0,,America/Los_Angeles,,,0
+2734200,,,SM Blvd & Baldwin,,34.1618619526564,-118.052107149911,,,0,,America/Los_Angeles,,,0
+2734201,,,SM Blvd & Mountain Trail,,34.1621501401458,-118.048093691927,,,0,,America/Los_Angeles,,,0
+2734202,,,Highland & Mountain Trail,,34.1643109653249,-118.048044202764,,,0,,America/Los_Angeles,,,0
+2734203,,,Highland & Canon,,34.1643205428685,-118.04516601708,,,0,,America/Los_Angeles,,,0
+2734204,,,Sierra Vista Park,,34.1619194343538,-118.040414749653,,,0,,America/Los_Angeles,,,0

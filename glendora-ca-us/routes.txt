@@ -1,0 +1,7 @@
+agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off,tts_route_short_name,tts_route_long_name
+1664,16799,,Gold Line Commuter Shuttle South,,3,https://www.cityofglendora.org/Home/ShowDocument?id=23052,fbcb00,000000,1,25,0,1,1,,
+1664,16802,,Gold Line Commuter Shuttle North,,3,https://www.cityofglendora.org/Home/ShowDocument?id=23052,fbcb00,000000,2,20,0,1,1,,
+1664,16803,,Metrolink Commuter Shuttle,,3,https://www.cityofglendora.org/Home/ShowDocument?id=23054,537ebf,000000,4,37,0,1,1,,
+1664,16807,,Midday Shuttle: Orange,,3,https://www.cityofglendora.org/Home/ShowDocument?id=23056,f5983d,000000,6,,0,1,1,,
+1664,16814,,Midday Shuttle: Green,,3,https://www.cityofglendora.org/Home/ShowDocument?id=23056,99bd50,000000,7,,0,1,1,,
+1664,16815,,Midday Shuttle: Tripper,,3,https://www.cityofglendora.org/Home/ShowDocument?id=23056,bf514c,000000,9,,0,1,1,,

@@ -1,0 +1,3 @@
+rider_category_id,rider_category_name,min_age,max_age,eligibility_url
+seniors,Seniors Age 55 and Over,55,,https://www.bellgardens.org/government/city-departments/public-works/transportation/fixed-route-bus
+disabled,Persons with Disabilities,,,https://www.bellgardens.org/government/city-departments/public-works/transportation/fixed-route-bus

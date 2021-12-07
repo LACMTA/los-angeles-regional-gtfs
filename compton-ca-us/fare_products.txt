@@ -1,0 +1,4 @@
+fare_product_id,fare_product_name,rider_category_id,fare_container_id,bundle_amount,duration_start,duration_amount,duration_unit,duration_type,offset_amount,offset_unit,service_id,timeframe_id,timeframe_type,cap_required,eligible_cap_id,amount,min_amount,max_amount,currency
+monthly_regular,Monthly Bus Pass General Public,,,,,1,5,1,,,,,,,,16,,,USD
+monthly_senior,Monthly Bus Pass Seniors Age 62 and Over,senior,,,,1,5,1,,,,,,,,5,,,USD
+monthly_disabled,Monthly Bus Pass Persons with Disabilities,disabled,,,,1,5,1,,,,,,,,5,,,USD

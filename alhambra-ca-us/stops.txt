@@ -1,0 +1,85 @@
+stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,position,direction,wheelchair_boarding
+2619783,,,Valley Blvd & Almansor St,,34.0790110972317,-118.117346013777,,,0,,America/Los_Angeles,,,0
+2619784,,,Valley Blvd & Vega St,,34.0792815057666,-118.111601995942,,,0,,America/Los_Angeles,,,0
+2619785,,,Shorb St & Granada Ave,,34.080834852917,-118.114294124758,,,0,,America/Los_Angeles,,,0
+2619787,,,Alamansor St & Los Higos St,,34.085540227231,-118.116862732891,,,0,,America/Los_Angeles,,,0
+2619788,,,Alamansor St & Los Higos St,,34.0858739402969,-118.117051768571,,,0,,America/Los_Angeles,,,0
+2619789,,,Shorb St & Granada Ave,,34.0809768530273,-118.113869209235,,,0,,America/Los_Angeles,,,0
+2619792,,,Vega St & Valley Blvd,,34.0794130521259,-118.111230539029,,,0,,America/Los_Angeles,,,0
+2619793,,,Valley Blvd & Almansor St,,34.0788020700444,-118.116573644768,,,0,,America/Los_Angeles,,,0
+2619794,,,Park St & Corto St,,34.0902641015543,-118.116897574015,,,0,,America/Los_Angeles,,,0
+2619796,,,Almansor St & Corto St,,34.0903393850589,-118.11709859838,,,0,,America/Los_Angeles,,,0
+2619798,,,Chapel Ave & Bay St,,34.0948470324736,-118.122320625078,,,0,,America/Los_Angeles,,,0
+2619799,,,Chapel Ave & Main St,,34.0963575033226,-118.123376770485,,,0,,America/Los_Angeles,,,0
+2619801,,,Main St & Chapel Ave,,34.0964542229056,-118.123892879177,,,0,,America/Los_Angeles,,,0
+2619802,,,Chapel Ave & Woodward Ave,,34.099084205323,-118.125291310645,,,0,,America/Los_Angeles,,,0
+2619803,,,Chapel Ave & Woodward Ave,,34.0989831143422,-118.125416172811,,,0,,America/Los_Angeles,,,0
+2619804,,,Woodward Ave & Garfield Ave,,34.0978977813961,-118.128243412842,,,0,,America/Los_Angeles,,,0
+2619805,,,Woodward Ave & Garfield Ave,,34.097798880767,-118.128092184768,,,0,,America/Los_Angeles,,,0
+2619806,,,Garfield Ave & Main St,,34.094957802928,-118.126550025915,,,0,,America/Los_Angeles,,,0
+2619807,,,Garfield Ave & Main St,,34.095295353823,-118.127051075686,,,0,,America/Los_Angeles,,,0
+2619808,,,Chapel Ave & Bay St,,34.0947504748581,-118.122451891536,,,0,,America/Los_Angeles,,,0
+2619809,,,Chapel Ave & Main St,,34.0968209798271,-118.123912787921,,,0,,America/Los_Angeles,,,0
+2619810,,,Main St & Chapel Ave,,34.0965838702224,-118.124045194493,,,0,,America/Los_Angeles,,,0
+2619811,,,Bay St & Garfield Ave,,34.0932858928397,-118.125155251565,,,0,,America/Los_Angeles,,,0
+2619812,,,Garfield Ave & Bay St,,34.0929909818423,-118.125459034351,,,0,,America/Los_Angeles,,,0
+2619813,,,Main St & 2nd Ave,,34.0941627134738,-118.12924940114,,,0,,America/Los_Angeles,,,0
+2619814,,,Main St & 2nd Ave,,34.0942106097507,-118.128655944533,,,0,,America/Los_Angeles,,,0
+2619815,,,Commonwealth Ave & 2nd St,,34.0909536421613,-118.127137282574,,,0,,America/Los_Angeles,,,0
+2619816,,,Commonwealth Ave & 2nd St,,34.0913446341201,-118.126634609376,,,0,,America/Los_Angeles,,,0
+2619817,,,Main St & 5th Ave,,34.092658268234,-118.132458784272,,,0,,America/Los_Angeles,,,0
+2619818,,,Main St & 5th Ave,,34.092699684614,-118.131917774734,,,0,,America/Los_Angeles,,,0
+2619819,,,Commonwealth Ave & 4th St,,34.0899982028147,-118.129182620671,,,0,,America/Los_Angeles,,,0
+2619820,,,Commonwealth Ave & 4th St,,34.0902979779535,-118.128878341988,,,0,,America/Los_Angeles,,,0
+2619821,,,Commonwealth Ave & Atlantic Blvd,,34.0875308856545,-118.135527851123,,,0,,America/Los_Angeles,,,0
+2619822,,,Commonwealth Ave & Atlantic Blvd,,34.0876141956454,-118.134170625273,,,0,,America/Los_Angeles,,,0
+2619823,,,Main St & Atlantic Blvd,,34.0916752973752,-118.135038004276,,,0,,America/Los_Angeles,,,0
+2619824,,,Main St & Atlantic Blvd,,34.0916481951948,-118.13410939794,,,0,,America/Los_Angeles,,,0
+2619825,,,Main St & Marengo Ave,,34.0916250726335,-118.141868241463,,,0,,America/Los_Angeles,,,0
+2619826,,,Main St & Marengo Ave,,34.0914238041055,-118.142393318148,,,0,,America/Los_Angeles,,,0
+2619827,,,Main St & Marguerita Ave,,34.0916593825098,-118.13813766611,,,0,,America/Los_Angeles,,,0
+2619828,,,Main St & Marguerita Ave,,34.0914398129107,-118.138561876094,,,0,,America/Los_Angeles,,,0
+2619829,,,Main St & Raymond Ave,,34.091608809927,-118.144133734819,,,0,,America/Los_Angeles,,,0
+2619830,,,Main St & Raymond Ave,,34.091403238691,-118.144860386689,,,0,,America/Los_Angeles,,,0
+2619831,,,Palm Ave & Commonwealth Ave,,34.088095074439,-118.146428857144,,,0,,America/Los_Angeles,,,0
+2619832,,,Palm Ave & Commonwealth Ave,,34.0881466188339,-118.146728429508,,,0,,America/Los_Angeles,,,0
+2619833,,,Commonwealth Ave & Raymond Ave,,34.0874795325536,-118.145162117288,,,0,,America/Los_Angeles,,,0
+2619834,,,Commonwealth Ave & Raymond Ave,,34.0876391285055,-118.144726658715,,,0,,America/Los_Angeles,,,0
+2619835,,,Commonwealth Ave & Marengo Ave,,34.0874953161456,-118.142243670107,,,0,,America/Los_Angeles,,,0
+2619836,,,Commonwealth Ave & Marengo Ave,,34.0876409202662,-118.141787397925,,,0,,America/Los_Angeles,,,0
+2619837,,,Commonwealth Ave & Fremont Ave,,34.0877530607399,-118.151621748859,,,0,,America/Los_Angeles,,,0
+2619838,,,Fremont Ave & Commonwealth Ave,,34.0874501622781,-118.152091236464,,,0,,America/Los_Angeles,,,0
+2619839,,,Fremont Ave & Orange St,,34.0837683582947,-118.152046173749,,,0,,America/Los_Angeles,,,0
+2619840,,,Fremont Ave & Orange St,,34.0843244811265,-118.151805180737,,,0,,America/Los_Angeles,,,0
+2619841,,,Fremont Ave & Mission Rd,,34.0801544725136,-118.15176281924,,,0,,America/Los_Angeles,,,0
+2619842,,,Fremont Ave & Mission Rd,,34.0790178554333,-118.152027733575,,,0,,America/Los_Angeles,,,0
+2619843,,,Fremont Ave & Valley Blvd,,34.0774606874361,-118.15175507954,,,0,,America/Los_Angeles,,,0
+2619844,,,Valley Blvd & Fremont Ave,,34.0768323674224,-118.151059895396,,,0,,America/Los_Angeles,,,0
+2619845,,,Fremont Ave & Valley Blvd,,34.07651062159,-118.151981575957,,,0,,America/Los_Angeles,,,0
+2619846,,,Valley Blvd & Edgewood Dr,,34.0769950179438,-118.148346441275,,,0,,America/Los_Angeles,,,0
+2619847,,,Valley Blvd & Edgewood Dr,,34.0771769799792,-118.149047122135,,,0,,America/Los_Angeles,,,0
+2619848,,,Valley Blvd & Raymond Ave,,34.0771814844675,-118.145152293002,,,0,,America/Los_Angeles,,,0
+2619849,,,Valley Blvd & Raymond Ave,,34.0773727092232,-118.145759313063,,,0,,America/Los_Angeles,,,0
+2619850,,,Valley Blvd & Marengo Ave,,34.0773740964226,-118.141541122738,,,0,,America/Los_Angeles,,,0
+2619851,,,Valley Blvd & Marengo Ave,,34.0775996186727,-118.142104710289,,,0,,America/Los_Angeles,,,0
+2619852,,,Valley Blvd & Marguerita Ave,,34.0776004710066,-118.137902018731,,,0,,America/Los_Angeles,,,0
+2619853,,,Valley Blvd & Marguerita Ave,,34.0778094155358,-118.138420945416,,,0,,America/Los_Angeles,,,0
+2619854,,,Valley Blvd & Atlantic Ave,,34.0780219923682,-118.1348464302,,,0,,America/Los_Angeles,,,0
+2619855,,,Valley Blvd & Atlantic Ave,,34.0778184122626,-118.134073625552,,,0,,America/Los_Angeles,,,0
+2619856,,,Valley Blvd & 6th St,,34.078116176619,-118.129071915593,,,0,,America/Los_Angeles,,,0
+2619857,,,Valley Blvd & 6th St,,34.0783162485715,-118.129673876374,,,0,,America/Los_Angeles,,,0
+2619858,,,Valley Blvd & 4th St,,34.0782683908629,-118.126523666897,,,0,,America/Los_Angeles,,,0
+2619859,,,Valley Blvd & 4th St,,34.0784610898672,-118.127067973135,,,0,,America/Los_Angeles,,,0
+2619860,,,Valley Blvd & Garfield Ave,,34.0784794074726,-118.122700551108,,,0,,America/Los_Angeles,,,0
+2619861,,,Valley Blvd & Garfield Ave,,34.0786751764282,-118.123521683052,,,0,,America/Los_Angeles,,,0
+2619862,,,Fremont Ave & Hellman Ave,,34.0698438945631,-118.1518947734,,,0,,America/Los_Angeles,,,0
+2619863,,,Fremont Ave & Hellman Ave,,34.0700405473454,-118.151683915962,,,0,,America/Los_Angeles,,,0
+2619864,,,Hellman Ave & Westboro Ave,,34.0697274282423,-118.157784989101,,,0,,America/Los_Angeles,,,0
+2619865,,,Hellman Ave & Westboro Ave,,34.0695699235578,-118.158034128261,,,0,,America/Los_Angeles,,,0
+2619866,,,Paseo Rancho Castilla & Levanda Ave,,34.0717845662026,-118.167880627132,,,0,,America/Los_Angeles,,,0
+2619868,,,Paseo Rancho Castilla & Levanda Ave,,34.071580929046,-118.16821669889,,,0,,America/Los_Angeles,,,0
+2619869,,,Cal State LA Metrolink,,34.0632123260011,-118.168372670796,,,0,,America/Los_Angeles,,,0
+2619870,,,Paseo Rancho Castilla & Campus Rd,,34.0651579733516,-118.172612657686,,,0,,America/Los_Angeles,,,0
+2619871,,,Paseo Rancho Castilla & Campus Rd,,34.0650905121775,-118.172849994219,,,0,,America/Los_Angeles,,,0
+2619874,,,Main St & Garfield Ave,,34.0952703421165,-118.126425742838,,,0,,America/Los_Angeles,,,0
+2619875,,,Main St & Garfield Ave,,34.09505027431,-118.127349072517,,,0,,America/Los_Angeles,,,0

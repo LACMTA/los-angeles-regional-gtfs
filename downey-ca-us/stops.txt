@@ -1,0 +1,92 @@
+stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,position,direction,wheelchair_boarding
+2679491,,,Transit Depot,,33.9395957636329,-118.134202058868,,,0,,America/Los_Angeles,,,0
+2679492,,,La Reina Ave & 3rd St,,33.9425690692844,-118.13364158981,,,0,,America/Los_Angeles,,,0
+2679493,,,Civic Center Dr & 3rd St,,33.9410179548106,-118.129573585464,,,0,,America/Los_Angeles,,,0
+2679494,,,5th St & Downey Ave,,33.9440565024974,-118.130748916581,,,0,,America/Los_Angeles,,,0
+2679495,,,5th St & Paramount Blvd,,33.9459428421459,-118.134407294597,,,0,,America/Los_Angeles,,,0
+2679496,,,Rives Ave & 5th St,,33.9488093858438,-118.139187882295,,,0,,America/Los_Angeles,,,0
+2679497,,,Rives Ave & Farm St - Furman Park,,33.9526732840351,-118.136374920499,,,0,,America/Los_Angeles,,,0
+2679498,,,Rives Ave & Baysinger St,,33.9551778150828,-118.134561448908,,,0,,America/Los_Angeles,,,0
+2679499,,,Florence Ave & Wiley Burke Ave,,33.9572257744994,-118.137045181298,,,0,,America/Los_Angeles,,,0
+2696006,,,Wiley Burke Ave & Lubec St,,33.9605898330935,-118.134865705722,,,0,,America/Los_Angeles,,,0
+2696007,,,Suva St & Guatemala Ave,,33.9645077556016,-118.134837863207,,,0,,America/Los_Angeles,,,0
+2696008,,,Suva St & Rives Ave,,33.9617764113718,-118.129420952573,,,0,,America/Los_Angeles,,,0
+2696009,,,Paramount Blvd & Suva St,,33.9600652089586,-118.124945387872,,,0,,America/Los_Angeles,,,0
+2696010,,,Paramount Blvd & Gallatin Rd,,33.9619780512346,-118.1232123849,,,0,,America/Los_Angeles,,,0
+2696011,,,Paramount Blvd & Vista Del Rosa St,,33.9658798071051,-118.117460485746,,,0,,America/Los_Angeles,,,0
+2696012,,,Telegraph Rd & Paramount Blvd,,33.9667896649685,-118.115714303401,,,0,,America/Los_Angeles,,,0
+2696013,,,Telegraph Rd & Birchbark Ave,,33.9644986435963,-118.113637196705,,,0,,America/Los_Angeles,,,0
+2696014,,,Lakewood Blvd & Telegraph Rd,,33.960822485515,-118.110413955452,,,0,,America/Los_Angeles,,,0
+2696016,,,Lakewood Blvd & Gallatin Rd,,33.95461513792,-118.113658331829,,,0,,America/Los_Angeles,,,0
+2696017,,,Brookshire Ave & Suva St,,33.9545458462649,-118.117924859064,,,0,,America/Los_Angeles,,,0
+2696018,,,Brookshire Ave & Gainford St,,33.9524815537931,-118.120044030066,,,0,,America/Los_Angeles,,,0
+2696019,,,Brookshire Ave & Florence Ave,,33.95006898351,-118.121837778364,,,0,,America/Los_Angeles,,,0
+2696020,,,Florence Ave & Downey Ave,,33.9516478261332,-118.125924873551,,,0,,America/Los_Angeles,,,0
+2696021,,,Paramount Blvd & Florence Ave,,33.9533711220859,-118.130369175968,,,0,,America/Los_Angeles,,,0
+2696022,,,Paramount Blvd & Farm St,,33.9504487889985,-118.132449654518,,,0,,America/Los_Angeles,,,0
+2696023,,,7th St & Western Ave,,33.9473917948523,-118.131690923837,,,0,,America/Los_Angeles,,,0
+2696024,,,Downey Ave & 6th St,,33.944853156301,-118.130241218683,,,0,,America/Los_Angeles,,,0
+2696036,,,Firestone Blvd & Patton Rd,,33.9370963854923,-118.1274134577,,,0,,America/Los_Angeles,,,0
+2696037,,,Firestone Blvd & Lakewood Blvd,,33.9357016939422,-118.124626769081,,,0,,America/Los_Angeles,,,0
+2696038,,,Woodruff Ave & Firestone Blvd,,33.9327846834302,-118.117477134936,,,0,,America/Los_Angeles,,,0
+2696039,,,Cecilia St & Cord Ave,,33.9354137839053,-118.113600047016,,,0,,America/Los_Angeles,,,0
+2696040,,,Pangborn Ave & Cecilia St,,33.9342589009263,-118.111216315335,,,0,,America/Los_Angeles,,,0
+2696041,,,Farm St & Pangborn Ave,,33.9375785502859,-118.108570534749,,,0,,America/Los_Angeles,,,0
+2696042,,,Lesterford Ave & Via Amorita,,33.9376045829907,-118.105232153334,,,0,,America/Los_Angeles,,,0
+2696043,,,Florence Ave & Mattock Ave,,33.94126260529,-118.10462169617,,,0,,America/Los_Angeles,,,0
+2696044,,,Florence Ave & Downey Sanford Bridge Rd,,33.9428256813569,-118.107705027432,,,0,,America/Los_Angeles,,,0
+2696045,,,Florence Ave & Woodruff Ave,,33.9443079507832,-118.110626604126,,,0,,America/Los_Angeles,,,0
+2696046,,,Haledon Ave & Dinsdale St,,33.9463367716531,-118.112991592211,,,0,,America/Los_Angeles,,,0
+2696047,,,Lemoran Ave & Gallatin Rd,,33.9503739260923,-118.107938134321,,,0,,America/Los_Angeles,,,0
+2696048,,,Gallatin Rd & Clancey Ave,,33.9526057330919,-118.110790900312,,,0,,America/Los_Angeles,,,0
+2696049,,,Gallatin Rd & Arrington Ave,,33.9538824688254,-118.112802446093,,,0,,America/Los_Angeles,,,0
+2696050,,,Lakewood Blvd & Telegraph Rd NB,,33.960522925054,-118.110212080422,,,0,,America/Los_Angeles,,,0
+2696052,,,Telegraph Rd & Serapis Ave,,33.9584976353329,-118.106688355312,,,0,,America/Los_Angeles,,,0
+2696053,,,Telegraph Rd & Passons Blvd,,33.955807228928,-118.102802806934,,,0,,America/Los_Angeles,,,0
+2696054,,,Cedartree Rd & Lindsey Ave,,33.956745077141,-118.106062839636,,,0,,America/Los_Angeles,,,0
+2696055,,,Lakewood Blvd & Florence Ave,,33.9473023678106,-118.117465065255,,,0,,America/Los_Angeles,,,0
+2696056,,,Lakewood Blvd & Cherokee Dr,,33.9433896092719,-118.119524969756,,,0,,America/Los_Angeles,,,0
+2696057,,,Brookshire Ave & 6th St,,33.9428875802877,-118.126240888572,,,0,,America/Los_Angeles,,,0
+2696058,,,3rd St & Civic Center Dr,,33.9410545110355,-118.130232109873,,,0,,America/Los_Angeles,,,0
+2696061,,,Brookshire Ave & Firestone Blvd,,33.9377596093629,-118.130167058907,,,0,,America/Los_Angeles,,,0
+2696062,,,Brookshire Ave & Davis St - Medical Center,,33.9350430080596,-118.132268258607,,,0,,America/Los_Angeles,,,0
+2696063,,,Brookshire Ave & Stewart and Gray Rd,,33.9304713941613,-118.135655843863,,,0,,America/Los_Angeles,,,0
+2696064,,,Brookshire Ave & Alameda St,,33.9261334161053,-118.138836740488,,,0,,America/Los_Angeles,,,0
+2696065,,,Brookshire Ave & Imperial Hwy,,33.9200849579625,-118.143799675705,,,0,,America/Los_Angeles,,,0
+2696066,,,Brookshire Ave & Puritan St,,33.9151230700956,-118.147544894804,,,0,,America/Los_Angeles,,,0
+2696067,,,Gardendale St & Downey Ave,,33.9148687080967,-118.151481014757,,,0,,America/Los_Angeles,,,0
+2696068,,,Downey Ave & Comolette St,,33.9180930801965,-118.149206845308,,,0,,America/Los_Angeles,,,0
+2696070,,,Imperial Hwy & Downey Ave,,33.9217636703354,-118.147111258967,,,0,,America/Los_Angeles,,,0
+2696071,,,Imperial Hwy & Paramount Blvd,,33.9243866262152,-118.152337619919,,,0,,America/Los_Angeles,,,0
+2696072,,,Rives Ave & Imperial Hwy - Apollo Park,,33.926513948303,-118.15607158901,,,0,,America/Los_Angeles,,,0
+2696073,,,Rives Ave & Quill dr,,33.9286482608787,-118.154453553196,,,0,,America/Los_Angeles,,,0
+2696074,,,Stewart and Gray Rd & Rives Ave,,33.9373083185836,-118.148383644498,,,0,,America/Los_Angeles,,,0
+2696075,,,Stewart and Gray Rd & Old River School Rd,,33.9401361109624,-118.153557002775,,,0,,America/Los_Angeles,,,0
+2696078,,,Old River school Rd & Pellet St,,33.9491940575526,-118.147508388445,,,0,,America/Los_Angeles,,,0
+2696079,,,3rd St & Rives Ave,,33.9462565525167,-118.140693093108,,,0,,America/Los_Angeles,,,0
+2696081,,,5th St & Paramount Blvd EB,,33.9460931618598,-118.135019513873,,,0,,America/Los_Angeles,,,0
+2696082,,,5th St & New St,,33.9440013144049,-118.130918233391,,,0,,America/Los_Angeles,,,0
+2696084,,,Old River School Rd & Arnett St,,33.9458728885953,-118.149849626278,,,0,,America/Los_Angeles,,,0
+2696085,,,Firestone Blvd & Dolan Ave,,33.9389072167697,-118.131146796256,,,0,,America/Los_Angeles,,,0
+2696086,,,Firestone Blvd & Stonewood Center Dr,,33.933884965689,-118.120877157326,,,0,,America/Los_Angeles,,,0
+2696087,,,Woodruff Ave & Firestone Blvd SB,,33.9311305635271,-118.116868986455,,,0,,America/Los_Angeles,,,0
+2696088,,,Stewart and Gray Rd & Coldbrook Ave,,33.927924901866,-118.122513539245,,,0,,America/Los_Angeles,,,0
+2696089,,,Bellflower Blvd & Stewart and Gray Rd,,33.9274511990197,-118.125564955974,,,0,,America/Los_Angeles,,,0
+2696090,,,Woodruff Ave & Washburn Rd,,33.9230427152395,-118.116851557822,,,0,,America/Los_Angeles,,,0
+2696091,,,Imperial Hwy & Woodruff Ave,,33.9171966731365,-118.117056796294,,,0,,America/Los_Angeles,,,0
+2696092,,,Imperial Hwy & Dunrobin Ave,,33.9171911619306,-118.120855662815,,,0,,America/Los_Angeles,,,0
+2696093,,,Bellflower Blvd & Imperial Hwy,,33.9160509550097,-118.125539719709,,,0,,America/Los_Angeles,,,0
+2696094,,,Bellflower Blvd & Foster Rd,,33.9099358576776,-118.125491617922,,,0,,America/Los_Angeles,,,0
+2696095,,,Foster Rd & Premier Ave - Carpenter Elementary School,,33.909848953975,-118.130621512006,,,0,,America/Los_Angeles,,,0
+2696115,,,Gardendale St & Vultee Ave - Old Downey Cemetery,,33.9095710238174,-118.140323231831,,,0,,America/Los_Angeles,,,0
+2696175,,,Gardendale St & Lakewood Blvd,,33.9108343867385,-118.142988429708,,,0,,America/Los_Angeles,,,0
+2696176,,,Golden Ave & Castana Ave - Golden Park,,33.9077144501628,-118.145520504176,,,0,,America/Los_Angeles,,,0
+2696177,,,Prichard St & Barlin Ave - Golden Park,,33.9068190625008,-118.147749617174,,,0,,America/Los_Angeles,,,0
+2696178,,,Gardendale St & Brookshire Ave,,33.9133341769184,-118.148186722496,,,0,,America/Los_Angeles,,,0
+2696179,,,Brookshire Ave & Borson St,,33.9178253480802,-118.145240320918,,,0,,America/Los_Angeles,,,0
+2696180,,,Imperial Hwy & Brookshire Ave,,33.9195255510014,-118.143526315679,,,0,,America/Los_Angeles,,,0
+2696181,,,Columbia Way - Columbia Memorial Space Center,,33.9205357023296,-118.134016139705,,,0,,America/Los_Angeles,,,0
+2696182,,,Lakewood Blvd & Alameda St,,33.9233796703311,-118.132783967951,,,0,,America/Los_Angeles,,,0
+2696183,,,Brookshire Ave & Stewart and Gray Rd NB,,33.9308666076193,-118.135098095442,,,0,,America/Los_Angeles,,,0
+2696184,,,Brookshire Ave & Davis St - Medical Center NB,,33.9350305956984,-118.132009989678,,,0,,America/Los_Angeles,,,0
+2696185,,,Brookshire Ave - Downey High School,,33.9398062226815,-118.128280639212,,,0,,America/Los_Angeles,,,0

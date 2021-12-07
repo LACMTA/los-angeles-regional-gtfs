@@ -1,0 +1,32 @@
+stop_id,stop_city
+2734179,Sierra Madre
+2734181,Sierra Madre
+2734198,Sierra Madre
+2734195,Sierra Madre
+2734177,Sierra Madre
+2734194,Sierra Madre
+2734202,Sierra Madre
+2734187,Sierra Madre
+2734174,Sierra Madre
+2734182,Sierra Madre
+2734189,Sierra Madre
+2734197,Sierra Madre
+2734184,Sierra Madre
+2734188,Sierra Madre
+2734180,Sierra Madre
+2734200,Sierra Madre
+2734199,Sierra Madre
+2734176,Sierra Madre
+2734193,Sierra Madre
+2734190,Sierra Madre
+2734201,Sierra Madre
+2734185,Pasadena
+2734192,Sierra Madre
+2734203,Sierra Madre
+2734186,Sierra Madre
+2734175,Sierra Madre
+2734204,Sierra Madre
+2734191,Sierra Madre
+2734196,Sierra Madre
+2734183,Sierra Madre
+2734178,Sierra Madre

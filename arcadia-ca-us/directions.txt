@@ -1,0 +1,6 @@
+route_id,direction_id,direction
+18682,0,Northbound
+18682,1,Southbound
+18683,0,Northbound
+18683,1,Southbound
+18684,0,Loop

@@ -1,0 +1,6 @@
+fare_id,route_id,origin_id,destination_id,contains_id
+4267,16949,,,
+4268,16950,,,
+4268,16954,,,
+4268,16955,,,
+4268,16962,,,

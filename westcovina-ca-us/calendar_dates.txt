@@ -1,0 +1,6 @@
+service_id,date,holiday_name,exception_type
+c_20684_b_27901_d_31,20211224,Christmas Eve,2
+c_20684_b_27901_d_31,20211126,Day after Thanksgiving,2
+c_20684_b_27901_d_31,20211125,Thanksgiving Day 2020,2
+c_20684_b_27901_d_31,20210531,Memorial Day,2
+c_20684_b_27901_d_31,20210215,Presidents Day,2

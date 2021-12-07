@@ -1,0 +1,2 @@
+service_id,service_description
+c_20942_b_28635_d_127,Year round (All days of week)

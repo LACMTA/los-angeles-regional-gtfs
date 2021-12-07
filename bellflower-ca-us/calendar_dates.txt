@@ -1,0 +1,6 @@
+service_id,date,holiday_name,exception_type
+c_20723_b_28090_d_31,20211231,New Year's Eve,2
+c_20723_b_28090_d_31,20211224,Christmas Eve,2
+c_20723_b_28090_d_31,20211125,Thanksgiving Day,2
+c_20723_b_28090_d_31,20211111,Veterans Day,2
+c_20723_b_28090_d_31,20210906,Labor Day,2

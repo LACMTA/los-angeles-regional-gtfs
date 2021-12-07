@@ -1,0 +1,13 @@
+fare_product_id,fare_product_name,rider_category_id,fare_container_id,bundle_amount,duration_start,duration_amount,duration_unit,duration_type,offset_amount,offset_unit,service_id,timeframe_id,timeframe_type,cap_required,eligible_cap_id,amount,min_amount,max_amount,currency
+1-day_regular,1-Day Pass General Public,,tap_regular,,,1,3,1,,,,,,,,7,,,USD
+1-day_senior,1-Day Pass Seniors Age 62 and Over,senior,tap_senior,,,1,3,1,,,,,,,,2.5,,,USD
+1-day_disabled,1-Day Pass Persons with Disabilities,disabled,tap_disabled,,,1,3,1,,,,,,,,2.5,,,USD
+7-day_regular,7-Day Pass General Public,,tap_regular,,,7,3,2,,,,,,,,25,,,USD
+30-day_regular,30-Day Pass General Public,,tap_regular,,,30,3,2,,,,,,,,100,,,USD
+30-day_senior,30-Day Pass Seniors Age 62 and Over,senior,tap_senior,,,30,3,2,,,,,,,,20,,,USD
+30-day_disabled,30-Day Pass Persons with Disabilities,disabled,tap_disabled,,,30,3,2,,,,,,,,20,,,USD
+30-day_college,30-Day Pass College/Vocational,,tap_college,,,30,3,2,,,,,,,,43,,,USD
+30-day_student,30-Day Pass Students K-12,,tap_student,,,30,3,2,,,,,,,,24,,,USD
+EZpass_regular,EZ Pass General Public,,tap_regular,,,30,3,2,,,,,,,,110,,,USD
+EZpass_senior,EZ Pass Seniors Age 62 and Over,senior,tap_senior,,,30,3,2,,,,,,,,42,,,USD
+EZpass_disabled,EZ Pass Persons with Disabilities,disabled,tap_disabled,,,30,3,2,,,,,,,,42,,,USD

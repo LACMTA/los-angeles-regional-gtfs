@@ -1,0 +1,5 @@
+route_id,direction_id,direction
+16904,,Loop
+16948,,Loop
+16952,0,Northbound
+16952,1,Southbound

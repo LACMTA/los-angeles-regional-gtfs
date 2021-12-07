@@ -1,0 +1,4 @@
+agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off
+1683,17084,,Teal Line ,,3,,4fbde3,000000,1,,0,1,1
+1683,18690,,Express Line,,3,,24c2c4,000000,1,,0,1,1
+1683,18172,,Pumpkin Line ,,3,,ec8413,ffffff,3,,0,1,1

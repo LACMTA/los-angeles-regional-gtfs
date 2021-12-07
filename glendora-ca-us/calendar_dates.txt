@@ -1,0 +1,5 @@
+service_id,date,holiday_name,exception_type
+c_20638_b_30530_d_30,20211126,Day after Thanksgiving,2
+c_20638_b_30530_d_30,20211125,Thanksgiving Day,2
+c_20605_b_27718_d_31,20211126,Day after Thanksgiving,2
+c_20605_b_27718_d_31,20211125,Thanksgiving Day,2

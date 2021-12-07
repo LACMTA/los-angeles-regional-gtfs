@@ -1,0 +1,44 @@
+stop_id,stop_city
+2628830,Huntington Park
+2628828,Huntington Park
+2628837,Huntington Park
+2628829,Huntington Park
+2628819,Huntington Park
+2628814,Huntington Park
+2628821,South Gate
+2628838,Huntington Park
+2729227,Huntington Park
+2628836,Huntington Park
+2729222,Maywood
+2729220,Vernon
+2729217,Huntington Park
+2628825,Huntington Park
+2628823,Huntington Park
+2628840,Huntington Park
+2729228,Huntington Park
+2729224,Maywood
+2729225,Maywood
+2729223,Maywood
+2628822,Huntington Park
+2729229,Bell
+2628855,Huntington Park
+2628815,Huntington Park
+2729219,Huntington Park
+2628826,Huntington Park
+2628817,Huntington Park
+2729221,Maywood
+2628848,Huntington Park
+2729216,Huntington Park
+2628827,Huntington Park
+2628842,Huntington Park
+2628841,Huntington Park
+2628839,Huntington Park
+2729230,Huntington Park
+2729226,Huntington Park
+2628820,Huntington Park
+2729218,Huntington Park
+2628818,Huntington Park
+2628824,Huntington Park
+2628816,Huntington Park
+2628845,Huntington Park
+2628835,Huntington Park

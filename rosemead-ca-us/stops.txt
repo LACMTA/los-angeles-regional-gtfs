@@ -1,0 +1,19 @@
+stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,position,direction,wheelchair_boarding
+2619867,,,Rosemead Square (Target),,34.074826,-118.070148,,,0,,America/Los_Angeles,,,0
+2619872,,,Garvey Community Center,,34.062595,-118.071275,,,0,,America/Los_Angeles,,,0
+2619873,,,Garvey Community Center,,34.062828,-118.071575,,,0,,America/Los_Angeles,,,0
+2619908,,,Walnut Grove Ave / Garvey Ave,,34.062268,-118.082085,,,0,,America/Los_Angeles,,,0
+2619910,,,Angelus Senior Housing,,34.056669,-118.087228,,,0,,America/Los_Angeles,,,0
+2621553,,,WalMart (Bench Area),,34.050934,-118.084786,,,0,,America/Los_Angeles,,,0
+2622477,,,Montebello Town Center,,34.036944,-118.086628,,,0,,America/Los_Angeles,,,0
+2622498,,,WalMart (Garden Center),,34.051484,-118.086139,,,0,,America/Los_Angeles,,,0
+2622499,,,Jackson Ave / Garvey Ave,,34.062452,-118.103673,,,0,,America/Los_Angeles,,,0
+2622500,,,Walgreens/Garvey Ave,,34.062542,-118.090815,,,0,,America/Los_Angeles,,,0
+2622501,,,City Hall,,34.080581,-118.077309,,,0,,America/Los_Angeles,,,0
+2622502,,,Valley Blvd/Mission Dr,,34.080993,-118.065796,,,0,,America/Los_Angeles,,,0
+2623619,,,Valley Blvd/Mission Dr,,34.081257,-118.065028,,,0,,America/Los_Angeles,,,0
+2623620,,,Rosemead High School,,34.083874,-118.071706,,,0,,America/Los_Angeles,,,0
+2623622,,,City Hall,,34.080784,-118.077966,,,0,,America/Los_Angeles,,,0
+2623624,,,Walgreens/Garvey Ave,,34.0627784779666,-118.090800824074,,,0,,America/Los_Angeles,,,0
+2623625,,,Garvey Ave/Jackson Ave,,34.062725,-118.103555,,,0,,America/Los_Angeles,,,0
+2623626,,,Garvey Ave/Walnut Grove Ave,,34.06243,-118.081855,,,0,,America/Los_Angeles,,,0

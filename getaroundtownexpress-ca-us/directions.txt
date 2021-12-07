@@ -1,0 +1,3 @@
+route_id,direction_id,direction
+18768,,Loop
+18784,,Loop

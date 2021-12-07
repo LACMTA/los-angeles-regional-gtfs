@@ -1,0 +1,147 @@
+stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,position,direction,wheelchair_boarding
+2628775,,,Metrolink,,34.0862531856752,-117.957300203026,,,0,,America/Los_Angeles,,,0
+2628776,,,Downing Ave & Pacific Ave,,34.0846303426744,-117.959022651932,,,0,,America/Los_Angeles,,,0
+2628777,,,Ramona Blvd & Maine Ave (EB),,34.0865018273098,-117.959867804748,,,0,,America/Los_Angeles,,,0
+2628779,,,Ramona Blvd & Bogart,,34.0872377466335,-117.958132768911,,,0,,America/Los_Angeles,,,0
+2628780,,,Baldwin Park Blvd & Stewart St (Saint Johns Catholic Church),,34.0816658348809,-117.967127709469,,,0,,America/Los_Angeles,,,0
+2628781,,,Ramona Blvd & Baldwin Park Blvd (Morgan Park),,34.0854929028578,-117.964292423582,,,0,,America/Los_Angeles,,,0
+2628783,,,Ramona Blvd & Cesar Chavez Dr (Morgan Park),,34.0865349918469,-117.962626437455,,,0,,America/Los_Angeles,,,0
+2628786,,,Maine Ave & Palm Ave (NB) (Main Park Plaza),,34.0888796370412,-117.960352947123,,,0,,America/Los_Angeles,,,0
+2628787,,,Maine Ave & Palmrose St (Main Park Plaza) (SB),,34.0893703556683,-117.960568020765,,,0,,America/Los_Angeles,,,0
+2628788,,,Maine Ave & Los Angeles St (SB),,34.0918988854022,-117.960619479205,,,0,,America/Los_Angeles,,,0
+2628789,,,Maine Ave & Los Angeles St (NB),,34.0929192264865,-117.960380164118,,,0,,America/Los_Angeles,,,0
+2628790,,,Maine Ave & Ohio St (SB),,34.094932796118,-117.960619250375,,,0,,America/Los_Angeles,,,0
+2628791,,,Maine Ave & Ohio St (NB),,34.0959969741505,-117.960412007057,,,0,,America/Los_Angeles,,,0
+2628792,,,Maine Ave & Olive St (SB),,34.0992555969701,-117.960657872295,,,0,,America/Los_Angeles,,,0
+2628793,,,Maine Ave & Olive St (NB),,34.0990583138816,-117.960425487563,,,0,,America/Los_Angeles,,,0
+2628794,,,Olive St & Bleeker St (EB),,34.0995382134568,-117.955375741072,,,0,,America/Los_Angeles,,,0
+2628795,,,Olive St & Bleeker St (WB),,34.0997218439926,-117.954637695294,,,0,,America/Los_Angeles,,,0
+2628796,,,Olive St & Stancroft Ave,,34.0997600858819,-117.952023238126,,,0,,America/Los_Angeles,,,0
+2628797,,,Olive St & Fortin St,,34.0997955042844,-117.948916422039,,,0,,America/Los_Angeles,,,0
+2628798,,,La Sena Ave & Olive St,,34.1000435520494,-117.944864452117,,,0,,America/Los_Angeles,,,0
+2628799,,,La Sena Ave & Olive St (NB),,34.1000816331012,-117.944715604821,,,0,,America/Los_Angeles,,,0
+2628800,,,Nubia St & La Sena Ave (WB),,34.1034250156535,-117.94495961413,,,0,,America/Los_Angeles,,,0
+2628801,,,Nubia St & La Sena Ave (EB),,34.1033054183231,-117.944955592526,,,0,,America/Los_Angeles,,,0
+2628831,,,Nubia St & Lante St (EB),,34.1032902736458,-117.946589895829,,,0,,America/Los_Angeles,,,0
+2628833,,,Nubia St & Lante St (WB),,34.1034077939261,-117.946586844244,,,0,,America/Los_Angeles,,,0
+2628843,,,Nubia St & Elton St (WB),,34.1033665703579,-117.950422373339,,,0,,America/Los_Angeles,,,0
+2628844,,,Nubia St & Elton St (EB),,34.1032452365664,-117.950431502231,,,0,,America/Los_Angeles,,,0
+2628846,,,Nubia St. & Bleeker St. (WB),,34.1033257714019,-117.954748346874,,,0,,America/Los_Angeles,,,0
+2628847,,,Nubia St. & Bleeker St. (EB),,34.1031961676761,-117.954744927552,,,0,,America/Los_Angeles,,,0
+2628849,,,Bleeker St & Joanbridge St (SB),,34.1053465110936,-117.955164193211,,,0,,America/Los_Angeles,,,0
+2628850,,,Bleeker St. & Joanbridge (NB),,34.105305315201,-117.954993872637,,,0,,America/Los_Angeles,,,0
+2628851,,,Maine Ave & Joanbridge St (SB),,34.1054062294786,-117.960685823683,,,0,,America/Los_Angeles,,,0
+2628852,,,Maine Ave & Joanbridge St (NB),,34.1053459444027,-117.960439389931,,,0,,America/Los_Angeles,,,0
+2628853,,,Nubia St & Wimmer Ave (WB),,34.1037227497924,-117.961413402564,,,0,,America/Los_Angeles,,,0
+2628854,,,Nubia Ave & Wimmer Ave (EB),,34.1036069747764,-117.961279163052,,,0,,America/Los_Angeles,,,0
+2628856,,,Nubia St & Landis Ave (WB),,34.1034955812528,-117.963507944193,,,0,,America/Los_Angeles,,,0
+2628857,,,Nubia St & Landis Ave (EB),,34.103146277792,-117.964055999753,,,0,,America/Los_Angeles,,,0
+2628858,,,Nubia St & Baldwin Park Blvd (WB),,34.1032118767122,-117.965464583279,,,0,,America/Los_Angeles,,,0
+2628859,,,Nubia St & Baldwin park Blvd (EB),,34.1030900306036,-117.965474239188,,,0,,America/Los_Angeles,,,0
+2628860,,,Nubia St & Stewart St (WB),,34.1031711927178,-117.968932498166,,,0,,America/Los_Angeles,,,0
+2628861,,,Nubia St & Stewart Ave (EB),,34.1030561723829,-117.968886393662,,,0,,America/Los_Angeles,,,0
+2628862,,,Stewart St & Live Oak Ave (NB),,34.1059616341679,-117.96922079249,,,0,,America/Los_Angeles,,,0
+2628863,,,Stewart St & Live Oak Ave (SB),,34.1059021755374,-117.969395575017,,,0,,America/Los_Angeles,,,0
+2628864,,,Commerce Dr (SB),,34.1045549680258,-117.973341819788,,,0,,America/Los_Angeles,,,0
+2628865,,,Commerce Dr (NB),,34.1044901529455,-117.973103571876,,,0,,America/Los_Angeles,,,0
+2628866,,,Commerce Dr & Rivergrade Rd (WB),,34.1018926368756,-117.978716399896,,,0,,America/Los_Angeles,,,0
+2628867,,,Commerce  Dr & Rivergrade Dr (EB),,34.1015388960212,-117.978527106337,,,0,,America/Los_Angeles,,,0
+2628868,,,Littlejohn Rd & Brooks Dr (SB),,34.0981992582229,-117.982599926236,,,0,,America/Los_Angeles,,,0
+2628869,,,Littlejohn St & Brooks Dr (NB),,34.0982032848874,-117.982412957251,,,0,,America/Los_Angeles,,,0
+2628870,,,Littlejohn St (SB),,34.0940811143866,-117.983381907145,,,0,,America/Los_Angeles,,,0
+2628871,,,Littlejohn St (NB),,34.0939741970708,-117.98319164232,,,0,,America/Los_Angeles,,,0
+2628872,,,Los Angeles St & Hornbrook Ave (EB),,34.091957336913,-117.982133810039,,,0,,America/Los_Angeles,,,0
+2628873,,,Los Angeles St & Hornbrook Ave (WB),,34.092135446448,-117.98218814713,,,0,,America/Los_Angeles,,,0
+2628874,,,Los Angeles St & Center St (WB),,34.092204334538,-117.977826776367,,,0,,America/Los_Angeles,,,0
+2628875,,,Los Angeles St & Center St (EB),,34.0919640681503,-117.977819712997,,,0,,America/Los_Angeles,,,0
+2628876,,,Merced Ave & Los Angeles St (NB),,34.0917753629948,-117.973516457404,,,0,,America/Los_Angeles,,,0
+2628877,,,Merced Ave & Los Angeles St (SB),,34.091447338835,-117.973726323712,,,0,,America/Los_Angeles,,,0
+2628878,,,Merced Ave & Palm Ave (SB),,34.088913802564,-117.973680407894,,,0,,America/Los_Angeles,,,0
+2628879,,,Merced Ave & Palm Ave (NB),,34.0886279345634,-117.973461699832,,,0,,America/Los_Angeles,,,0
+2628880,,,Lubican St & Merced Ave (NB),,34.0847938320901,-117.973380217786,,,0,,America/Los_Angeles,,,0
+2628881,,,Merced Ave & Lubican St (SB),,34.0848223965726,-117.973618144949,,,0,,America/Los_Angeles,,,0
+2628882,,,Ramona Blvd & Merced Ave (WB),,34.0835201566582,-117.973160615828,,,0,,America/Los_Angeles,,,0
+2628883,,,Ramona Blvd & Merced Ave (EB),,34.0834408664392,-117.97227884593,,,0,,America/Los_Angeles,,,0
+2628884,,,Merced Ave & Illinois St (SB),,34.0815476075361,-117.972119106161,,,0,,America/Los_Angeles,,,0
+2628885,,,Merced Ave & Illinois St (NB),,34.0816528915088,-117.971923780456,,,0,,America/Los_Angeles,,,0
+2628886,,,Ramona Blvd & Monterey Ave (EB),,34.0823766972879,-117.977044738552,,,0,,America/Los_Angeles,,,0
+2628887,,,Ramona Blvd & Moneterey Ave (WB),,34.0826220322983,-117.977104484772,,,0,,America/Los_Angeles,,,0
+2628888,,,Frazier St & Kenmore Ave (WB),,34.0795493375958,-117.97381891746,,,0,,America/Los_Angeles,,,0
+2628889,,,Frazier & Kenmore Ave (EB),,34.0793892679677,-117.973886961786,,,0,,America/Los_Angeles,,,0
+2628890,,,Frazier St & Grace Ave (WB),,34.0785783426668,-117.978104751862,,,0,,America/Los_Angeles,,,0
+2628891,,,Frazier St & Grace Ave (EB),,34.0784327422269,-117.978115008003,,,0,,America/Los_Angeles,,,0
+2628892,,,Ramona Blvd & Foster Ave (EB),,34.0815535197806,-117.980640516841,,,0,,America/Los_Angeles,,,0
+2628893,,,Ramona Blvd & Harlan Ave,,34.0816590311043,-117.981382481011,,,0,,America/Los_Angeles,,,0
+2628894,,,Ramona Blvd & Earl Ave (WB),,34.0806741538044,-117.985401438363,,,0,,America/Los_Angeles,,,0
+2628895,,,Ramona Blvd & Earl Ave (EB),,34.0804518173557,-117.98529283686,,,0,,America/Los_Angeles,,,0
+2628896,,,Frazier St & Emery Ave (WB),,34.0734587028453,-117.984249881936,,,0,,America/Los_Angeles,,,0
+2628897,,,Frazier St & Emery Ave (EB),,34.0733734944623,-117.984033840244,,,0,,America/Los_Angeles,,,0
+2628898,,,Ramona Blvd & Francisquito Ave (EB),,34.0797270768787,-117.988391708827,,,0,,America/Los_Angeles,,,0
+2628899,,,Ramona Ave & Francisquito Ave (WB),,34.0797175431025,-117.989623196242,,,0,,America/Los_Angeles,,,0
+2628900,,,Ramona Blvd & Barnes Ave,,34.0785621707163,-117.993542602194,,,0,,America/Los_Angeles,,,0
+2628901,,,Ramona St & Durbin St,,34.0788159163307,-117.993629377082,,,0,,America/Los_Angeles,,,0
+2628904,,,Syracuse Ave & Blenheim St (NB),,34.0773260920079,-117.995827063206,,,0,,America/Los_Angeles,,,0
+2628905,,,Syracuse Ave & Blenheim St (SB),,34.0773773914755,-117.995988826743,,,0,,America/Los_Angeles,,,0
+2628907,,,Syracuse Ave & Royston St (NB),,34.0757343999605,-117.996299173148,,,0,,America/Los_Angeles,,,0
+2628908,,,Syracuse Ave & Royston St (SB),,34.0754492372936,-117.996540147567,,,0,,America/Los_Angeles,,,0
+2628912,,,Waco St & Frazier St (NB),,34.0716215819158,-117.98638004912,,,0,,America/Los_Angeles,,,0
+2628913,,,Waco St & Frazier St (SB),,34.0715549515399,-117.986463979005,,,0,,America/Los_Angeles,,,0
+2628914,,,Waco St & Mangum St (NB),,34.0725123805125,-117.987721058893,,,0,,America/Los_Angeles,,,0
+2628915,,,Waco St & Mangum St (SB),,34.0724129080955,-117.987792197773,,,0,,America/Los_Angeles,,,0
+2628916,,,Athol St & Waco St,,34.0733751505783,-117.989482959522,,,0,,America/Los_Angeles,,,0
+2628917,,,Athol St & Fairgrove St (EB),,34.0712731715334,-117.990334401222,,,0,,America/Los_Angeles,,,0
+2628918,,,Athol St & Fairgrove St (WB),,34.0710727606224,-117.990724648777,,,0,,America/Los_Angeles,,,0
+2628919,,,Syracuse Ave & Fairgrove St,,34.0728909860957,-117.997131929879,,,0,,America/Los_Angeles,,,0
+2628920,,,Fairgrove St & Syracuse Ave,,34.0726428071505,-117.997082928959,,,0,,America/Los_Angeles,,,0
+2628921,,,Fairgrove St & Barnes Ave (EB),,34.0722827004101,-117.995330945392,,,0,,America/Los_Angeles,,,0
+2628922,,,Fairgrove St & Barnes Ave (WB),,34.0723244324663,-117.99484220098,,,0,,America/Los_Angeles,,,0
+2628923,,,Fairgrove St & Athol St (SB),,34.0712187907304,-117.99078402187,,,0,,America/Los_Angeles,,,0
+2628924,,,Fairgrove St & Athol St (NB),,34.0712931876087,-117.990660600324,,,0,,America/Los_Angeles,,,0
+2628925,,,Athol St & Bess Ave (NB),,34.0684376507476,-117.993060193478,,,0,,America/Los_Angeles,,,0
+2628926,,,Athol St & Bess Ave (SB),,34.067639221612,-117.993829204949,,,0,,America/Los_Angeles,,,0
+2628927,,,Frazier St & Athol St,,34.0648315008619,-117.992678526043,,,0,,America/Los_Angeles,,,0
+2628928,,,Frazier St & Torch St,,34.0649805104991,-117.992331956952,,,0,,America/Los_Angeles,,,0
+2628929,,,Dalewood St & Leorita St (WB),,34.0663658666676,-117.988626339061,,,0,,America/Los_Angeles,,,0
+2628930,,,Dalewood St & Leorita St (EB),,34.0662858015772,-117.988559814063,,,0,,America/Los_Angeles,,,0
+2628931,,,Dalewood St (Kaiser Parking Entrance EB),,34.0665534579686,-117.986653016326,,,0,,America/Los_Angeles,,,0
+2628932,,,Dalewood St (Kaiser Parking Lot WB),,34.0666534636605,-117.986655327917,,,0,,America/Los_Angeles,,,0
+2628933,,,Dalewood Dr & Baldwin Park Blvd,,34.0663655705442,-117.983499677614,,,0,,America/Los_Angeles,,,0
+2628934,,,Baldwin Park Blvd & Dalewood St,,34.065676280857,-117.983477691365,,,0,,America/Los_Angeles,,,0
+2628935,,,Kaiser Permanente Main Entrance,,34.0649595810494,-117.985195353908,,,0,,America/Los_Angeles,,,0
+2628936,,,Baldwin Park Blvd & Tracy St (NE),,34.0697288489851,-117.979397091958,,,0,,America/Los_Angeles,,,0
+2628937,,,Baldwin Park Blvd & Tracy St (SW),,34.0700338292734,-117.979498986812,,,0,,America/Los_Angeles,,,0
+2628938,,,Baldwin Park Blvd & Francisquito Ave,,34.0711733727505,-117.978286935695,,,0,,America/Los_Angeles,,,0
+2628939,,,Francisquito Ave & Baldwin Park Blvd,,34.0710544766633,-117.977665590395,,,0,,America/Los_Angeles,,,0
+2628942,,,Francisquito Ave & Maine Ave (NB),,34.0707778444166,-117.976938779663,,,0,,America/Los_Angeles,,,0
+2628946,,,Francisquito Ave & Paddy Lane (SE) (Sierra Center),,34.0698616653019,-117.976048489863,,,0,,America/Los_Angeles,,,0
+2628947,,,Francisquito & Paddy Lane (NW) (Sierra Center),,34.0698058855666,-117.975600542609,,,0,,America/Los_Angeles,,,0
+2628952,,,Francisquito Ave & Big Dalton Ave (NW),,34.0660137881402,-117.970460656913,,,0,,America/Los_Angeles,,,0
+2628953,,,Francisquito Ave & Big Dalton Ave (SE),,34.0658793845495,-117.97063281964,,,0,,America/Los_Angeles,,,0
+2628954,,,Puente Ave & Francisquito Ave (NE),,34.0644771255937,-117.967916447771,,,0,,America/Los_Angeles,,,0
+2628955,,,Puente Ave & Francisquito Ave (SW),,34.0646927083877,-117.968108790101,,,0,,America/Los_Angeles,,,0
+2628956,,,Puente Ave & Dalewood St (SW),,34.0683558924811,-117.964213354188,,,0,,America/Los_Angeles,,,0
+2628957,,,Puente Ave & Dalewood St (NE),,34.0682864903416,-117.963881757501,,,0,,America/Los_Angeles,,,0
+2628958,,,Puente Ave & Merced Ave (SW),,34.0721297263259,-117.96016435245,,,0,,America/Los_Angeles,,,0
+2628959,,,Puente Ave & Merced Ave (NE),,34.0720552657672,-117.959945242804,,,0,,America/Los_Angeles,,,0
+2628960,,,Puente Ave & Towne Center Dr (NE),,34.0727800031182,-117.95917702908,,,0,,America/Los_Angeles,,,0
+2628961,,,Puente Ave & Towne Center Dr (SW),,34.0728742470816,-117.95937068635,,,0,,America/Los_Angeles,,,0
+2628962,,,Puente Ave & Channing St (NE),,34.0761286627423,-117.955616845344,,,0,,America/Los_Angeles,,,0
+2628963,,,Puente Ave & Channing St (SW),,34.0764814853261,-117.95552932813,,,0,,America/Los_Angeles,,,0
+2628964,,,Puente Ave & W Pacific Ave (SW),,34.0791627788081,-117.952693147707,,,0,,America/Los_Angeles,,,0
+2628965,,,Puente Ave & W Pacific Ave (NE),,34.0789987954086,-117.952536095987,,,0,,America/Los_Angeles,,,0
+2628966,,,Puente Ave & Central Ave,,34.081756117013,-117.950243355912,,,0,,America/Los_Angeles,,,0
+2628967,,,Puente Ave & Cleary Dr (Baldwin Park High School),,34.083645718971,-117.949916163823,,,0,,America/Los_Angeles,,,0
+2628968,,,Puente Ave & Big Dalton Ave (Baldwin Park High School),,34.0866587027247,-117.949789559435,,,0,,America/Los_Angeles,,,0
+2628969,,,W Badillo St & Puente Ave,,34.0874778887173,-117.950317495301,,,0,,America/Los_Angeles,,,0
+2628970,,,W Badillo St & Vineland Ave,,34.0873352377592,-117.95286139798,,,0,,America/Los_Angeles,,,0
+2628972,,,W Badillo St & Virginia Ave,,34.0876390489536,-117.953996570125,,,0,,America/Los_Angeles,,,0
+2629025,,,Waco St & Athol St,,34.0733428995598,-117.989194666797,,,0,,America/Los_Angeles,,,0
+2729392,,,Baldwin Park Blvd & Bess Ave (SB),,34.0635318934033,-117.985933031599,,,0,,America/Los_Angeles,,,0
+2729393,,,Baldwin Park Blvd & Bess Ave (NB),,34.0633818198338,-117.985677909115,,,0,,America/Los_Angeles,,,0
+2729394,,,Ramona Blvd & Maine Ave (WB),,34.0865992560887,-117.960950718731,,,0,,America/Los_Angeles,,,0
+2729395,,,Ramona Blvd & Baldwin Park Blvd,,34.0855446278821,-117.965565751475,,,0,,America/Los_Angeles,,,0
+2729396,,,Francisquito Ave & Vineland Ave,,34.0678405133,-117.973329603663,,,0,,America/Los_Angeles,,,0
+2729397,,,Vineland Ave & Francisquito Ave,,34.0675604504186,-117.973177932683,,,0,,America/Los_Angeles,,,0
+2729398,,,Baldwin Park Blvd & Merced Ave (NB),,34.0789568899074,-117.969640104799,,,0,,America/Los_Angeles,,,0
+2729399,,,Baldwin Park Blvd & Merced Ave (SB),,34.0786883476257,-117.970272066198,,,0,,America/Los_Angeles,,,0
+2729400,,,Francisquito Ave & Maine Ave (SB),,34.0702349631684,-117.976554521837,,,0,,America/Los_Angeles,,,0

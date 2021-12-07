@@ -1,0 +1,8 @@
+agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off
+582,4930,10,Line 10 Whittier Blvd.,,3,http://www.ridembl.com/Portals/0/schedules/MBL-line-10-mobile-2-19-17.pdf,5aa2dd,ffffff,1,10,0,1,1
+582,4931,20,Line 20 San Gabriel Blvd.,,3,http://www.ridembl.com/Portals/0/schedules/MBL-line-20-mobile2-19-17.pdf,1f4220,ffffff,2,23,0,1,1
+582,4932,30,Line 30 Garfield Av.,,3,http://www.ridembl.com/Portals/0/schedules/MBL-line-30-mobile2-19-17.pdf,cf2c2d,ffffff,3,90,0,1,1
+582,4933,40,Line 40 Beverly Blvd.,,3,http://www.ridembl.com/Portals/0/MBL-line-40-mobile2-21-16-rev2.pdf,8f2033,ffffff,4,13,0,1,1
+582,4934,50,Line 50 Washington Blvd.,,3,http://www.ridembl.com/Portals/0/schedules_uploaded_3-9-16/MBL-line-50-mobile-3-09-16.pdf,96c51a,000000,5,23,0,1,1
+582,4936,70,Line 70 Wilcox Av.,,3,http://www.ridembl.com/Portals/0/schedules_uploaded_3-9-16/MBL-line-70-mobile-3-24-15.pdf,174771,ffffff,7,30,0,1,1
+582,4937,90,Line 90 Express,,3,http://www.ridembl.com/Portals/0/schedules_uploaded_3-9-16/MBL-line-90-mobile-3-24-15.pdf,efac2a,000000,8,20,0,1,1

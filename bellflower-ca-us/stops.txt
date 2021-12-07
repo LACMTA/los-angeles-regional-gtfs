@@ -1,0 +1,60 @@
+stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,position,direction,wheelchair_boarding
+2622517,,,Bellflower Blvd & Flora Vista St- Maynes Event Center,,33.886118,-118.125171,,,0,,America/Los_Angeles,,,0
+2622518,,,Bellflower Blvd & Alondra Blvd,,33.888956,-118.125177,,,0,,America/Los_Angeles,,,0
+2622519,,,Bellflower Blvd & Linden St,,33.890995,-118.12519,,,0,,America/Los_Angeles,,,0
+2622520,,,Bellflower Blvd & Jefferson St,,33.8928358048758,-118.125189085327,,,0,,America/Los_Angeles,,,0
+2623823,,,Bellflower Blvd & Somerset Blvd,,33.896928,-118.125219,,,0,,America/Los_Angeles,,,0
+2623824,,,Somerset Blvd & Blaine Ave,,33.896685,-118.126079,,,0,,America/Los_Angeles,,,0
+2623825,,,Bellflower Blvd and Rosencrans Ave,,33.901809,-118.125234,,,0,,America/Los_Angeles,,,0
+2623826,,,Bellflower Blvd-St. Johns High School,,33.906238,-118.125248,,,0,,America/Los_Angeles,,,0
+2623827,,,Woodruff Ave & Foster Rd,,33.909496,-118.116826,,,0,,America/Los_Angeles,,,0
+2623828,,,Woodruff Ave & Arthurdale St,,33.905729,-118.116809,,,0,,America/Los_Angeles,,,0
+2623829,,,Flower St & Bixby Ave,,33.882017,-118.120632,,,0,,America/Los_Angeles,,,0
+2623830,,,Flower St & Civic Center Plaza,,33.882196,-118.122079,,,0,,America/Los_Angeles,,,0
+2623831,,,Bellflower Blvd & Flower St,,33.882329,-118.12516,,,0,,America/Los_Angeles,,,0
+2623832,,,Civic Center Dr & Belmont St,,33.883342,-118.122373,,,0,,America/Los_Angeles,,,0
+2623833,,,Woodruff Ave & Walnut St,,33.880067,-118.117439,,,0,,America/Los_Angeles,,,0
+2623834,,,Woodruff Ave & Beach St,,33.877341,-118.117433,,,0,,America/Los_Angeles,,,0
+2623835,,,Artesia Blvd & Woodruff Ave,,33.872758,-118.116859,,,0,,America/Los_Angeles,,,0
+2623836,,,Artesia Blvd & Canehill Ave,,33.872763,-118.11098,,,0,,America/Los_Angeles,,,0
+2623837,,,Palo Verde Ave & Artesia Blvd,,33.871876,-118.108663,,,0,,America/Los_Angeles,,,0
+2623838,,,Palo Verde Ave & Felson St,,33.868552,-118.108606,,,0,,America/Los_Angeles,,,0
+2623839,,,Allington St between Palo Verde & Canehill,,33.865684,-118.110358,,,0,,America/Los_Angeles,,,0
+2623946,,,Woodruff Ave & Ashworth St,,33.8681977048054,-118.117085083391,,,0,,America/Los_Angeles,,,0
+2623947,,,Artesia Blvd & Woodruff Ave,,33.873023,-118.117909,,,0,,America/Los_Angeles,,,0
+2623948,,,Ramona St At Ramona Senior Center,,33.87309,-118.123604,,,0,,America/Los_Angeles,,,0
+2623949,,,Ramona St at Bellflower Senior Center,,33.873095,-118.122458,,,0,,America/Los_Angeles,,,0
+2623950,,,Artesia Blvd & Bixby Ave,,33.874466,-118.120909,,,0,,America/Los_Angeles,,,0
+2623951,,,Artesia Blvd & Bellflower Blvd,,33.874947,-118.125665,,,0,,America/Los_Angeles,,,0
+2623952,,,Artesia Blvd & Ardmore Ave,,33.874941,-118.128927,,,0,,America/Los_Angeles,,,0
+2623953,,,Artesia Blvd & Clark Ave,,33.874921,-118.134229,,,0,,America/Los_Angeles,,,0
+2623954,,,Artesia Blvd & Virginia Ave,,33.874906,-118.139451,,,0,,America/Los_Angeles,,,0
+2623956,,,Lakewood Blvd & Artesia Blvd,,33.875037,-118.142444,,,0,,America/Los_Angeles,,,0
+2623957,,,Lakewood Blvd & Park St,,33.87864,-118.142464,,,0,,America/Los_Angeles,,,0
+2623961,,,Lakewood Blvd & Flower St,,33.881851,-118.142489,,,0,,America/Los_Angeles,,,0
+2623962,,,Lakewood Blvd between Oak St and Mayne St,,33.885044,-118.142507,,,0,,America/Los_Angeles,,,0
+2623964,,,Lakewood Blvd & Dunbar St,,33.887311,-118.142519,,,0,,America/Los_Angeles,,,0
+2623965,,,Alondra Blvd between Lakewood Blvd & Bonfair Ave,,33.889144,-118.141668,,,0,,America/Los_Angeles,,,0
+2623966,,,Alondra Blvd & Virginia Ave,,33.889171,-118.137986,,,0,,America/Los_Angeles,,,0
+2623967,,,Clark Ave & Alondra Blvd,,33.888953,-118.134106,,,0,,America/Los_Angeles,,,0
+2623968,,,Oak St & Clark Ave,,33.884566,-118.133567,,,0,,America/Los_Angeles,,,0
+2623969,,,Oak St & Ardmore Ave,,33.8845853554811,-118.130124260697,,,0,,America/Los_Angeles,,,0
+2623970,,,Bellflower Blvd & Oak St,,33.884423,-118.125397,,,0,,America/Los_Angeles,,,0
+2623971,,,Somerset Blvd & Ryon Ave,,33.896663,-118.128713,,,0,,America/Los_Angeles,,,0
+2623972,,,Somerset Blvd & Clark Ave,,33.89666,-118.134424,,,0,,America/Los_Angeles,,,0
+2623976,,,Somerset Blvd & Touchwood Ave,,33.896643,-118.138079,,,0,,America/Los_Angeles,,,0
+2623978,,,Lakewood Blvd at Paramount Pl,,33.901508,-118.142691,,,0,,America/Los_Angeles,,,0
+2623979,,,Lakewood Blvd & Somerset Blvd,,33.896768,-118.142588,,,0,,America/Los_Angeles,,,0
+2623980,,,Rosecrans Ave & Lakewood Blvd,,33.903678,-118.142561,,,0,,America/Los_Angeles,,,0
+2623981,,,Rosecrans Ave & Clark Ave,,33.903965,-118.134306,,,0,,America/Los_Angeles,,,0
+2623982,,,Rosecrans Ave between Sonrisa St & Cerritos Ave,,33.903838,-118.138059,,,0,,America/Los_Angeles,,,0
+2623983,,,Rosecrans Ave & Ardis Ave,,33.902986,-118.12891,,,0,,America/Los_Angeles,,,0
+2623984,,,Rosecrans Ave & Bellflower Blvd,,33.90189,-118.124943,,,0,,America/Los_Angeles,,,0
+2623985,,,Rosecrans Ave & Cabel Ave,,33.901882,-118.121914,,,0,,America/Los_Angeles,,,0
+2623986,,,Rosecrans Ave & Woodruff Ave,,33.901907,-118.116284,,,0,,America/Los_Angeles,,,0
+2623987,,,McNabb Ave & Rosecrans Ave,,33.90158,-118.113176,,,0,,America/Los_Angeles,,,0
+2623988,,,McNabb Ave & Somerset Blvd,,33.896953,-118.11322,,,0,,America/Los_Angeles,,,0
+2623989,,,Woodruff Ave & Rosencrans Ave,,33.901321,-118.116818,,,0,,America/Los_Angeles,,,0
+2623990,,,Woodruff Ave & Somerset Blvd,,33.896846,-118.116783,,,0,,America/Los_Angeles,,,0
+2623991,,,Woodruff Ave & Alondra Blvd,,33.888715,-118.117539,,,0,,America/Los_Angeles,,,0
+2623992,,,Woodruff Ave between Modway St & Flower St,,33.882829,-118.117471,,,0,,America/Los_Angeles,,,0

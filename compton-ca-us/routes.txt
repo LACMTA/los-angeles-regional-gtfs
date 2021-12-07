@@ -1,0 +1,6 @@
+agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off
+1666,16836,,4,,3,http://www.comptoncity.org/visitors/cpttrans.asp,1293c3,000000,10,40,0,1,1
+1666,16837,,5,,3,http://www.comptoncity.org/visitors/cpttrans.asp,913d91,000000,11,60,0,1,1
+1666,16833,,1,,3,http://www.comptoncity.org/visitors/cpttrans.asp,f49022,000000,3,40,0,1,1
+1666,16834,,2,,3,http://www.comptoncity.org/visitors/cpttrans.asp,f1cd10,000000,8,60,0,1,1
+1666,16835,,3,,3,http://www.comptoncity.org/visitors/cpttrans.asp,12a45d,000000,9,40,0,1,1

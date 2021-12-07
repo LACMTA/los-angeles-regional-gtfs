@@ -1,0 +1,23 @@
+stop_id,stop_city
+2624066,Bell
+2624072,Cudahy
+2624065,Bell
+2624078,Huntington Park
+2624077,Bell
+2624082,Bell
+2624071,Cudahy
+2624067,Bell
+2624075,Bell
+2624068,Bell
+2624080,Huntington Park
+2624069,Bell Gardens
+2624081,Bell
+2624079,Huntington Park
+2624063,Bell
+2624062,Bell
+2624076,Bell
+2624070,Cudahy
+2624074,Bell
+2624073,Bell
+2624064,Bell
+2624061,Bell

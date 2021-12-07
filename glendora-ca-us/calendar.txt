@@ -1,0 +1,4 @@
+service_id,service_name,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
+c_20638_b_30530_d_30,School Year Shuttles (TuWThF),0,1,1,1,1,0,0,20210816,20211231
+c_20638_b_30530_d_1,School Year Shuttles (Monday only),1,0,0,0,0,0,0,20210816,20211231
+c_20605_b_27718_d_31,Year Round (Weekday),1,1,1,1,1,0,0,20200101,20211231

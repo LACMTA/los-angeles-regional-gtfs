@@ -1,0 +1,23 @@
+stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,position,direction,wheelchair_boarding
+2624061,,,Gage Avenue and Pine Avenue (Civic Center),,33.9781624376815,-118.189207254285,,,0,,America/Los_Angeles,,,0
+2624062,,,Gage Avenue and Atlantic Avenue,,33.9778857895382,-118.186707138412,,,0,,America/Los_Angeles,,,0
+2624063,,,Gage Avenue and King Avenue,,33.977647,-118.184365,,,0,,America/Los_Angeles,,,0
+2624064,,,Gage Avenue and Heliotrope Avenue,,33.9772229816841,-118.180464027752,,,0,,America/Los_Angeles,,,0
+2624065,,,Gage Avenue and Wilcox Avenue,,33.9768414987532,-118.176930842095,,,0,,America/Los_Angeles,,,0
+2624066,,,Gage Avenue and Walker Avenue,,33.976492,-118.173621,,,0,,America/Los_Angeles,,,0
+2624067,,,Walker Avenue and Southall Lane,,33.97228,-118.173515,,,0,,America/Los_Angeles,,,0
+2624068,,,Walker Avenue and Florence Avenue,,33.9693471757682,-118.173966641923,,,0,,America/Los_Angeles,,,0
+2624069,,,Eastern Avenue and Florence Avenue,,33.96747,-118.164965,,,0,,America/Los_Angeles,,,0
+2624070,,,Clara Street (Clara Park),,33.9653511222492,-118.181445305184,,,0,,America/Los_Angeles,,,0
+2624071,,,Atlantic Avenue and Clara Street,,33.9659636089986,-118.186918898946,,,0,,America/Los_Angeles,,,0
+2624072,,,Atlantic Avenue and Live Oak Street,,33.968213,-118.187485,,,0,,America/Los_Angeles,,,0
+2624073,,,Atlantic Avenue and Florence Avenue,,33.96982,-118.187887,,,0,,America/Los_Angeles,,,0
+2624074,,,Florence Avenue and Otis Avenue,,33.971103,-118.194252,,,0,,America/Los_Angeles,,,0
+2624075,,,Florence Avenue and Bear Avenue,,33.9715724421421,-118.198730665127,,,0,,America/Los_Angeles,,,0
+2624076,,,Bell Avenue and Orchard Avenue,,33.9757995285099,-118.199845187137,,,0,,America/Los_Angeles,,,0
+2624077,,,Bell Avenue and California Avenue,,33.976085,-118.202522,,,0,,America/Los_Angeles,,,0
+2624078,,,Maywood Avenue and Gage Avenue,,33.9801004060451,-118.202517030819,,,0,,America/Los_Angeles,,,0
+2624079,,,Maywood Avenue and Randolph Place,,33.9824536922432,-118.202539281078,,,0,,America/Los_Angeles,,,0
+2624080,,,Randolph Street and Carmelita Avenue,,33.9824281681914,-118.197644479267,,,0,,America/Los_Angeles,,,0
+2624081,,,Randolph Street and Otis Avenue,,33.981776,-118.192049,,,0,,America/Los_Angeles,,,0
+2624082,,,Gage Avenue and Otis Avenue,,33.978495,-118.192299,,,0,,America/Los_Angeles,,,0

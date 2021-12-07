@@ -1,0 +1,4 @@
+rider_category_id,rider_category_name,min_age,max_age,eligibility_url
+disabled,Members of the City’s Phone-A-Ride Program,,,"https://www.cityofsouthgate.org/218/GATE-Get-Around-Town-Express#:~:text=Regular%20fare%20is%20%240.50.,only%20valid%20during%20school%20hours)."
+student,High School & College Students,,,"https://www.cityofsouthgate.org/218/GATE-Get-Around-Town-Express#:~:text=Regular%20fare%20is%20%240.50.,only%20valid%20during%20school%20hours)."
+vocational,Vocational Students,,,"https://www.cityofsouthgate.org/218/GATE-Get-Around-Town-Express#:~:text=Regular%20fare%20is%20%240.50.,only%20valid%20during%20school%20hours)."

@@ -1,0 +1,4 @@
+rider_category_id,rider_category_name,min_age,max_age,eligibility_url
+senior,Seniors Age 62 and Over,62,,https://www.cityofglendora.org/departments-services/transportation/metrolink-shuttle-services
+disabled,Persons with Disabilities,,,https://www.cityofglendora.org/departments-services/transportation/metrolink-shuttle-services
+student,Students K-12,,,https://www.cityofglendora.org/departments-services/transportation/metrolink-shuttle-services

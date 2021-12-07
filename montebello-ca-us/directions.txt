@@ -1,0 +1,15 @@
+route_id,direction_id,direction
+4930,0,Westbound
+4930,1,Eastbound
+4931,0,Northbound
+4931,1,Southbound
+4932,0,Northbound
+4932,1,Southbound
+4933,0,Westbound
+4933,1,Eastbound
+4934,0,Westbound
+4934,1,Eastbound
+4936,0,Northbound
+4936,1,Southbound
+4937,0,Westbound
+4937,1,Eastbound

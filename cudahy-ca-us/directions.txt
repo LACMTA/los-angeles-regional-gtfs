@@ -1,0 +1,2 @@
+route_id,direction_id,direction
+18422,0,No direction

@@ -1,0 +1,2 @@
+service_id,service_name,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
+c_20883_b_28504_d_31,Year round (Weekday),1,1,1,1,1,0,0,20201210,20211231

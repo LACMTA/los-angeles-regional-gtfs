@@ -1,0 +1,6 @@
+fare_id,route_id,origin_id,destination_id,contains_id
+4260,16833,,,
+4260,16834,,,
+4260,16835,,,
+4260,16836,,,
+4260,16837,,,

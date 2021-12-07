@@ -1,0 +1,5 @@
+service_id,service_description
+c_20717_b_28562_d_27,Year Round (MTuThF)
+c_20717_b_28562_d_31,Year Round (Weekday)
+c_20717_b_28562_d_32,Year Round (Saturday only)
+c_20717_b_28562_d_4,Year Round (Wednesday only)

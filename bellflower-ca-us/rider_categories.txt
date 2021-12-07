@@ -1,0 +1,4 @@
+rider_category_id,rider_category_name,min_age,max_age,eligibility_url
+senior,Seniors Age 55 and Over,55,,"https://www.bellflower.org/community/transportation/bus_routes___schedules.php#:~:text=This%20fixed%20route%20system%20operates,free%20for%20kids%205%20%26%20under."
+disabled,Persons with Disabilities,,,"https://www.bellflower.org/community/transportation/bus_routes___schedules.php#:~:text=This%20fixed%20route%20system%20operates,free%20for%20kids%205%20%26%20under."
+children,Children Age 5 and Under,,5,"https://www.bellflower.org/community/transportation/bus_routes___schedules.php#:~:text=This%20fixed%20route%20system%20operates,free%20for%20kids%205%20%26%20under."

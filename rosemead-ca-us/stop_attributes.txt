@@ -1,0 +1,19 @@
+stop_id,stop_city
+2622501,El Monte
+2623620,El Monte
+2623624,Rosemead
+2623619,El Monte
+2619910,Rosemead
+2622477,Montebello
+2619873,El Monte
+2619867,El Monte
+2623626,Rosemead
+2622499,Rosemead
+2619872,El Monte
+2623625,Rosemead
+2622502,El Monte
+2621553,El Monte
+2623622,El Monte
+2619908,Rosemead
+2622498,El Monte
+2622500,Rosemead

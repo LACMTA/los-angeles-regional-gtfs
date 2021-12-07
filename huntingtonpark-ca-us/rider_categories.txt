@@ -1,0 +1,5 @@
+rider_category_id,rider_category_name,min_age,max_age,eligibility_url
+senior,Seniors Age 62 and Over,62,,https://www.hpca.gov/232/HP-Express
+disabled,Persons with Disabilities,,,https://www.hpca.gov/232/HP-Express
+medicare,Medicare Cardholders,,,https://www.hpca.gov/232/HP-Express
+children,Children Age 4 and Under,,4,https://www.hpca.gov/232/HP-Express
