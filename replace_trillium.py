@@ -4,9 +4,6 @@ import os
 import fileinput
 import re
 
-# folders = os.listdir()
-# print(folders)
-
 def replace_Trillium(text):
 	text = text.replace("http://www.trilliumtransit.com", "https://www.metro.net")
 	text = text.replace("Trillium Solutions, Inc.", "Los Angeles County Metropolitan Transportation Authority")
@@ -25,12 +22,3 @@ for r, d, f in os.walk(thisdir):
 			filedata = replace_Trillium(filedata)
 			with open(os.path.join(r, file), 'w') as f:
 				f.write(filedata)
-
-# for f in folders:
-# 	if not os.path.isfile(f):
-# 		thisdir = os.listdir(f)
-# 		for file in thisdir:
-# 			if file.endswith("feed_info.txt"):
-# 				print(os.path.join(f, file))
-
-
