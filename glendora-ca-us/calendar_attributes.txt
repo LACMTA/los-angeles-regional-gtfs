@@ -1,4 +1,6 @@
 service_id,service_description
-c_20605_b_27718_d_31,Year Round (Weekday)
-c_20638_b_30530_d_1,School Year Shuttles (Monday only)
-c_20638_b_30530_d_30,School Year Shuttles (TuWThF)
+TWRF-20220906-20221231,School Year Shuttles (TuWThF)
+M-20220906-20221231,School Year Shuttles (Monday only)
+TWRF-20210816-20220529,School Year Shuttles (TuWThF)
+M-20210816-20220529,School Year Shuttles (Monday only)
+wkdy,Year Round (Weekday)

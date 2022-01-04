@@ -1,0 +1,5 @@
+trip_id,arrival_time,departure_time,stop_id,stop_sequence,stop_headsign,pickup_type,drop_off_type,shape_dist_traveled,timepoint,start_service_area_id,end_service_area_id,start_service_area_radius,end_service_area_radius,continuous_pickup,continuous_drop_off,pickup_booking_rule_id,drop_off_booking_rule_id,start_pickup_dropoff_window,end_pickup_dropoff_window,mean_duration_factor,mean_duration_offset,safe_duration_factor,safe_duration_offset,tts_stop_headsign,min_arrival_time,max_departure_time
+Catalina-Flyer_Outbound-daily_1_09:00,09:00:00,09:00:00,2751240,1,,0,0,0,1,,,,,1,1,,,,,,,,,,,
+Catalina-Flyer_Outbound-daily_1_09:00,10:15:00,10:15:00,2751241,2,,0,0,52402.5277616,1,,,,,1,1,,,,,,,,,,,
+Catalina-Flyer_Inbound-daily_1_16:30,16:30:00,16:30:00,2751241,1,,0,0,0,1,,,,,1,1,,,,,,,,,,,
+Catalina-Flyer_Inbound-daily_1_16:30,17:45:00,17:45:00,2751240,2,,0,0,52426.30621787,1,,,,,1,1,,,,,,,,,,,

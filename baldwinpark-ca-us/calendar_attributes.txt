@@ -1,4 +1,4 @@
 service_id,service_description
-c_20935_b_28606_d_31,Year Round (Weekday)
-c_20935_b_28606_d_32,Year Round (Saturday only)
-c_20935_b_28606_d_64,Year Round (Sunday only)
+Su,Year Round (Sunday only)
+Sa,Year Round (Saturday only)
+wkdy,Year Round (Weekday)

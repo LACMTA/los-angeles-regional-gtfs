@@ -1,0 +1,13 @@
+service_id,date,holiday_name,exception_type
+wknd,20221225,Christmas Day,2
+wknd,20220101,New Years Day,2
+wkdy,20221124,Thanksgiving ,2
+wkdy,20220905,Labor Day ,2
+wkdy,20220704,Independence Day,2
+wkdy,20220530,Memorial Day,2
+daily,20221225,Christmas Day,2
+daily,20221124,Thanksgiving ,2
+daily,20220905,Labor Day ,2
+daily,20220704,Independence Day,2
+daily,20220530,Memorial Day,2
+daily,20220101,New Years Day,2

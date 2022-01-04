@@ -1,0 +1,4 @@
+service_id,service_description
+wknd,Year Round Starting 6/1/21 (Weekend)
+Sa,Year Round Starting 6/1/21 (Saturday only)
+wkdy,Year Round Starting 6/1/21 (Weekday)

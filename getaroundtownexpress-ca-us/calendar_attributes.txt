@@ -1,3 +1,3 @@
 service_id,service_description
-c_21103_b_29067_d_31,Year Round  (Weekday)
-c_21103_b_29067_d_32,Year Round  (Saturday only)
+Sa,Year Round  (Saturday only)
+wkdy,Year Round  (Weekday)

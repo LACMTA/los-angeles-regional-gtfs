@@ -1,0 +1,2 @@
+leg_group_id,fare_leg_name,network_id,from_area_id,contains_area_id,to_area_id,is_symmetrical,from_timeframe_id,to_timeframe_id,min_distance,max_distance,distance_type,service_id,min_amount,max_amount,fare_product_id,fare_container_id,rider_category_id,eligible_cap_id,amount,currency
+Lynwood,,,,,,,,,,,,,,,,,,,0.25,USD

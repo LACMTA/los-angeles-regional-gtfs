@@ -1,7 +1,10 @@
 route_id,direction_id,direction
-17637,0,No direction
-17638,0,No direction
-17639,0,No direction
-17640,0,No direction
-17641,0,No direction
-17642,0,No direction
+SoutheastRoute,0,Westbound
+SoutheastRoute,0,Northbound
+SoutheastRoute,0,Loop
+SouthwestRoute,0,Loop
+NortheastRoute,0,Westbound
+NortheastRoute,0,Loop
+NorthwestRoute,0,Loop
+SouthRoute,0,Loop
+NorthRoute,0,Loop

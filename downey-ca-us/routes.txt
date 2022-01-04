@@ -1,7 +1,7 @@
-agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off
-1682,17639,,Northwest Route,,3,,006651,ffffff,2,,0,1,1
-1682,17640,,Northeast Route,,3,,f69800,000000,3,,0,1,1
-1682,17637,,North Route,,3,,0b9248,000000,4,,0,1,1
-1682,17641,,Southwest Route,,3,,0a3a83,ffffff,5,,0,1,1
-1682,17642,,Southeast Route,,3,,8b2f54,ffffff,7,,0,1,1
-1682,17638,,South Route,,3,,0073ab,000000,8,,0,1,1
+agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off,tts_route_short_name,tts_route_long_name
+1682,NorthwestRoute,,Northwest Route,,3,,006651,ffffff,2,,0,1,1,,
+1682,NortheastRoute,,Northeast Route,,3,,f69800,000000,3,,0,1,1,,
+1682,NorthRoute,,North Route,,3,,0b9248,000000,4,,0,1,1,,
+1682,SouthwestRoute,,Southwest Route,,3,,0a3a83,ffffff,5,,0,1,1,,
+1682,SoutheastRoute,,Southeast Route,,3,,8b2f54,ffffff,7,,0,1,1,,
+1682,SouthRoute,,South Route,,3,,0073ab,000000,8,,0,1,1,,

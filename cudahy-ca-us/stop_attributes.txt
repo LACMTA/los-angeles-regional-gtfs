@@ -1,8 +1,0 @@
-stop_id,stop_city
-2712691,Cudahy
-2712693,Cudahy
-2712689,Cudahy
-2712688,Cudahy
-2712692,Cudahy
-2712690,Cudahy
-2712694,Cudahy

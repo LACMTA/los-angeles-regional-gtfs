@@ -1,1 +1,0 @@
-rider_category_id,rider_category_description

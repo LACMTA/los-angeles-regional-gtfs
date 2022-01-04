@@ -1,0 +1,3 @@
+route_id,direction_id,direction
+BeachShuttle,0,Loop
+DailyShuttle,0,Loop

@@ -1,2 +1,2 @@
 service_id,service_description
-c_20723_b_28090_d_31,Year Round Service (Weekday)
+wkdy,Year Round Service (Weekday)

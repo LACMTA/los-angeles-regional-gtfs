@@ -1,0 +1,3 @@
+agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off,tts_route_short_name,tts_route_long_name
+1746,BeachShuttle,,Beach Shuttle,,3,,0c286d,ffffff,2,30,0,1,1,,
+1746,LunchtimeShuttle,,Lunchtime Shuttle,,3,,730e11,ffffff,3,25,0,1,1,,
