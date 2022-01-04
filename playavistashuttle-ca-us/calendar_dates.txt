@@ -1,0 +1,18 @@
+service_id,date,holiday_name,exception_type
+Su,20221124,Thanksgiving Day,1
+Su,20221111,Veteran's Day,1
+Su,20220905,Labor Day,1
+Su,20220704,Independence Day,1
+Su,20220530,Memorial Day,1
+Su,20220221,President's Day ,1
+Su,20220117,Martin Luther King Jr. Day,1
+Su,20220101,New Year's Day,1
+FSa,20220101,New Year's Day,2
+Sa,20220101,New Year's Day,2
+wkdy,20221124,Thanksgiving Day,2
+wkdy,20221111,Veteran's Day,2
+wkdy,20220905,Labor Day,2
+wkdy,20220704,Independence Day,2
+wkdy,20220530,Memorial Day,2
+wkdy,20220221,President's Day ,2
+wkdy,20220117,Martin Luther King Jr. Day,2

@@ -1,4 +1,4 @@
-agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off
-1671,16904,,Red Line,,3,,fd2800,,2,,0,1,1
-1671,16948,,Blue Line,,3,,477ae0,,3,,0,1,1
-1671,16952,,Green Line ,,3,,4db63f,,6,30,0,1,1
+agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off,tts_route_short_name,tts_route_long_name
+1671,RedLine,,Red Line,,3,,fd2800,ffffff,2,,0,1,1,,
+1671,BlueLine,,Blue Line,,3,,477ae0,ffffff,3,,0,1,1,,
+1671,GreenLine,,Green Line ,,3,,4db63f,ffffff,6,30,0,1,1,,

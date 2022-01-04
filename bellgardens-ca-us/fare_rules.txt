@@ -1,2 +1,2 @@
 fare_id,route_id,origin_id,destination_id,contains_id
-4248,16903,,,
+4248,FixedRoute,,,

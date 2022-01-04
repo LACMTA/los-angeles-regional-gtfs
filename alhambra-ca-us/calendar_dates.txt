@@ -1,5 +1,9 @@
 service_id,date,holiday_name,exception_type
-c_20661_b_27875_d_32,20211225,Christmas Day,2
-c_20661_b_27875_d_31,20211125,Thanksgiving Day,2
-c_20661_b_27875_d_31,20211111,Veterans Day,2
-c_20661_b_27875_d_31,20210906,Labor Day,2
+Sa,20220101,New Years Day,2
+wkdy,20221124,Thanksgiving Day,2
+wkdy,20221111,Veterans Day,2
+wkdy,20220905,Labor Day,2
+wkdy,20220704,Indepedence Day,2
+wkdy,20220530,Memorial Day,2
+wkdy,20220221,Presidents Day,2
+wkdy,20220117,MLK Jr Day,2

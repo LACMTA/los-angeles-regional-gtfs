@@ -1,4 +1,6 @@
 service_id,date,holiday_name,exception_type
-c_20682_b_27896_d_63,20211225,Christmas Day,2
-c_20682_b_27896_d_63,20211125,Thanksgiving,2
-c_20682_b_27896_d_63,20210906,Labor Day ,2
+MTWRFSa,20221124,Thanksgiving,2
+MTWRFSa,20220905,Labor Day ,2
+MTWRFSa,20220704,July 4th,2
+MTWRFSa,20220530,Memorial Day,2
+MTWRFSa,20220101,New Year's Day,2

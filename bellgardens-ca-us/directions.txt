@@ -1,2 +1,2 @@
 route_id,direction_id,direction
-16903,0,Loop
+FixedRoute,0,Loop

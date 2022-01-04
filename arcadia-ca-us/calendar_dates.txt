@@ -1,1 +1,2 @@
-date,service_id,holiday_name,exception_type
+service_id,date,holiday_name,exception_type
+wknd,20220101,New Year's Day,2

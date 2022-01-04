@@ -1,3 +1,3 @@
-agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off
-1669,16829,,Green Line,,3,https://drive.google.com/file/d/1vpT0HwWsRmteNKgD7EMnQqRqw9GeWYJl/view,018c49,ffffff,2,40,0,1,1
-1669,16830,,Blue Line,,3,https://drive.google.com/file/d/1OYNWZL62F65l_1ueBG_IF7lNlJBIumFC/view,2f368a,ffffff,3,60,0,1,1
+agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off,tts_route_short_name,tts_route_long_name
+1669,GreenLine,,Green Line,,3,https://drive.google.com/file/d/1vpT0HwWsRmteNKgD7EMnQqRqw9GeWYJl/view,018c49,ffffff,2,40,0,1,1,,
+1669,BlueLine,,Blue Line,,3,https://drive.google.com/file/d/1OYNWZL62F65l_1ueBG_IF7lNlJBIumFC/view,0089cd,ffffff,3,60,0,1,1,,

@@ -1,0 +1,3 @@
+rider_category_id,rider_category_description
+2,Senior
+6,Disabled

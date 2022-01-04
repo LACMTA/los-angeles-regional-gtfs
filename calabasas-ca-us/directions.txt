@@ -1,11 +1,11 @@
 route_id,direction_id,direction
-16949,0,Eastbound
-16950,0,Loop
-16950,0,Northbound 
-16950,0,Southbound
-16954,0,Eastbound
-16954,0,Westbound
-16955,0,Eastbound
-16955,0,Loop
-16962,0,No direction
-19724,0,Loop
+CalabasasTrolley,0,Loop
+Line5,0,No direction
+Line4,0,Loop
+Line4,0,Eastbound
+Line3,0,Westbound
+Line3,0,Eastbound
+Line2,0,Southbound
+Line2,0,Northbound 
+Line2,0,Loop
+Line1,0,Eastbound

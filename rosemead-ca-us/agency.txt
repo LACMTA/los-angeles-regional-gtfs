@@ -1,2 +1,2 @@
-agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url
-1672,http://www.cityofrosemead.org/government/city_departments/public_works/public_works_superintendent/public_transportation/dial_a_ride_rosemead_explorer,en,Rosemead Explorer,,America/Los_Angeles,
+agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url,tts_agency_name
+1672,http://www.cityofrosemead.org/government/city_departments/public_works/public_works_superintendent/public_transportation/dial_a_ride_rosemead_explorer,en,Rosemead Explorer,,America/Los_Angeles,,

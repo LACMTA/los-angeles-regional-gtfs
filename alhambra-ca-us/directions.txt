@@ -1,5 +1,5 @@
 route_id,direction_id,direction
-16829,0,Clockwise
-16829,1,Counterclockwise
-16830,0,Southbound
-16830,1,Northbound
+BlueLine,1,Northbound
+BlueLine,0,Southbound
+GreenLine,1,Counterclockwise
+GreenLine,0,Clockwise

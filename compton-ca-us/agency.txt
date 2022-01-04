@@ -1,2 +1,2 @@
-agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url
-1666,http://www.comptoncity.org/visitors/cpttrans.asp,en,Compton Renaissance Transit,,America/Los_Angeles,
+agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url,tts_agency_name
+1666,http://www.comptoncity.org/visitors/cpttrans.asp,en,Compton Renaissance Transit,,America/Los_Angeles,,

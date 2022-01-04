@@ -25,3 +25,7 @@ Here are the zip file permalinks:
 ## Disclaimer
 
 While we will do our best to ensure the data is kept accurate and up to date, we cannot be held liable for any omissions and inaccuracies.
+
+## Python Notes
+
+Run using `python3`.

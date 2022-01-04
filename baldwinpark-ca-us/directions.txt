@@ -1,5 +1,5 @@
 route_id,direction_id,direction
-17084,0,Loop
-18172,0,Loop
-18690,0,Northbound 
-18690,0,Southbound
+ExpressLine,0,Southbound
+ExpressLine,0,Northbound 
+PumpkinLine,0,Loop
+TealLine,0,Loop

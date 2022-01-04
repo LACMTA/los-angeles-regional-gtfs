@@ -1,53 +1,53 @@
-stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,position,direction,wheelchair_boarding
-2619747,,,Bell Gardens Park,,33.9685393953862,-118.143872824625,,,0,,America/Los_Angeles,,,0
-2619748,,,Emil Avenue and Foster Bridge Boulevard,,33.969804,-118.141743,,,0,,America/Los_Angeles,,,0
-2619749,,,Foster Bridge Boulevard and Chalet Drive,,33.9687893018004,-118.138611392837,,,0,,America/Los_Angeles,,,0
-2619750,,,Gage Avenue and Chalet Drive,,33.972847,-118.13744,,,0,,America/Los_Angeles,,,0
-2619751,,,Gage Avenue and Emil Avenue,,33.973232,-118.141042,,,0,,America/Los_Angeles,,,0
-2619752,,,Gage Avenue and Perry Road,,33.973622,-118.144663,,,0,,America/Los_Angeles,,,0
-2619753,,,Gage Avenue and Garfield Avenue,,33.973826,-118.146306,,,0,,America/Los_Angeles,,,0
-2619754,,,Gage Avenue and Darwell Avenue,,33.974213,-118.149828,,,0,,America/Los_Angeles,,,0
-2619755,,,Gage Avenue and Jaboneria Road,,33.974526,-118.152839,,,0,,America/Los_Angeles,,,0
-2619756,,,Gage Avenue and Colmar Avenue,,33.974929,-118.1573,,,0,,America/Los_Angeles,,,0
-2619757,,,Gage Avenue and El Selinda Avenue,,33.9752008856657,-118.159914252321,,,0,,America/Los_Angeles,,,0
-2619758,,,Eastern Avenue and Gage Avenue,,33.975241,-118.163897,,,0,,America/Los_Angeles,,,0
-2619759,,,Eastern Avenue and Lubec Street (Southbound),,33.9717113438133,-118.164370503855,,,0,,America/Los_Angeles,,,0
-2619760,,,Market Place (Southbound),,33.969603,-118.164711,,,0,,America/Los_Angeles,,,0
-2619761,,,Eastern Avenue and Florence Avenue,,33.9674310476341,-118.164963971649,,,0,,America/Los_Angeles,,,0
-2619762,,,Eastern Avenue and Live Oak Street,,33.966027,-118.165158,,,0,,America/Los_Angeles,,,0
-2619763,,,Eastern Avenue and Clara Street,,33.9634037575605,-118.16551073099,,,0,,America/Los_Angeles,,,0
-2619764,,,Jaboneria Road and Quinn Street,,33.959191,-118.166337,,,0,,America/Los_Angeles,,,0
-2619765,,,Muller Street and Jaboneria Road,,33.9578754072703,-118.167153856536,,,0,,America/Los_Angeles,,,0
-2619766,,,Eastern Avenue and Cecilia Street,,33.9573074334323,-118.164602424537,,,0,,America/Los_Angeles,,,0
-2619767,,,Garfield Avenue and Eastern Avenue,,33.953848,-118.163264,,,0,,America/Los_Angeles,,,0
-2619768,,,Garfield Avenue and Park Lane,,33.9595819896804,-118.156144769425,,,0,,America/Los_Angeles,,,0
-2619769,,,Garfield Avenue and Fostoria Street,,33.9560425221785,-118.160622266643,,,0,,America/Los_Angeles,,,0
-2619770,,,Garfield Avenue and Muller Street,,33.957766,-118.158652,,,0,,America/Los_Angeles,,,0
-2619771,,,Ford Park,,33.9591404855588,-118.151876485108,,,0,,America/Los_Angeles,,,0
-2619772,,,Scott Avenue and Emil Avenue,,33.960276,-118.148689,,,0,,America/Los_Angeles,,,0
-2619773,,,Scout Avenue and Clara Street,,33.9610844664885,-118.146682521213,,,0,,America/Los_Angeles,,,0
-2619774,,,Clara Street and Emil Avenue,,33.961522,-118.148979,,,0,,America/Los_Angeles,,,0
-2619775,,,Clara Street and Kress Avenue,,33.961751,-118.151092,,,0,,America/Los_Angeles,,,0
-2619776,,,Clara Street and Garfield Avenue,,33.9620004422838,-118.153425191024,,,0,,America/Los_Angeles,,,0
-2619777,,,Clara Street and Ira Avenue,,33.962242,-118.155665,,,0,,America/Los_Angeles,,,0
-2619778,,,Clara Street and Gephart Avenue,,33.962645,-118.159336,,,0,,America/Los_Angeles,,,0
-2619779,,,Clara Street and Jaboneria Road,,33.962904,-118.161809,,,0,,America/Los_Angeles,,,0
-2619780,,,Jaboneria Road and Priory Street,,33.9640975100044,-118.160819752853,,,0,,America/Los_Angeles,,,0
-2619781,,,Florence Avenue and Jaboneria Road (Westbound),,33.967276,-118.15802,,,0,,America/Los_Angeles,,,0
-2619782,,,Florence Avenue and El Selinda Avenue,,33.967538,-118.16047,,,0,,America/Los_Angeles,,,0
-2619786,,,Florence Avenue and Eastern Avenue,,33.9679484388089,-118.164425432278,,,0,,America/Los_Angeles,,,0
-2619790,,,Market Place (Northbound),,33.9693549987387,-118.164396343025,,,0,,America/Los_Angeles,,,0
-2619791,,,Eastern Avenue and Lubec Street (Northbound),,33.9714406198808,-118.164105773055,,,0,,America/Los_Angeles,,,0
-2619795,,,El Selinda Avenue and Ludell Street,,33.9686515466438,-118.160682308865,,,0,,America/Los_Angeles,,,0
-2619797,,,Lubec Street and Jaboneria Road,,33.970185,-118.155857,,,0,,America/Los_Angeles,,,0
-2619800,,,Florence Avenue and Jaboneria Road (Eastbound),,33.966956,-118.157326,,,0,,America/Los_Angeles,,,0
-2619881,,,Florence Avenue and Garfield Avenue,,33.9654059742744,-118.151881780945,,,0,,America/Los_Angeles,,,0
-2619887,,,Florence Avenue and Perry Road,,33.9643658153354,-118.150284593915,,,0,,America/Los_Angeles,,,0
-2619889,,,Florence Avenue and Emil Avenue,,33.9628544456141,-118.14797510274,,,0,,America/Los_Angeles,,,0
-2619892,,,Scout Avenue and Florence Avenue,,33.9617852043749,-118.144826263852,,,0,,America/Los_Angeles,,,0
-2619893,,,Scout Avenue and Florence Place,,33.965329,-118.140265,,,0,,America/Los_Angeles,,,0
-2619894,,,Florence Place and Emil Avenue,,33.9657834149868,-118.14456242665,,,0,,America/Los_Angeles,,,0
-2619896,,,Florence Place and Perry Road,,33.9661332550588,-118.147768513008,,,0,,America/Los_Angeles,,,0
-2619898,,,Bell Gardens City Hall,,33.9682408297242,-118.149878434637,,,0,,America/Los_Angeles,,,0
-2619899,,,Garfield Avenue and Loveland Street,,33.9699192860427,-118.148961656224,,,0,,America/Los_Angeles,,,0
-2622472,,,El Selinda Avenue and Lubec Street,,33.9710118592241,-118.160092305594,,,0,,America/Los_Angeles,,,0
+stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,position,direction,wheelchair_boarding,tts_stop_name
+2619747,,,Bell Gardens Park,,33.9685393953862,-118.143872824625,,,0,,America/Los_Angeles,,,0,
+2619748,,,Emil Avenue and Foster Bridge Boulevard,,33.969804,-118.141743,,,0,,America/Los_Angeles,,,0,
+2619749,,,Foster Bridge Boulevard and Chalet Drive,,33.9687893018004,-118.138611392837,,,0,,America/Los_Angeles,,,0,
+2619750,,,Gage Avenue and Chalet Drive,,33.972847,-118.13744,,,0,,America/Los_Angeles,,,0,
+2619751,,,Gage Avenue and Emil Avenue,,33.973232,-118.141042,,,0,,America/Los_Angeles,,,0,
+2619752,,,Gage Avenue and Perry Road,,33.973622,-118.144663,,,0,,America/Los_Angeles,,,0,
+2619753,,,Gage Avenue and Garfield Avenue,,33.973826,-118.146306,,,0,,America/Los_Angeles,,,0,
+2619754,,,Gage Avenue and Darwell Avenue,,33.974213,-118.149828,,,0,,America/Los_Angeles,,,0,
+2619755,,,Gage Avenue and Jaboneria Road,,33.974526,-118.152839,,,0,,America/Los_Angeles,,,0,
+2619756,,,Gage Avenue and Colmar Avenue,,33.974929,-118.1573,,,0,,America/Los_Angeles,,,0,
+2619757,,,Gage Avenue and El Selinda Avenue,,33.9752008856657,-118.159914252321,,,0,,America/Los_Angeles,,,0,
+2619758,,,Eastern Avenue and Gage Avenue,,33.975241,-118.163897,,,0,,America/Los_Angeles,,,0,
+2619759,,,Eastern Avenue and Lubec Street (Southbound),,33.9717113438133,-118.164370503855,,,0,,America/Los_Angeles,,,0,
+2619760,,,Market Place (Southbound),,33.969603,-118.164711,,,0,,America/Los_Angeles,,,0,
+2619761,,,Eastern Avenue and Florence Avenue,,33.9674310476341,-118.164963971649,,,0,,America/Los_Angeles,,,0,
+2619762,,,Eastern Avenue and Live Oak Street,,33.966027,-118.165158,,,0,,America/Los_Angeles,,,0,
+2619763,,,Eastern Avenue and Clara Street,,33.9634037575605,-118.16551073099,,,0,,America/Los_Angeles,,,0,
+2619764,,,Jaboneria Road and Quinn Street,,33.959191,-118.166337,,,0,,America/Los_Angeles,,,0,
+2619765,,,Muller Street and Jaboneria Road,,33.9578754072703,-118.167153856536,,,0,,America/Los_Angeles,,,0,
+2619766,,,Eastern Avenue and Cecilia Street,,33.9573074334323,-118.164602424537,,,0,,America/Los_Angeles,,,0,
+2619767,,,Garfield Avenue and Eastern Avenue,,33.953848,-118.163264,,,0,,America/Los_Angeles,,,0,
+2619768,,,Garfield Avenue and Park Lane,,33.9595819896804,-118.156144769425,,,0,,America/Los_Angeles,,,0,
+2619769,,,Garfield Avenue and Fostoria Street,,33.9560425221785,-118.160622266643,,,0,,America/Los_Angeles,,,0,
+2619770,,,Garfield Avenue and Muller Street,,33.957766,-118.158652,,,0,,America/Los_Angeles,,,0,
+2619771,,,Ford Park,,33.9591404855588,-118.151876485108,,,0,,America/Los_Angeles,,,0,
+2619772,,,Scott Avenue and Emil Avenue,,33.960276,-118.148689,,,0,,America/Los_Angeles,,,0,
+2619773,,,Scout Avenue and Clara Street,,33.9610844664885,-118.146682521213,,,0,,America/Los_Angeles,,,0,
+2619774,,,Clara Street and Emil Avenue,,33.961522,-118.148979,,,0,,America/Los_Angeles,,,0,
+2619775,,,Clara Street and Kress Avenue,,33.961751,-118.151092,,,0,,America/Los_Angeles,,,0,
+2619776,,,Clara Street and Garfield Avenue,,33.9620004422838,-118.153425191024,,,0,,America/Los_Angeles,,,0,
+2619777,,,Clara Street and Ira Avenue,,33.962242,-118.155665,,,0,,America/Los_Angeles,,,0,
+2619778,,,Clara Street and Gephart Avenue,,33.962645,-118.159336,,,0,,America/Los_Angeles,,,0,
+2619779,,,Clara Street and Jaboneria Road,,33.962904,-118.161809,,,0,,America/Los_Angeles,,,0,
+2619780,,,Jaboneria Road and Priory Street,,33.9640975100044,-118.160819752853,,,0,,America/Los_Angeles,,,0,
+2619781,,,Florence Avenue and Jaboneria Road (Westbound),,33.967276,-118.15802,,,0,,America/Los_Angeles,,,0,
+2619782,,,Florence Avenue and El Selinda Avenue,,33.967538,-118.16047,,,0,,America/Los_Angeles,,,0,
+2619786,,,Florence Avenue and Eastern Avenue,,33.9679484388089,-118.164425432278,,,0,,America/Los_Angeles,,,0,
+2619790,,,Market Place (Northbound),,33.9693549987387,-118.164396343025,,,0,,America/Los_Angeles,,,0,
+2619791,,,Eastern Avenue and Lubec Street (Northbound),,33.9714406198808,-118.164105773055,,,0,,America/Los_Angeles,,,0,
+2619795,,,El Selinda Avenue and Ludell Street,,33.9686515466438,-118.160682308865,,,0,,America/Los_Angeles,,,0,
+2619797,,,Lubec Street and Jaboneria Road,,33.970185,-118.155857,,,0,,America/Los_Angeles,,,0,
+2619800,,,Florence Avenue and Jaboneria Road (Eastbound),,33.966956,-118.157326,,,0,,America/Los_Angeles,,,0,
+2619881,,,Florence Avenue and Garfield Avenue,,33.9654059742744,-118.151881780945,,,0,,America/Los_Angeles,,,0,
+2619887,,,Florence Avenue and Perry Road,,33.9643658153354,-118.150284593915,,,0,,America/Los_Angeles,,,0,
+2619889,,,Florence Avenue and Emil Avenue,,33.9628544456141,-118.14797510274,,,0,,America/Los_Angeles,,,0,
+2619892,,,Scout Avenue and Florence Avenue,,33.9617852043749,-118.144826263852,,,0,,America/Los_Angeles,,,0,
+2619893,,,Scout Avenue and Florence Place,,33.965329,-118.140265,,,0,,America/Los_Angeles,,,0,
+2619894,,,Florence Place and Emil Avenue,,33.9657834149868,-118.14456242665,,,0,,America/Los_Angeles,,,0,
+2619896,,,Florence Place and Perry Road,,33.9661332550588,-118.147768513008,,,0,,America/Los_Angeles,,,0,
+2619898,,,Bell Gardens City Hall,,33.9682408297242,-118.149878434637,,,0,,America/Los_Angeles,,,0,
+2619899,,,Garfield Avenue and Loveland Street,,33.9699192860427,-118.148961656224,,,0,,America/Los_Angeles,,,0,
+2622472,,,El Selinda Avenue and Lubec Street,,33.9710118592241,-118.160092305594,,,0,,America/Los_Angeles,,,0,

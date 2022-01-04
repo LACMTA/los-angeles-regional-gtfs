@@ -1,0 +1,3 @@
+route_id,direction_id,direction
+YellowLine,1,Counterclockwise
+GreenLine,0,Clockwise

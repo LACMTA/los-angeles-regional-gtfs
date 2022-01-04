@@ -1,2 +1,2 @@
-agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off
-1742,18904,,Gateway Coach,,3,,00a445,ffffff,2,,0,1,1
+agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off,tts_route_short_name,tts_route_long_name
+1742,GatewayCoach,,Gateway Coach,,3,,00a445,ffffff,2,,0,1,1,,

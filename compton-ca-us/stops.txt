@@ -1,128 +1,128 @@
-stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,position,direction,wheelchair_boarding
-2619876,,,Adult School,,33.8985069374658,-118.252326997067,,,0,,America/Los_Angeles,,,0
-2619877,,,Central Ave & El Segundo Blvd,,33.9161009733883,-118.254299454165,,,0,,America/Los_Angeles,,,0
-2619878,,,Wilmington Ave & 130th St,,33.9137511601841,-118.2392455056,,,0,,America/Los_Angeles,,,0
-2619879,,,Wilmington Ave & Stockwell St,,33.9087754936893,-118.239240377966,,,0,,America/Los_Angeles,,,0
-2619880,,,Wilmington Ave & 139th St,,33.9060643983603,-118.238763807803,,,0,,America/Los_Angeles,,,0
-2619882,,,Rosecrans Ave & Wilmington Ave,,33.9032058853096,-118.237666625973,,,0,,America/Los_Angeles,,,0
-2619883,,,Rosecrans Ave & Matthisen Ave EB,,33.9032048735191,-118.234474246089,,,0,,America/Los_Angeles,,,0
-2619884,,,Rosecrans Ave & Aranbe Ave,,33.9032049098335,-118.231967550295,,,0,,America/Los_Angeles,,,0
-2619885,,,W Rosecrans Ave & N Oleander Ave EB,,33.9032020207781,-118.23016773798,,,0,,America/Los_Angeles,,,0
-2619886,,,E Rosecrans Ave & N Acacia Ave EB,,33.9031991129026,-118.227450569007,,,0,,America/Los_Angeles,,,0
-2619888,,,E Rosecrans Ave & N Willowbrook Ave EB,,33.9031983349915,-118.225195382539,,,0,,America/Los_Angeles,,,0
-2619890,,,MLK Transit Center,,33.8980464228846,-118.224100248557,,,0,,America/Los_Angeles,,,0
-2619891,,,E Compton Blvd & South Willowbrook Ave,,33.8958270402619,-118.223084358586,,,0,,America/Los_Angeles,,,0
-2619895,,,E Rosecrans Ave & N Willowbrook Ave WB,,33.9034243523864,-118.225509542662,,,0,,America/Los_Angeles,,,0
-2619897,,,E Rosecrans Ave & N Acacia Ave WB,,33.9034227485865,-118.227432251161,,,0,,America/Los_Angeles,,,0
-2619900,,,E Rosecrans Ave & N Oleander Ave WB,,33.9034177170143,-118.229806313171,,,0,,America/Los_Angeles,,,0
-2619901,,,W Rosecrans Ave & N Matthisen Ave WB,,33.9034236117072,-118.234219078072,,,0,,America/Los_Angeles,,,0
-2619902,,,N Wilmington Ave & W Rosecrans Ave,,33.9030110209671,-118.23821172459,,,0,,America/Los_Angeles,,,0
-2619903,,,N Wilmington Ave & W Poplar St,,33.9001425291506,-118.238020651135,,,0,,America/Los_Angeles,,,0
-2619904,,,S Wilmington Ave & W Compton Blvd,,33.8960972311872,-118.237746756325,,,0,,America/Los_Angeles,,,0
-2619905,,,W Compton Blvd & N Tajauta Ave,,33.8959382901614,-118.246206714054,,,0,,America/Los_Angeles,,,0
-2619906,,,W Compton Blvd & N Nestor Ave,,33.8959274380066,-118.248641439182,,,0,,America/Los_Angeles,,,0
-2619907,,,Central Ave & W Compton Blvd,,33.8962084470816,-118.251795904999,,,0,,America/Los_Angeles,,,0
-2619909,,,Central Ave & W Rosecrans Ave,,33.9025652826804,-118.253344702486,,,0,,America/Los_Angeles,,,0
-2621551,,,S Central Ave & W Piru St,,33.9085322744425,-118.254376053748,,,0,,America/Los_Angeles,,,0
-2621552,,,Ronald McNair Elementary School,,33.9161385076347,-118.248223133966,,,0,,America/Los_Angeles,,,0
-2621554,,,W El Segundo Blvd & N Compton Ave,,33.9161085429215,-118.245736538607,,,0,,America/Los_Angeles,,,0
-2621555,,,W El Segundo Blvd & N Grandee Ave,,33.9161210194138,-118.24340464276,,,0,,America/Los_Angeles,,,0
-2621556,,,W El Segundo Blvd & S Willowbrook Ave,,33.9160903022311,-118.232041819037,,,0,,America/Los_Angeles,,,0
-2622449,,,Compton High School,,33.8920004654436,-118.228139762458,,,0,,America/Los_Angeles,,,0
-2622450,,,W Alondra Blvd & S Oleander Ave WB,,33.8886837688627,-118.227999404312,,,0,,America/Los_Angeles,,,0
-2622451,,,W Alondra Blvd & S Center Ave WB,,33.8886545114499,-118.232553874952,,,0,,America/Los_Angeles,,,0
-2622452,,,W Alondra Blvd & W Wilmington Ave WB,,33.8886413593809,-118.236815350033,,,0,,America/Los_Angeles,,,0
-2622453,,,Central Ave & W Alondra Blvd SB,,33.8875590697517,-118.250022944704,,,0,,America/Los_Angeles,,,0
-2622454,,,W Caldwell St & S Dwight Ave,,33.8836944331712,-118.24088797841,,,0,,America/Los_Angeles,,,0
-2622455,,,S Wilmington Ave & W Caldwell St,,33.8843304804448,-118.236719577081,,,0,,America/Los_Angeles,,,0
-2622456,,,W Alondra Blvd & S Center Ave EB,,33.8884206423243,-118.232461369597,,,0,,America/Los_Angeles,,,0
-2622457,,,W Alondra Blvd & S Oleander Ave EB,,33.8884721874026,-118.227906759022,,,0,,America/Los_Angeles,,,0
-2622458,,,W Alondra Blvd & S Acacia Ave EB,,33.8884819680592,-118.226206746877,,,0,,America/Los_Angeles,,,0
-2622459,,,E Alondra Blvd & S Tamarind Ave EB,,33.8885035262031,-118.221735244192,,,0,,America/Los_Angeles,,,0
-2622460,,,S Wilmington Ave & W Alondra Blvd NB,,33.8889478270741,-118.236986856635,,,0,,America/Los_Angeles,,,0
-2622461,,,S Wilmington Ave & W Laurel St,,33.8926261117355,-118.237237641204,,,0,,America/Los_Angeles,,,0
-2622462,,,S Center Ave & W Cypress St,,33.8899567171099,-118.232905692481,,,0,,America/Los_Angeles,,,0
-2622463,,,S Tamarind Ave & E Caldwell St,,33.8847721227948,-118.221345193395,,,0,,America/Los_Angeles,,,0
-2622464,,,E Greenleaf Blvd & S Tamarind Ave,,33.881137005525,-118.220732255298,,,0,,America/Los_Angeles,,,0
-2622465,,,E Greenleaf Blvd & S Alameda St,,33.8811544630889,-118.218575567078,,,0,,America/Los_Angeles,,,0
-2622466,,,Gateway Shopping Center,,33.8787110071533,-118.217840369821,,,0,,America/Los_Angeles,,,0
-2622467,,,Compton College & DMV,,33.8746749571441,-118.214488728472,,,0,,America/Los_Angeles,,,0
-2622468,,,W Willowbrook Ave & W Myrrh St,,33.8927265844015,-118.223775588934,,,0,,America/Los_Angeles,,,0
-2622469,,,E Compton Blvd & Douglas Dollarhide,,33.8958331864324,-118.221441721576,,,0,,America/Los_Angeles,,,0
-2622470,,,W Myrrh St & S Acacia Ave,,33.8920490501432,-118.225856495415,,,0,,America/Los_Angeles,,,0
-2622471,,,E Alondra Blvd & S Tamarind Ave WB,,33.8887142223913,-118.221388547252,,,0,,America/Los_Angeles,,,0
-2622473,,,E Alondra Blvd & Santa Fe Ave,,33.8884952549691,-118.216416953392,,,0,,America/Los_Angeles,,,0
-2622474,,,E Greenleaf Blvd & S Tartar Ln,,33.8811888385986,-118.215017713381,,,0,,America/Los_Angeles,,,0
-2622475,,,Long Beach Blvd & E Greenleaf Blvd,,33.8819147556793,-118.204919446883,,,0,,America/Los_Angeles,,,0
-2622476,,,Long Beach Blvd & E Marcelle St,,33.8861356357681,-118.206177797656,,,0,,America/Los_Angeles,,,0
-2623627,,,E Alondra Blvd & S Long Beach Blvd,,33.8885775413996,-118.206626141624,,,0,,America/Los_Angeles,,,0
-2623628,,,E Alondra Blvd & S Bradfield Ave,,33.8886031259128,-118.203264386238,,,0,,America/Los_Angeles,,,0
-2623629,,,E Alondra Blvd & S Muriel Ave,,33.8886102167724,-118.201241613994,,,0,,America/Los_Angeles,,,0
-2623630,,,E Alondra Blvd & S Harris Ave,,33.8886312619196,-118.198507398247,,,0,,America/Los_Angeles,,,0
-2623631,,,E Alondra Blvd & S White Ave,,33.8886525960676,-118.194344199696,,,0,,America/Los_Angeles,,,0
-2623632,,,E Alondra Blvd & Atlantic Ave,,33.888660640188,-118.192295470625,,,0,,America/Los_Angeles,,,0
-2623633,,,Myrrh St & S San Jose Ave,,33.8926068732188,-118.181491014396,,,0,,America/Los_Angeles,,,0
-2623634,,,San Jose Ave & Somerset Blvd,,33.8959333119024,-118.181751290144,,,0,,America/Los_Angeles,,,0
-2623635,,,E Compton Blvd & S Gibson Ave,,33.8963156831773,-118.188842028602,,,0,,America/Los_Angeles,,,0
-2623636,,,E Compton Blvd & Atlantic Ave,,33.8962649738347,-118.193933034847,,,0,,America/Los_Angeles,,,0
-2623637,,,E Compton Blvd & S Castlegate Ave,,33.8962386704816,-118.196516025513,,,0,,America/Los_Angeles,,,0
-2623639,,,E Compton Blvd & Harris Ave,,33.8962052958543,-118.198747212568,,,0,,America/Los_Angeles,,,0
-2623640,,,E Compton Blvd & N Long Beach Road,,33.8961352715317,-118.207672464052,,,0,,America/Los_Angeles,,,0
-2623641,,,E Compton Blvd & N Mayo Ave WB,,33.8961379724553,-118.21292091019,,,0,,America/Los_Angeles,,,0
-2623643,,,E Compton Blvd & Santa Fe Ave WB,,33.8961291192368,-118.216157864574,,,0,,America/Los_Angeles,,,0
-2623644,,,E Compton Blvd & N Spring St,,33.896122965278,-118.218291893815,,,0,,America/Los_Angeles,,,0
-2623647,,,E Compton Blvd & S Alameda St,,33.8958763280584,-118.21945325146,,,0,,America/Los_Angeles,,,0
-2623648,,,E Compton Blvd & Santa Fe Ave EB,,33.8958855193989,-118.21605632516,,,0,,America/Los_Angeles,,,0
-2623649,,,E Compton Blvd & S Mayo Dr EB,,33.8958961920291,-118.212354998427,,,0,,America/Los_Angeles,,,0
-2623650,,,S Long Beach Blvd & E Compton Blvd,,33.8956230392489,-118.20807253727,,,0,,America/Los_Angeles,,,0
-2623651,,,S Long Beach Blvd & E Alondra Blvd,,33.8889938965282,-118.207296274155,,,0,,America/Los_Angeles,,,0
-2623652,,,S Long Beach Blvd & S Temple Ave,,33.8863762617972,-118.20651376283,,,0,,America/Los_Angeles,,,0
-2623653,,,S Long Beach Blvd & E Bennett St,,33.88280003398,-118.205430867119,,,0,,America/Los_Angeles,,,0
-2623654,,,E Artesia Blvd & Santa Fe Ave,,33.874379961252,-118.214282024758,,,0,,America/Los_Angeles,,,0
-2623655,,,Artesia Station,,33.8761397647043,-118.224751994366,,,0,,America/Los_Angeles,,,0
-2623656,,,W Walnut St @ Geodis,,33.8764955421862,-118.227335220125,,,0,,America/Los_Angeles,,,0
-2623657,,,W Walnut St & S Wilmington Ave,,33.8762538189815,-118.235534246382,,,0,,America/Los_Angeles,,,0
-2623658,,,W Walnut St @ Fire Station 4,,33.8761185528338,-118.240227737044,,,0,,America/Los_Angeles,,,0
-2623659,,,S Central Ave & E Walnut St SB,,33.8750025166849,-118.248875064296,,,0,,America/Los_Angeles,,,0
-2623660,,,Central Ave & E Albertoni St,,33.8730786532662,-118.248854722511,,,0,,America/Los_Angeles,,,0
-2623661,,,Central Ave & E Radbard St,,33.8707602600443,-118.248839126861,,,0,,America/Los_Angeles,,,0
-2623662,,,Central Ave & E Victoria St,,33.8679024322137,-118.248856418188,,,0,,America/Los_Angeles,,,0
-2623663,,,CSUDH,,33.8668373372485,-118.255090151507,,,0,,America/Los_Angeles,,,0
-2623664,,,Central Ave & W Greenleaf Blvd,,33.8802526094077,-118.248616513315,,,0,,America/Los_Angeles,,,0
-2623665,,,Central Ave & W Caldwell St,,33.8835103742402,-118.248789156343,,,0,,America/Los_Angeles,,,0
-2623666,,,Central Ave & W Alondra Blvd NB,,33.8880520521674,-118.249861072563,,,0,,America/Los_Angeles,,,0
-2623667,,,W El Segundo Blvd & S Wilmington Ave,,33.9161129340169,-118.239359160646,,,0,,America/Los_Angeles,,,0
-2623668,,,N Wilmington Ave & W El Segundo Blvd NB,,33.9166386737222,-118.23895394091,,,0,,America/Los_Angeles,,,0
-2623669,,,Wilmington Ave & E 122nd St,,33.9214809448133,-118.238949529522,,,0,,America/Los_Angeles,,,0
-2623670,,,MLK Jr. Community Hospital,,33.9232688805322,-118.241169828202,,,0,,America/Los_Angeles,,,0
-2623671,,,Wilmington Ave & E 120th St,,33.9228818247933,-118.23929274209,,,0,,America/Los_Angeles,,,0
-2623672,,,S Wilmington Ave & E 124th St,,33.9195862124319,-118.239237934667,,,0,,America/Los_Angeles,,,0
-2623673,,,S Willowbrook Ae & E Wayside St,,33.9139568147262,-118.230592769082,,,0,,America/Los_Angeles,,,0
-2623674,,,S Willowbrook Ave & E Piru St,,33.9103200941502,-118.228650116107,,,0,,America/Los_Angeles,,,0
-2623675,,,N Willowbrook Ave & W Winona Ave,,33.9073733633933,-118.2271094004,,,0,,America/Los_Angeles,,,0
-2623676,,,S Central Ave & E Walnut St NB,,33.8758300155205,-118.248581385146,,,0,,America/Los_Angeles,,,0
-2623706,,,E El Segundo Blvd & N Alameda St EB,,33.9161852241298,-118.222623076357,,,0,,America/Los_Angeles,,,0
-2623707,,,E El Segundo Blvd @ 503 East,,33.9165244388614,-118.219716200296,,,0,,America/Los_Angeles,,,0
-2623708,,,E El Segundo Blvd & Santa Fe Ave EB,,33.916713728411,-118.217999662671,,,0,,America/Los_Angeles,,,0
-2623709,,,Santa Fe Ave & E Carlin Ave SB,,33.9147036866108,-118.217311360262,,,0,,America/Los_Angeles,,,0
-2623710,,,Santa Fe Ave & E Pine St SB,,33.9115926435483,-118.21684578888,,,0,,America/Los_Angeles,,,0
-2623711,,,Santa Fe Ave & E Oaks St SB,,33.9097332205808,-118.216554773167,,,0,,America/Los_Angeles,,,0
-2623712,,,Santa Fe Ave & E Tucker St SB,,33.9071206260781,-118.216607217181,,,0,,America/Los_Angeles,,,0
-2623713,,,E Palmer St & Santa Fe Ave,,33.8982381867767,-118.215650458935,,,0,,America/Los_Angeles,,,0
-2623714,,,E Palmer St & N Mayo Ave,,33.8982509826099,-118.212596363875,,,0,,America/Los_Angeles,,,0
-2623715,,,E Palmer St & N Sloan Ave,,33.8982626360761,-118.210462523161,,,0,,America/Los_Angeles,,,0
-2623716,,,E Palmer St & N Long Beach Blvd,,33.8982668420263,-118.208550700351,,,0,,America/Los_Angeles,,,0
-2623717,,,Compton Career Link,,33.9002533795444,-118.20676906397,,,0,,America/Los_Angeles,,,0
-2623718,,,N Bullis Rd & E Kay St,,33.9042057951181,-118.20702637687,,,0,,America/Los_Angeles,,,0
-2623719,,,E Rosecrans Ave & N Long Beach Blvd,,33.9035616508633,-118.208910714154,,,0,,America/Los_Angeles,,,0
-2623721,,,E Rosecrans Ave & N Van Ness Ave,,33.9035247937158,-118.213465946256,,,0,,America/Los_Angeles,,,0
-2623724,,,E Rosecrans Ave & Santa Fe Ave,,33.9035022152989,-118.216031962704,,,0,,America/Los_Angeles,,,0
-2623733,,,Santa Fe Ave & E Tucker St NB,,33.9072119420455,-118.216287525609,,,0,,America/Los_Angeles,,,0
-2623734,,,Santa Fe Ave & E Oaks St NB,,33.9095033565495,-118.216244488951,,,0,,America/Los_Angeles,,,0
-2623735,,,Santa Fe Ave & E Pine St NB,,33.9112846759199,-118.216520842431,,,0,,America/Los_Angeles,,,0
-2623736,,,Santa Fe Ave & Carlin Ave NB,,33.9152432574422,-118.217176748834,,,0,,America/Los_Angeles,,,0
-2623737,,,El Segundo Blvd & Santa Fe Ave WB,,33.9168041265683,-118.218313793323,,,0,,America/Los_Angeles,,,0
-2623738,,,S Mona Blvd & E Stockwell St,,33.911356055967,-118.225638572925,,,0,,America/Los_Angeles,,,0
-2623739,,,S Mona Blvd & E El Segundo Blvd,,33.9159373263384,-118.226991917795,,,0,,America/Los_Angeles,,,0
-2623740,,,Fashion Center,,33.9116368371706,-118.208179489759,,,0,,America/Los_Angeles,,,0
-2623743,,,College Drive,,33.8745864039348,-118.208744956212,,,0,,America/Los_Angeles,,,0
+stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,position,direction,wheelchair_boarding,tts_stop_name
+2619876,,,Adult School,,33.8985069374658,-118.252326997067,,,0,,America/Los_Angeles,,,0,
+2619877,,,Central Ave & El Segundo Blvd,,33.9161009733883,-118.254299454165,,,0,,America/Los_Angeles,,,0,
+2619878,,,Wilmington Ave & 130th St,,33.9137511601841,-118.2392455056,,,0,,America/Los_Angeles,,,0,
+2619879,,,Wilmington Ave & Stockwell St,,33.9087754936893,-118.239240377966,,,0,,America/Los_Angeles,,,0,
+2619880,,,Wilmington Ave & 139th St,,33.9060643983603,-118.238763807803,,,0,,America/Los_Angeles,,,0,
+2619882,,,Rosecrans Ave & Wilmington Ave,,33.9032058853096,-118.237666625973,,,0,,America/Los_Angeles,,,0,
+2619883,,,Rosecrans Ave & Matthisen Ave EB,,33.9032048735191,-118.234474246089,,,0,,America/Los_Angeles,,,0,
+2619884,,,Rosecrans Ave & Aranbe Ave,,33.9032049098335,-118.231967550295,,,0,,America/Los_Angeles,,,0,
+2619885,,,W Rosecrans Ave & N Oleander Ave EB,,33.9032020207781,-118.23016773798,,,0,,America/Los_Angeles,,,0,
+2619886,,,E Rosecrans Ave & N Acacia Ave EB,,33.9031991129026,-118.227450569007,,,0,,America/Los_Angeles,,,0,
+2619888,,,E Rosecrans Ave & N Willowbrook Ave EB,,33.9031983349915,-118.225195382539,,,0,,America/Los_Angeles,,,0,
+2619890,,,MLK Transit Center,,33.8980464228846,-118.224100248557,,,0,,America/Los_Angeles,,,0,
+2619891,,,E Compton Blvd & South Willowbrook Ave,,33.8958270402619,-118.223084358586,,,0,,America/Los_Angeles,,,0,
+2619895,,,E Rosecrans Ave & N Willowbrook Ave WB,,33.9034243523864,-118.225509542662,,,0,,America/Los_Angeles,,,0,
+2619897,,,E Rosecrans Ave & N Acacia Ave WB,,33.9034227485865,-118.227432251161,,,0,,America/Los_Angeles,,,0,
+2619900,,,E Rosecrans Ave & N Oleander Ave WB,,33.9034177170143,-118.229806313171,,,0,,America/Los_Angeles,,,0,
+2619901,,,W Rosecrans Ave & N Matthisen Ave WB,,33.9034236117072,-118.234219078072,,,0,,America/Los_Angeles,,,0,
+2619902,,,N Wilmington Ave & W Rosecrans Ave,,33.9030110209671,-118.23821172459,,,0,,America/Los_Angeles,,,0,
+2619903,,,N Wilmington Ave & W Poplar St,,33.9001425291506,-118.238020651135,,,0,,America/Los_Angeles,,,0,
+2619904,,,S Wilmington Ave & W Compton Blvd,,33.8960972311872,-118.237746756325,,,0,,America/Los_Angeles,,,0,
+2619905,,,W Compton Blvd & N Tajauta Ave,,33.8959382901614,-118.246206714054,,,0,,America/Los_Angeles,,,0,
+2619906,,,W Compton Blvd & N Nestor Ave,,33.8959274380066,-118.248641439182,,,0,,America/Los_Angeles,,,0,
+2619907,,,Central Ave & W Compton Blvd,,33.8962084470816,-118.251795904999,,,0,,America/Los_Angeles,,,0,
+2619909,,,Central Ave & W Rosecrans Ave,,33.9025652826804,-118.253344702486,,,0,,America/Los_Angeles,,,0,
+2621551,,,S Central Ave & W Piru St,,33.9085322744425,-118.254376053748,,,0,,America/Los_Angeles,,,0,
+2621552,,,Ronald McNair Elementary School,,33.9161385076347,-118.248223133966,,,0,,America/Los_Angeles,,,0,
+2621554,,,W El Segundo Blvd & N Compton Ave,,33.9161085429215,-118.245736538607,,,0,,America/Los_Angeles,,,0,
+2621555,,,W El Segundo Blvd & N Grandee Ave,,33.9161210194138,-118.24340464276,,,0,,America/Los_Angeles,,,0,
+2621556,,,W El Segundo Blvd & S Willowbrook Ave,,33.9160903022311,-118.232041819037,,,0,,America/Los_Angeles,,,0,
+2622449,,,Compton High School,,33.8920004654436,-118.228139762458,,,0,,America/Los_Angeles,,,0,
+2622450,,,W Alondra Blvd & S Oleander Ave WB,,33.8886837688627,-118.227999404312,,,0,,America/Los_Angeles,,,0,
+2622451,,,W Alondra Blvd & S Center Ave WB,,33.8886545114499,-118.232553874952,,,0,,America/Los_Angeles,,,0,
+2622452,,,W Alondra Blvd & W Wilmington Ave WB,,33.8886413593809,-118.236815350033,,,0,,America/Los_Angeles,,,0,
+2622453,,,Central Ave & W Alondra Blvd SB,,33.8875590697517,-118.250022944704,,,0,,America/Los_Angeles,,,0,
+2622454,,,W Caldwell St & S Dwight Ave,,33.8836944331712,-118.24088797841,,,0,,America/Los_Angeles,,,0,
+2622455,,,S Wilmington Ave & W Caldwell St,,33.8843304804448,-118.236719577081,,,0,,America/Los_Angeles,,,0,
+2622456,,,W Alondra Blvd & S Center Ave EB,,33.8884206423243,-118.232461369597,,,0,,America/Los_Angeles,,,0,
+2622457,,,W Alondra Blvd & S Oleander Ave EB,,33.8884721874026,-118.227906759022,,,0,,America/Los_Angeles,,,0,
+2622458,,,W Alondra Blvd & S Acacia Ave EB,,33.8884819680592,-118.226206746877,,,0,,America/Los_Angeles,,,0,
+2622459,,,E Alondra Blvd & S Tamarind Ave EB,,33.8885035262031,-118.221735244192,,,0,,America/Los_Angeles,,,0,
+2622460,,,S Wilmington Ave & W Alondra Blvd NB,,33.8889478270741,-118.236986856635,,,0,,America/Los_Angeles,,,0,
+2622461,,,S Wilmington Ave & W Laurel St,,33.8926261117355,-118.237237641204,,,0,,America/Los_Angeles,,,0,
+2622462,,,S Center Ave & W Cypress St,,33.8899567171099,-118.232905692481,,,0,,America/Los_Angeles,,,0,
+2622463,,,S Tamarind Ave & E Caldwell St,,33.8847721227948,-118.221345193395,,,0,,America/Los_Angeles,,,0,
+2622464,,,E Greenleaf Blvd & S Tamarind Ave,,33.881137005525,-118.220732255298,,,0,,America/Los_Angeles,,,0,
+2622465,,,E Greenleaf Blvd & S Alameda St,,33.8811544630889,-118.218575567078,,,0,,America/Los_Angeles,,,0,
+2622466,,,Gateway Shopping Center,,33.8787110071533,-118.217840369821,,,0,,America/Los_Angeles,,,0,
+2622467,,,Compton College & DMV,,33.8746749571441,-118.214488728472,,,0,,America/Los_Angeles,,,0,
+2622468,,,W Willowbrook Ave & W Myrrh St,,33.8927265844015,-118.223775588934,,,0,,America/Los_Angeles,,,0,
+2622469,,,E Compton Blvd & Douglas Dollarhide,,33.8958331864324,-118.221441721576,,,0,,America/Los_Angeles,,,0,
+2622470,,,W Myrrh St & S Acacia Ave,,33.8920490501432,-118.225856495415,,,0,,America/Los_Angeles,,,0,
+2622471,,,E Alondra Blvd & S Tamarind Ave WB,,33.8887142223913,-118.221388547252,,,0,,America/Los_Angeles,,,0,
+2622473,,,E Alondra Blvd & Santa Fe Ave,,33.8884952549691,-118.216416953392,,,0,,America/Los_Angeles,,,0,
+2622474,,,E Greenleaf Blvd & S Tartar Ln,,33.8811888385986,-118.215017713381,,,0,,America/Los_Angeles,,,0,
+2622475,,,Long Beach Blvd & E Greenleaf Blvd,,33.8819147556793,-118.204919446883,,,0,,America/Los_Angeles,,,0,
+2622476,,,Long Beach Blvd & E Marcelle St,,33.8861356357681,-118.206177797656,,,0,,America/Los_Angeles,,,0,
+2623627,,,E Alondra Blvd & S Long Beach Blvd,,33.8885775413996,-118.206626141624,,,0,,America/Los_Angeles,,,0,
+2623628,,,E Alondra Blvd & S Bradfield Ave,,33.8886031259128,-118.203264386238,,,0,,America/Los_Angeles,,,0,
+2623629,,,E Alondra Blvd & S Muriel Ave,,33.8886102167724,-118.201241613994,,,0,,America/Los_Angeles,,,0,
+2623630,,,E Alondra Blvd & S Harris Ave,,33.8886312619196,-118.198507398247,,,0,,America/Los_Angeles,,,0,
+2623631,,,E Alondra Blvd & S White Ave,,33.8886525960676,-118.194344199696,,,0,,America/Los_Angeles,,,0,
+2623632,,,E Alondra Blvd & Atlantic Ave,,33.888660640188,-118.192295470625,,,0,,America/Los_Angeles,,,0,
+2623633,,,Myrrh St & S San Jose Ave,,33.8926068732188,-118.181491014396,,,0,,America/Los_Angeles,,,0,
+2623634,,,San Jose Ave & Somerset Blvd,,33.8959333119024,-118.181751290144,,,0,,America/Los_Angeles,,,0,
+2623635,,,E Compton Blvd & S Gibson Ave,,33.8963156831773,-118.188842028602,,,0,,America/Los_Angeles,,,0,
+2623636,,,E Compton Blvd & Atlantic Ave,,33.8962649738347,-118.193933034847,,,0,,America/Los_Angeles,,,0,
+2623637,,,E Compton Blvd & S Castlegate Ave,,33.8962386704816,-118.196516025513,,,0,,America/Los_Angeles,,,0,
+2623639,,,E Compton Blvd & Harris Ave,,33.8962052958543,-118.198747212568,,,0,,America/Los_Angeles,,,0,
+2623640,,,E Compton Blvd & N Long Beach Road,,33.8961352715317,-118.207672464052,,,0,,America/Los_Angeles,,,0,
+2623641,,,E Compton Blvd & N Mayo Ave WB,,33.8961379724553,-118.21292091019,,,0,,America/Los_Angeles,,,0,
+2623643,,,E Compton Blvd & Santa Fe Ave WB,,33.8961291192368,-118.216157864574,,,0,,America/Los_Angeles,,,0,
+2623644,,,E Compton Blvd & N Spring St,,33.896122965278,-118.218291893815,,,0,,America/Los_Angeles,,,0,
+2623647,,,E Compton Blvd & S Alameda St,,33.8958763280584,-118.21945325146,,,0,,America/Los_Angeles,,,0,
+2623648,,,E Compton Blvd & Santa Fe Ave EB,,33.8958855193989,-118.21605632516,,,0,,America/Los_Angeles,,,0,
+2623649,,,E Compton Blvd & S Mayo Dr EB,,33.8958961920291,-118.212354998427,,,0,,America/Los_Angeles,,,0,
+2623650,,,S Long Beach Blvd & E Compton Blvd,,33.8956230392489,-118.20807253727,,,0,,America/Los_Angeles,,,0,
+2623651,,,S Long Beach Blvd & E Alondra Blvd,,33.8889938965282,-118.207296274155,,,0,,America/Los_Angeles,,,0,
+2623652,,,S Long Beach Blvd & S Temple Ave,,33.8863762617972,-118.20651376283,,,0,,America/Los_Angeles,,,0,
+2623653,,,S Long Beach Blvd & E Bennett St,,33.88280003398,-118.205430867119,,,0,,America/Los_Angeles,,,0,
+2623654,,,E Artesia Blvd & Santa Fe Ave,,33.874379961252,-118.214282024758,,,0,,America/Los_Angeles,,,0,
+2623655,,,Artesia Station,,33.8761397647043,-118.224751994366,,,0,,America/Los_Angeles,,,0,
+2623656,,,W Walnut St @ Geodis,,33.8764955421862,-118.227335220125,,,0,,America/Los_Angeles,,,0,
+2623657,,,W Walnut St & S Wilmington Ave,,33.8762538189815,-118.235534246382,,,0,,America/Los_Angeles,,,0,
+2623658,,,W Walnut St @ Fire Station 4,,33.8761185528338,-118.240227737044,,,0,,America/Los_Angeles,,,0,
+2623659,,,S Central Ave & E Walnut St SB,,33.8750025166849,-118.248875064296,,,0,,America/Los_Angeles,,,0,
+2623660,,,Central Ave & E Albertoni St,,33.8730786532662,-118.248854722511,,,0,,America/Los_Angeles,,,0,
+2623661,,,Central Ave & E Radbard St,,33.8707602600443,-118.248839126861,,,0,,America/Los_Angeles,,,0,
+2623662,,,Central Ave & E Victoria St,,33.8679024322137,-118.248856418188,,,0,,America/Los_Angeles,,,0,
+2623663,,,CSUDH,,33.8668373372485,-118.255090151507,,,0,,America/Los_Angeles,,,0,
+2623664,,,Central Ave & W Greenleaf Blvd,,33.8802526094077,-118.248616513315,,,0,,America/Los_Angeles,,,0,
+2623665,,,Central Ave & W Caldwell St,,33.8835103742402,-118.248789156343,,,0,,America/Los_Angeles,,,0,
+2623666,,,Central Ave & W Alondra Blvd NB,,33.8880520521674,-118.249861072563,,,0,,America/Los_Angeles,,,0,
+2623667,,,W El Segundo Blvd & S Wilmington Ave,,33.9161129340169,-118.239359160646,,,0,,America/Los_Angeles,,,0,
+2623668,,,N Wilmington Ave & W El Segundo Blvd NB,,33.9166386737222,-118.23895394091,,,0,,America/Los_Angeles,,,0,
+2623669,,,Wilmington Ave & E 122nd St,,33.9214809448133,-118.238949529522,,,0,,America/Los_Angeles,,,0,
+2623670,,,MLK Jr. Community Hospital,,33.9232688805322,-118.241169828202,,,0,,America/Los_Angeles,,,0,
+2623671,,,Wilmington Ave & E 120th St,,33.9228818247933,-118.23929274209,,,0,,America/Los_Angeles,,,0,
+2623672,,,S Wilmington Ave & E 124th St,,33.9195862124319,-118.239237934667,,,0,,America/Los_Angeles,,,0,
+2623673,,,S Willowbrook Ae & E Wayside St,,33.9139568147262,-118.230592769082,,,0,,America/Los_Angeles,,,0,
+2623674,,,S Willowbrook Ave & E Piru St,,33.9103200941502,-118.228650116107,,,0,,America/Los_Angeles,,,0,
+2623675,,,N Willowbrook Ave & W Winona Ave,,33.9073733633933,-118.2271094004,,,0,,America/Los_Angeles,,,0,
+2623676,,,S Central Ave & E Walnut St NB,,33.8758300155205,-118.248581385146,,,0,,America/Los_Angeles,,,0,
+2623706,,,E El Segundo Blvd & N Alameda St EB,,33.9161852241298,-118.222623076357,,,0,,America/Los_Angeles,,,0,
+2623707,,,E El Segundo Blvd @ 503 East,,33.9165244388614,-118.219716200296,,,0,,America/Los_Angeles,,,0,
+2623708,,,E El Segundo Blvd & Santa Fe Ave EB,,33.916713728411,-118.217999662671,,,0,,America/Los_Angeles,,,0,
+2623709,,,Santa Fe Ave & E Carlin Ave SB,,33.9147036866108,-118.217311360262,,,0,,America/Los_Angeles,,,0,
+2623710,,,Santa Fe Ave & E Pine St SB,,33.9115926435483,-118.21684578888,,,0,,America/Los_Angeles,,,0,
+2623711,,,Santa Fe Ave & E Oaks St SB,,33.9097332205808,-118.216554773167,,,0,,America/Los_Angeles,,,0,
+2623712,,,Santa Fe Ave & E Tucker St SB,,33.9071206260781,-118.216607217181,,,0,,America/Los_Angeles,,,0,
+2623713,,,E Palmer St & Santa Fe Ave,,33.8982381867767,-118.215650458935,,,0,,America/Los_Angeles,,,0,
+2623714,,,E Palmer St & N Mayo Ave,,33.8982509826099,-118.212596363875,,,0,,America/Los_Angeles,,,0,
+2623715,,,E Palmer St & N Sloan Ave,,33.8982626360761,-118.210462523161,,,0,,America/Los_Angeles,,,0,
+2623716,,,E Palmer St & N Long Beach Blvd,,33.8982668420263,-118.208550700351,,,0,,America/Los_Angeles,,,0,
+2623717,,,Compton Career Link,,33.9002533795444,-118.20676906397,,,0,,America/Los_Angeles,,,0,
+2623718,,,N Bullis Rd & E Kay St,,33.9042057951181,-118.20702637687,,,0,,America/Los_Angeles,,,0,
+2623719,,,E Rosecrans Ave & N Long Beach Blvd,,33.9035616508633,-118.208910714154,,,0,,America/Los_Angeles,,,0,
+2623721,,,E Rosecrans Ave & N Van Ness Ave,,33.9035247937158,-118.213465946256,,,0,,America/Los_Angeles,,,0,
+2623724,,,E Rosecrans Ave & Santa Fe Ave,,33.9035022152989,-118.216031962704,,,0,,America/Los_Angeles,,,0,
+2623733,,,Santa Fe Ave & E Tucker St NB,,33.9072119420455,-118.216287525609,,,0,,America/Los_Angeles,,,0,
+2623734,,,Santa Fe Ave & E Oaks St NB,,33.9095033565495,-118.216244488951,,,0,,America/Los_Angeles,,,0,
+2623735,,,Santa Fe Ave & E Pine St NB,,33.9112846759199,-118.216520842431,,,0,,America/Los_Angeles,,,0,
+2623736,,,Santa Fe Ave & Carlin Ave NB,,33.9152432574422,-118.217176748834,,,0,,America/Los_Angeles,,,0,
+2623737,,,El Segundo Blvd & Santa Fe Ave WB,,33.9168041265683,-118.218313793323,,,0,,America/Los_Angeles,,,0,
+2623738,,,S Mona Blvd & E Stockwell St,,33.911356055967,-118.225638572925,,,0,,America/Los_Angeles,,,0,
+2623739,,,S Mona Blvd & E El Segundo Blvd,,33.9159373263384,-118.226991917795,,,0,,America/Los_Angeles,,,0,
+2623740,,,Fashion Center,,33.9116368371706,-118.208179489759,,,0,,America/Los_Angeles,,,0,
+2623743,,,College Drive,,33.8745864039348,-118.208744956212,,,0,,America/Los_Angeles,,,0,
