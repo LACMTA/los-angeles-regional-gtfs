@@ -10,6 +10,7 @@ Here are the zip file permalinks:
 * [Bellflower](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/bellflower-ca-us/bellflower-ca-us.zip)
 * [Bell Gardens](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/bellgardens-ca-us/bellgardens-ca-us.zip)
 * [Calabasas](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/calabasas-ca-us/calabasas-ca-us.zip)
+* Catalina Flyer
 * [Compton](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/compton-ca-us/compton-ca-us.zip)
 * [Cudahy](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/cudahy-ca-us/cudahy-ca-us.zip)
 * [Downey](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/downey-ca-us/downey-ca-us.zip)
