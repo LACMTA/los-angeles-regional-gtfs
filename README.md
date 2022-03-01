@@ -33,4 +33,4 @@ While we will do our best to ensure the data is kept accurate and up to date, we
 
 ## Python Notes
 
-Run using `python3`.
+Run `zip_each_dir.py` to generate zip files for each directory.  Requires Python 3.
