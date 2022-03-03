@@ -1,2 +1,0 @@
-feed_publisher_url,feed_publisher_name,feed_lang,feed_version,feed_license,feed_contact_email,feed_contact_url,feed_start_date,feed_end_date,feed_id
-https://www.metro.net,"Los Angeles County Metropolitan Transportation Authority",en,UTC: 30-Dec-2020 21:24,,csinteractive@metro.net,https://developer.metro.net,20201230,20210701,montebello-ca-us

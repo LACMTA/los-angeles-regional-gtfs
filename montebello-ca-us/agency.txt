@@ -1,2 +1,0 @@
-agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url
-582,http://www.ridembl.com/,en,Montebello Bus Lines,323-558-1625,America/Los_Angeles,http://www.ridembl.com/Fares
