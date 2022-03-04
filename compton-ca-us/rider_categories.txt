@@ -1,4 +1,4 @@
 rider_category_id,rider_category_name,min_age,max_age,eligibility_url
 senior,Seniors Age 62 and Over,62,,http://www.comptoncity.org/visitors/cpttrans.asp
 disabled,Persons with Disabilities,,,http://www.comptoncity.org/visitors/cpttrans.asp
-students,Students,,,http://www.comptoncity.org/visitors/cpttrans.asp
+student,Students,,,http://www.comptoncity.org/visitors/cpttrans.asp
