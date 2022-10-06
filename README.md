@@ -4,21 +4,21 @@ Metro is hosting GTFS data on behalf of various regional agencies. Each folder c
 
 Here are the zip file permalinks:
 
-* [Alhambra](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/alhambra-ca-us/alhambra-ca-us.zip)
-* [Arcadia](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/arcadia-ca-us/arcadia-ca-us.zip)
-* [Baldwin Park](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/baldwinpark-ca-us/baldwinpark-ca-us.zip)
-* [Bellflower](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/bellflower-ca-us/bellflower-ca-us.zip)
-* [Bell Gardens](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/bellgardens-ca-us/bellgardens-ca-us.zip)
-* [Calabasas](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/calabasas-ca-us/calabasas-ca-us.zip)
+* [Alhambra](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/alhambra-ca-us/alhambra-ca-us.zip)
+* [Arcadia](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/arcadia-ca-us/arcadia-ca-us.zip)
+* [Baldwin Park](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/baldwinpark-ca-us/baldwinpark-ca-us.zip/y)
+* [Bellflower](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/bellflower-ca-us/bellflower-ca-us.zip)
+* [Bell Gardens](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/bellgardens-ca-us/bellgardens-ca-us.zip)
+* [Calabasas](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/calabasas-ca-us/calabasas-ca-us.zip)
 * Catalina Flyer
-* [Compton](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/compton-ca-us/compton-ca-us.zip)
-* [Cudahy](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/cudahy-ca-us/cudahy-ca-us.zip)
-* [Downey](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/downey-ca-us/downey-ca-us.zip)
+* [Compton](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main//compton-ca-us/compton-ca-us.zip)
+* [Cudahy](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/cudahy-ca-us/cudahy-ca-us.zip)
+* [Downey](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/downey-ca-us/downey-ca-us.zip)
 * El Segundo
-* [Get Around Town Express (South Gate)](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/getaroundtownexpress-ca-us/getaroundtownexpress-ca-us.zip)
-* [Glendora](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/glendora-ca-us/glendora-ca-us.zip) - Trillium was able to get Glendora into Google Maps.
-* [Huntington Park](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/huntingtonpark-ca-us/huntingtonpark-ca-us.zip)
-* [La Campana (Bell)](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/lacampana-ca-us/lacampana-ca-us.zip)
+* [Get Around Town Express (South Gate)](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/getaroundtownexpress-ca-us/getaroundtownexpress-ca-us.zip)
+* [Glendora](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/glendora-ca-us/glendora-ca-us.zip) - Trillium was able to get Glendora into Google Maps.
+* [Huntington Park](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/huntingtonpark-ca-us/huntingtonpark-ca-us.zip)
+* [La Campana (Bell)](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/lacampana-ca-us/lacampana-ca-us.zip)
 * La Puente
 * Lynwood
 * ~[Montebello](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/montebello-ca-us/montebello-ca-us.zip) - This feed is most likely out of date. Montebello currently publishes their feed to Google Maps through Avail.~  *Removed 3/2/2022*
@@ -28,9 +28,9 @@ Here are the zip file permalinks:
   <br>[GTFS-rt Vehicle Positions](https://mbl.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=VehiclePosition)
   <br>[GTFS-rt Alerts](https://mbl.rideralerts.com/InfoPoint/GTFS-Realtime.ashx?Type=Alert)
 * Playa Vista Shuttle
-* [Rosemead](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/rosemead-ca-us/rosemead-ca-us.zip)
-* [Sierra Madre](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/sierramadre-ca-us/sierramadre-ca-us.zip)
-* [West Covina](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/westcovina-ca-us/westcovina-ca-us.zip)
+* [Rosemead](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/rosemead-ca-us/rosemead-ca-us.zip)
+* [Sierra Madre](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/sierramadre-ca-us/sierramadre-ca-us.zip)
+* [West Covina](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/westcovina-ca-us/westcovina-ca-us.zip)
 
 ## Disclaimer
 
