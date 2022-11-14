@@ -1,0 +1,9 @@
+service_id,date,holiday_name,exception_type
+c_67552_b_78015_d_63,20230904,Labor Day,2
+c_67552_b_78015_d_63,20230102,New Year's Day (Observed),2
+c_67552_b_78015_d_63,20221226,Christmas Day (Observed),2
+c_67552_b_78015_d_63,20221124,Thanksgiving Day,2
+c_67552_b_78015_d_31,20230904,Labor Day,2
+c_67552_b_78015_d_31,20230102,New Year's Day (Observed),2
+c_67552_b_78015_d_31,20221226,Christmas Day (Observed),2
+c_67552_b_78015_d_31,20221124,Thanksgiving Day,2

@@ -1,0 +1,2 @@
+service_id,service_name,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
+c_45719_b_55702_d_31,Weekday Regular (Weekday),1,1,1,1,1,0,0,20220601,20230601
