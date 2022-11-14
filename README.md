@@ -6,6 +6,7 @@ Here are the zip file permalinks:
 
 * [Alhambra](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/alhambra-ca-us/alhambra-ca-us.zip)
 * [Arcadia](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/arcadia-ca-us/arcadia-ca-us.zip)
+* [Artesia](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/artesia-ca-us/artesia-ca-us.zip)
 * [Baldwin Park](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/baldwinpark-ca-us/baldwinpark-ca-us.zip)
 * [Bellflower](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/bellflower-ca-us/bellflower-ca-us.zip)
 * [Bell Gardens](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/bellgardens-ca-us/bellgardens-ca-us.zip)

@@ -1,0 +1,2 @@
+service_id,service_name,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
+c_67566_b_78088_d_56,Year-Round Service (ThFSa),0,0,0,1,1,1,0,20221001,20231001

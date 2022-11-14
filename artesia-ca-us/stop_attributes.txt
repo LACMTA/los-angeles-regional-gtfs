@@ -1,0 +1,8 @@
+stop_id,stop_city
+4149251,Artesia
+4149246,Artesia
+4149255,Artesia
+4149254,Cerritos
+4149248,Artesia
+4149252,Artesia
+4149253,Artesia
