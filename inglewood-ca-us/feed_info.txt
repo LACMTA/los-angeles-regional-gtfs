@@ -1,0 +1,2 @@
+feed_publisher_url,feed_publisher_name,feed_lang,feed_version,feed_license,feed_contact_email,feed_contact_url,feed_start_date,feed_end_date,feed_id
+https://www.metro.net,"Los Angeles County Metropolitan Transportation Authority",en,UTC: 12-Jul-2022 20:29,,csinteractive@metro.net,https://developer.metro.net,20220712,20230601,inglewoodshuttle-ca-us
