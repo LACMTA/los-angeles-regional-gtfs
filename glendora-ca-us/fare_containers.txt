@@ -1,6 +1,6 @@
 fare_container_id,fare_container_name,minimum_initial_purchase,amount,currency,rider_category_id
-tap_regular,TAP Card General Public,5,2,USD,
-tap_senior,TAP Card Seniors Age 62 and Over,5,0,USD,senior
-tap_disabled,TAP Card Persons with Disabilities,5,0,USD,disabled
-tap_college,TAP Card College/Vocational,5,0,USD,
-tap_student,TAP Card Students K-12,5,0,USD,student
+tap_general,TAP Card General Public,5,2.00,USD,
+tap_senior,TAP Card Seniors Age 62 and Over,5,0.00,USD,senior
+tap_disabled,TAP Card Persons with Disabilities,5,0.00,USD,disabled
+tap_college,TAP Card College/Vocational,5,0.00,USD,
+tap_student,TAP Card Students K-12,5,0.00,USD,student
