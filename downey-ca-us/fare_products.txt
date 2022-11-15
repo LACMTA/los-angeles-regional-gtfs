@@ -1,2 +1,5 @@
 fare_product_id,fare_product_name,rider_category_id,fare_container_id,bundle_amount,duration_start,duration_amount,duration_unit,duration_type,offset_amount,offset_unit,service_id,timeframe_id,timeframe_type,cap_required,eligible_cap_id,amount,min_amount,max_amount,currency
-30-tickets_regular,30-Use Bus Tickets General Public,,,30,,,,,,,,,,,,15,,,USD
+oneway_general,One-Way Fare General Public,,,,,,,,,,,,,,,0.50,,,USD
+oneway_disabled,One-Way Fare Persons with Disabilities,disabled,,,,,,,,,,,,,,0.00,,,USD
+30-tickets_general,30-Use Bus Ticket Book General Public,,,30,,,,,,,,,,,,15.00,,,USD
+transfers,Free Transfer,,,,,,,,,,,,,,,0.00,,,USD
