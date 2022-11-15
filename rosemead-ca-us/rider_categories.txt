@@ -1,4 +1,4 @@
 rider_category_id,rider_category_name,min_age,max_age,eligibility_url
-seniors,Seniors Age 55 and Over,55,,"https://www.cityofrosemead.org/government/city_departments/public_works/public_works_superintendent/public_transportation/dial_a_ride_rosemead_explorer#:~:text=The%20cost%20to%20ride%20is,operators%20do%20not%20carry%20change."
-disabled,Persons with Disabilities,,,"https://www.cityofrosemead.org/government/city_departments/public_works/public_works_superintendent/public_transportation/dial_a_ride_rosemead_explorer#:~:text=The%20cost%20to%20ride%20is,operators%20do%20not%20carry%20change."
-children,Children Age 4 and Under,,4,"https://www.cityofrosemead.org/government/city_departments/public_works/public_works_superintendent/public_transportation/dial_a_ride_rosemead_explorer#:~:text=The%20cost%20to%20ride%20is,operators%20do%20not%20carry%20change."
+senior,Seniors Age 55 and Over,55,,https://www.cityofrosemead.org/cms/One.aspx?portalId=10035075&pageId=10972255
+disabled,Persons with Disabilities,,,https://www.cityofrosemead.org/cms/One.aspx?portalId=10035075&pageId=10972255
+children,Children Age 4 and Under,,4,https://www.cityofrosemead.org/cms/One.aspx?portalId=10035075&pageId=10972255

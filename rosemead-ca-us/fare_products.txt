@@ -1,0 +1,5 @@
+fare_product_id,fare_product_name,rider_category_id,fare_container_id,bundle_amount,duration_start,duration_amount,duration_unit,duration_type,offset_amount,offset_unit,service_id,timeframe_id,timeframe_type,cap_required,eligible_cap_id,amount,min_amount,max_amount,currency
+oneway_general,One-Way Fare General Public,,,,,,,,,,,,,,,0.50,,,USD
+oneway_senior,One-Way Fare Seniors Age 55 and Over,senior,,,,,,,,,,,,,,0.00,,,USD
+oneway_disabled,One-Way Fare Persons with Disabilities,disabled,,,,,,,,,,,,,,0.00,,,USD
+oneway_children,One-Way Fare Children Age 4 and Under,children,,,,,,,,,,,,,,0.00,,,USD
