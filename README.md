@@ -4,14 +4,16 @@ Metro is hosting GTFS data on behalf of various regional agencies. Each folder c
 
 Here are the zip file permalinks:
 
-* [Alhambra](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/alhambra-ca-us/alhambra-ca-us.zip)
-* [Arcadia](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/arcadia-ca-us/arcadia-ca-us.zip)
-* [Baldwin Park](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/baldwinpark-ca-us/baldwinpark-ca-us.zip/y)
-* [Bellflower](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/bellflower-ca-us/bellflower-ca-us.zip)
+* [Alhambra](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/alhambra-ca-us/alhambra-ca-us.zip) - *updated 2/10/23*
+* [Arcadia](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/arcadia-ca-us/arcadia-ca-us.zip) - *updated 2/10/23*
+  * Arcadia's app vendor, Passio, generates a GTFS but it does not pass the MobilityData validator.
+* [Artesia](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/artesia-ca-us/artesia-ca-us.zip) - *updated 2/10/23*
+* [Baldwin Park](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/baldwinpark-ca-us/baldwinpark-ca-us.zip/) - *updated 2/10/23*
+* [Bellflower](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/bellflower-ca-us/bellflower-ca-us.zip) - *updated 2/10/23*
 * [Bell Gardens](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/bellgardens-ca-us/bellgardens-ca-us.zip)
 * [Calabasas](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/calabasas-ca-us/calabasas-ca-us.zip)
 * Catalina Flyer
-* [Compton](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main//compton-ca-us/compton-ca-us.zip)
+* [Compton](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/compton-ca-us/compton-ca-us.zip)
 * [Cudahy](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/cudahy-ca-us/cudahy-ca-us.zip)
 * [Downey](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/downey-ca-us/downey-ca-us.zip)
 * El Segundos
