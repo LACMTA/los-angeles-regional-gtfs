@@ -8,3 +8,12 @@ date,service_id,holiday_name,exception_type
 20231224,Su,Christmas Eve,2
 20231225,wkdy,Christmas Day,2
 20231231,Su,New Years Eve,2
+20240101,wkdy,New Years Day,2
+20240115,wkdy,Martin Luther King Jr Day,2
+20240527,wkdy,Memorial Day,2
+20240704,wkdy,Independence Day,2
+20240902,wkdy,Labor Day,2
+20241128,wkdy,Thanksgiving Day,2
+20241224,wkdy,Christmas Eve,2
+20241225,wkdy,Christmas Day,2
+20241231,wkdy,New Years Eve,2
