@@ -1,4 +1,7 @@
 service_id,date,holiday_name,exception_type
-wkdy,20221124,Thanksgiving Day,2
-wkdy,20220530,Memorial Day,2
-wkdy,20220117,MLK Jr. Day,2
+wkdy,20230116,Martin Luther King Jr. Day,2
+wkdy,20230529,Memorial Day,2
+wkdy,20231123,Thanksgiving Day,2
+wkdy,20240115,Martin Luther King Jr. Day,2
+wkdy,20240527,Memorial Day,2
+wkdy,20241128,Thanksgiving Day,2
