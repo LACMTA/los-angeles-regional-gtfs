@@ -9,7 +9,7 @@ assignees: ''
 
 - [ ] Check with agency website and/or contact to confirm if there are any changes to the service
     - Service last updated: mm/yyyy
-- [ ] Update service dates for `mm/dd/yyyyy` - `mm/dd/yyyy`
+- [ ] Update service dates for `mm/dd/yyyy` - `mm/dd/yyyy`
     - [ ] `calendar.txt`
     - [ ] `calendar_dates.txt`
     - [ ] `feed_info.txt`
