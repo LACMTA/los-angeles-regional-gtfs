@@ -1,6 +1,12 @@
 service_id,date,holiday_name,exception_type
-MTWRFSa,20221124,Thanksgiving,2
-MTWRFSa,20220905,Labor Day ,2
-MTWRFSa,20220704,July 4th,2
-MTWRFSa,20220530,Memorial Day,2
-MTWRFSa,20220101,New Year's Day,2
+MTWRFSa,20230529,Memorial Day,2
+MTWRFSa,20230704,Independence Day,2
+MTWRFSa,20230904,Labor Day,2
+MTWRFSa,20231123,Thanksgiving Day,2
+MTWRFSa,20231225,Christmas Day,2
+MTWRFSa,20240101,New Year's Day,2
+MTWRFSa,20240527,Memorial Day,2
+MTWRFSa,20240704,Independence Day,2
+MTWRFSa,20240902,Labor Day,2
+MTWRFSa,20241128,Thanksgiving Day,2
+MTWRFSa,20241225,Christmas Day,2
