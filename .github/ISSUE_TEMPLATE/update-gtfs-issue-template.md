@@ -14,7 +14,7 @@ assignees: ''
     - [ ] `calendar_dates.txt`
     - [ ] `feed_info.txt`
 - [ ] Re-zip all files
-- [ ] Run new GTFS through the official [MobilityData GTFS validator]https://github.com/MobilityData/gtfs-validator) and then track/fix issues as needed.
+- [ ] Run new GTFS through the official [MobilityData GTFS validator](https://github.com/MobilityData/gtfs-validator) and then track/fix issues as needed.
 - [ ] Update `README.md` with last updated date info
 
 Issues:
