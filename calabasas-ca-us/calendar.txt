@@ -1,5 +1,5 @@
 service_id,service_name,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
-W,Year Round (Wednesday only),0,0,1,0,0,0,0,20210101,20221231
-Sa,Year Round (Saturday only),0,0,0,0,0,1,0,20210101,20221231
-wkdy,Year Round (Weekday),1,1,1,1,1,0,0,20210101,20221231
-MTRF,Year Round (MTuThF),1,1,0,1,1,0,0,20210101,20221231
+W,Year Round (Wednesday only),0,0,1,0,0,0,0,20230101,20241231
+Sa,Year Round (Saturday only),0,0,0,0,0,1,0,20230101,20241231
+wkdy,Year Round (Weekday),1,1,1,1,1,0,0,20230101,20241231
+MTRF,Year Round (MTuThF),1,1,0,1,1,0,0,20230101,20241231
