@@ -1,4 +1,4 @@
 service_id,service_name,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
-wknd,Year Round (Weekend),0,0,0,0,0,1,1,20200901,20221231
-wkdy,Year Round (Weekday),1,1,1,1,1,0,0,20200901,20221231
-daily,Year Round (All days of week),1,1,1,1,1,1,1,20200901,20221231
+wknd,Year Round (Weekend),0,0,0,0,0,1,1,20230101,20241231
+wkdy,Year Round (Weekday),1,1,1,1,1,0,0,20230101,20241231
+daily,Year Round (All days of week),1,1,1,1,1,1,1,20230101,20241231
