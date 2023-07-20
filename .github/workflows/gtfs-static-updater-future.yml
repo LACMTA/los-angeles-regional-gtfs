@@ -5,8 +5,9 @@ on:
       paths:
       - 'lacmta/future/**.zip'
       - 'lacmta-rail/current/**.zip'
-      # branches:
-      #   - main
+      branches:
+        - dev
+  workflow_dispatch:
 
 jobs:
   deploy-to-future-db:
@@ -16,15 +17,15 @@ jobs:
         name: Checkout the repo
         with:
           path: "los-angeles-regional-gtfs"
-      - name: ⛏️Unzip gtfs-static files⛏️
-        run: |
-          unzip /scripts/extract-gtfs-static-zips.sh
-      - uses: actions/setup-python@v2
-        name: 🐍Setup Python environment🐍 
+      # - uses: actions/setup-python@v2
+      #   name: 🐍Setup Python environment🐍 
       - name: 🚩Install requirements🚩
-        run : pip install -r requirements.txt
+        run : |
+          ls -la
+      # - name: 🚩Install requirements🚩
+      #   run : pip install -r requirements.txt
       - name: Update Database with latest data🛢
-        run: python /scripts/gtfs_static_updater
+        run: python los-angeles-regional-gtfs/.scripts/gtfs_static_updater_future.py
         env:
           DB_URI: ${{secrets.API_DB_URI}}
           TARGET_DB_SCHEMA: "metro_api_future"
