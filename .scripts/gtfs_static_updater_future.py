@@ -1,0 +1,1 @@
+print('Hello from gtfs_static_updater_future.py')
