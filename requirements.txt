@@ -1,0 +1,24 @@
+# fastapi==0.63.0
+pandas
+pydantic
+# starlette==0.13.6
+# typing-extensions==3.7.4.3
+requests
+python-dotenv
+# pytz
+# python-multipart
+SQLAlchemy
+psycopg2
+schedule
+geopandas
+GeoAlchemy2==0.10.2
+# python-jose[cryptography]
+# passlib[bcrypt]
+# # GeoAlchemy2
+# logzio-python-handler
+# aiofiles
+# jinja2==3.0.3
+# fastapi-restful[tasks]
+google
+protobuf==3.19.6
+polyline
