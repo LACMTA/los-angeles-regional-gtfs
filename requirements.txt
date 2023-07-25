@@ -7,7 +7,7 @@ requests
 python-dotenv
 # pytz
 # python-multipart
-SQLAlchemy
+SQLAlchemy==1.4.42
 psycopg2
 schedule
 geopandas

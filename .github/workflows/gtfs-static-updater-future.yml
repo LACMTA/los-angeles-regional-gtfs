@@ -20,7 +20,7 @@ jobs:
       - name: 🚩Install requirements🚩
         run : pip install -r requirements.txt
       - name: Update Database with latest data🛢
-        run: python ./.scripts/gtfs_static_updater_future.py --db_uri ${{secrets.API_DB_URI} --db_schema metro_api_future}
+        run: python ./.scripts/gtfs_static_updater_future.py --db_uri ${{secrets.API_DB_URI}} --db_schema metro_api_future
         env:
           DB_URI: ${{secrets.API_DB_URI}}
           TARGET_DB_SCHEMA: "metro_api_future"
