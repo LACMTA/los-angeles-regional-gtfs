@@ -7,6 +7,7 @@ import os
 # from pathlib import Path
 # from sqlalchemy import create_engine
 import geopandas as gpd
+from geoalchemy2 import to_postgis
 from io import StringIO
 import zipfile
 import timeit
