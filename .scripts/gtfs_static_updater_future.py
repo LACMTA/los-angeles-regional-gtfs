@@ -7,10 +7,11 @@ import os
 # from pathlib import Path
 # from sqlalchemy import create_engine
 import geopandas as gpd
-from geoalchemy2 import to_postgis
+import geoalchemy2
 from io import StringIO
 import zipfile
 import timeit
+import shutil
 
 from sqlalchemy import create_engine,MetaData
 from sqlalchemy.ext.declarative import declarative_base
@@ -291,7 +292,26 @@ def main():
     process_zip_files_for_agency_id('lacmta')
     process_zip_files_for_agency_id('lacmta-rail')
     update_gtfs_static_files()
+
     pass
+
+
+def remove_temp_files():
+    temp_directory = os.path.join(os.getcwd(),'temp')
+    if os.path.exists(temp_directory):
+        shutil.rmtree(temp_directory)
+    else:
+        print("The temp  does not exist")
+
+def commit_logs_to_github_repo():
+    print('Committing logs to github repo')
+    os.system('git checkout logs')
+    os.system('git add .')
+    os.system('git commit -m "Updated logs on '+str(datetime.datetime.now()))
+    os.system('git push origin logs')
 
 if __name__ == "__main__":
     main()
+    commit_logs_to_github_repo()
+    remove_temp_files()
+
