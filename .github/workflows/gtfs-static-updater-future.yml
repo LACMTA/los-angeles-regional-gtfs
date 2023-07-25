@@ -13,19 +13,14 @@ jobs:
   deploy-to-future-db:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         name: Checkout the repo
-        with:
-          path: "los-angeles-regional-gtfs"
-      # - uses: actions/setup-python@v2
-      #   name: 🐍Setup Python environment🐍 
+      - uses: actions/setup-python@v2
+        name: 🐍Setup Python environment🐍 
       - name: 🚩Install requirements🚩
-        run : |
-          ls -la
-      # - name: 🚩Install requirements🚩
-      #   run : pip install -r requirements.txt
+        run : pip install -r requirements.txt
       - name: Update Database with latest data🛢
-        run: python los-angeles-regional-gtfs/.scripts/gtfs_static_updater_future.py
+        run: python ./.scripts/gtfs_static_updater_future.py --db_uri ${{secrets.API_DB_URI} --db_schema metro_api_future}
         env:
           DB_URI: ${{secrets.API_DB_URI}}
           TARGET_DB_SCHEMA: "metro_api_future"
