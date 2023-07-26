@@ -1,24 +1,36 @@
-# fastapi==0.63.0
-pandas
-pydantic
-# starlette==0.13.6
-# typing-extensions==3.7.4.3
-requests
-python-dotenv
-# pytz
-# python-multipart
-SQLAlchemy==1.4.42
-psycopg2
-schedule
-geopandas
+annotated-types==0.5.0
+attrs==23.1.0
+beautifulsoup4==4.12.2
+certifi==2023.7.22
+charset-normalizer==3.2.0
+click==8.1.6
+click-plugins==1.1.1
+cligj==0.7.2
+colorama==0.4.6
+Fiona==1.9.4.post1
 GeoAlchemy2==0.10.2
-# python-jose[cryptography]
-# passlib[bcrypt]
-# # GeoAlchemy2
-# logzio-python-handler
-# aiofiles
-# jinja2==3.0.3
-# fastapi-restful[tasks]
-google
+geopandas==0.13.2
+google==3.0.0
+greenlet==2.0.2
+idna==3.4
+numpy==1.25.1
+packaging==23.1
+pandas==2.0.3
+polyline==2.0.0
 protobuf==3.19.6
-polyline
+psycopg2==2.9.6
+pydantic==2.1.0
+pydantic_core==2.4.0
+pyproj==3.6.0
+python-dateutil==2.8.2
+python-dotenv==1.0.0
+pytz==2023.3
+requests==2.31.0
+schedule==1.2.0
+shapely==2.0.1
+six==1.16.0
+soupsieve==2.4.1
+SQLAlchemy==1.4.42
+typing_extensions==4.7.1
+tzdata==2023.3
+urllib3==2.0.4
