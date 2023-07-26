@@ -128,7 +128,8 @@ def update_gtfs_static_files():
             temp_gdf_rail = gpd.GeoDataFrame(temp_df_rail, geometry=gpd.points_from_xy(temp_df_rail.shape_pt_lon, temp_df_rail.shape_pt_lat))
             shapes_combined_gdf = gpd.GeoDataFrame(pd.concat([temp_gdf_bus, temp_gdf_rail],ignore_index=True),geometry='geometry')
             shapes_combined_gdf.crs = 'EPSG:4326'
-            shapes_combined_gdf.to_postgis(file,engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
+            if debug == False:
+                shapes_combined_gdf.to_postgis(file,engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
         else:
             combined_temp_df = pd.concat([temp_df_bus, temp_df_rail])
             if file == "stop_times":
@@ -157,12 +158,20 @@ def update_gtfs_static_files():
     stop_times_by_route_df = pd.concat(df_to_combine)
     stop_times_by_route_df['departure_times'] = stop_times_by_route_df.apply(lambda row: get_stop_times_from_stop_id(row),axis=1)
     stop_times_by_route_df['route_code'].fillna(stop_times_by_route_df['route_id'], inplace=True)
-
+    print("Processing route stops...")
+    process_start = timeit.default_timer()
     route_stops_geo_data_frame = gpd.GeoDataFrame(stop_times_by_route_df, geometry=stop_times_by_route_df.apply(lambda x: get_lat_long_from_coordinates(x.geojson),axis=1))
     route_stops_geo_data_frame.set_crs(epsg=4326, inplace=True)
     if debug == False:
         # save to database
         route_stops_geo_data_frame.to_postgis('route_stops',engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
+    process_end = timeit.default_timer()
+    with open('logs.txt', 'a+') as f:
+        human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        total_time = process_end - process_start
+        total_time_rounded = round(total_time,2)
+        print(human_readable_date+" | " + "route_stops" + " | " + str(total_time_rounded) + " seconds.", file=f)
+    print("Done processing route stops.")
 
 def get_lat_long_from_coordinates(geojson):
     this_geojson_geom = geojson['geometry']
@@ -243,7 +252,7 @@ def create_list_of_trips(trips,stop_times):
     summarized_trips_df = trips[["route_id","trip_id","direction_id","service_id","agency_id"]]
     summarized_trips_df['day_type'] = summarized_trips_df['service_id'].map(get_day_type_from_service_id)
     trips_list_df = trips_list_df.merge(summarized_trips_df, on='trip_id').drop_duplicates(subset=['route_id','day_type','direction_id'])
-    trips_list_df.to_csv('trips_list_df.csv')
+    # trips_list_df.to_csv('trips_list_df.csv')
 
 
 def encode_lat_lon_to_geojson(lat,lon):
@@ -304,11 +313,15 @@ def remove_temp_files():
         print("The temp  does not exist")
 
 def commit_logs_to_github_repo():
-    print('Committing logs to github repo')
-    os.system('git checkout logs')
-    os.system('git add .')
-    os.system('git commit -m "Updated logs on '+str(datetime.datetime.now()))
-    os.system('git push origin logs')
+    try:
+        print('Committing logs to github repo')
+        # os.system('git checkout logs')
+        os.system('git add .')
+        os.system('git commit -m "Updated logs on '+str(datetime.datetime.now()))
+        os.system('git push origin logs')
+    except Exception as e:
+        print(e)
+        pass
 
 if __name__ == "__main__":
     main()
