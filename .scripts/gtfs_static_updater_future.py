@@ -158,12 +158,20 @@ def update_gtfs_static_files():
     stop_times_by_route_df = pd.concat(df_to_combine)
     stop_times_by_route_df['departure_times'] = stop_times_by_route_df.apply(lambda row: get_stop_times_from_stop_id(row),axis=1)
     stop_times_by_route_df['route_code'].fillna(stop_times_by_route_df['route_id'], inplace=True)
-
+    print("Processing route stops...")
+    process_start = timeit.default_timer()
     route_stops_geo_data_frame = gpd.GeoDataFrame(stop_times_by_route_df, geometry=stop_times_by_route_df.apply(lambda x: get_lat_long_from_coordinates(x.geojson),axis=1))
     route_stops_geo_data_frame.set_crs(epsg=4326, inplace=True)
     if debug == False:
         # save to database
         route_stops_geo_data_frame.to_postgis('route_stops',engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
+    process_end = timeit.default_timer()
+    with open('logs.txt', 'a+') as f:
+        human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        total_time = process_end - process_start
+        total_time_rounded = round(total_time,2)
+        print(human_readable_date+" | " + "route_stops" + " | " + str(total_time_rounded) + " seconds.", file=f)
+    print("Done processing route stops.")
 
 def get_lat_long_from_coordinates(geojson):
     this_geojson_geom = geojson['geometry']
