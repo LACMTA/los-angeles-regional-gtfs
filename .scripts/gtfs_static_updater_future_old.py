@@ -4,7 +4,7 @@ import sys, argparse
 import pandas as pd
 import json
 import os
-import gtfs_static_utils
+# import gtfs_static_utils
 # from pathlib import Path
 # from sqlalchemy import create_engine
 import geopandas as gpd
@@ -21,7 +21,6 @@ from shapely.geometry import Point
 
 
 debug = False
-local = True
 # from sqlalchemy.orm import Session,sessionmaker
 # from config import Config
 # from .database_connector import *
@@ -130,7 +129,7 @@ def update_gtfs_static_files():
             if debug == False:
                 shapes_combined_gdf.to_postgis(file,engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
         else:
-            combined_temp_df = gtfs_static_utils.combine_dataframes(temp_df_bus,temp_df_rail)
+            combined_temp_df = pd.concat([temp_df_bus, temp_df_rail])
             if file == "stop_times":
                 stop_times_df = combined_temp_df
             if file == "trips":
@@ -140,7 +139,7 @@ def update_gtfs_static_files():
             if file == "calendar":
                 calendar_df = combined_temp_df
             if debug == False:
-                gtfs_static_utils.update_dataframe_to_db(combined_temp_df,file,engine,TARGET_SCHEMA)
+                combined_temp_df.to_sql(file,engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
                 # combined_temp_df.to_sql(file,engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
         process_end = timeit.default_timer()
         
@@ -152,7 +151,7 @@ def update_gtfs_static_files():
             print("******************")
     print("Processing trip list")
     process_start = timeit.default_timer()
-    trips_list_df = gtfs_static_utils.create_list_of_trips(trips_df,stop_times_df)
+    trips_list_df  = create_list_of_trips(trips_df,stop_times_df)
     summarized_trips_df = trips_df[["route_id","trip_id","direction_id","service_id","agency_id"]]
     summarized_trips_df['day_type'] = summarized_trips_df['service_id'].map(get_day_type_from_service_id)
     trips_list_df = trips_list_df.merge(summarized_trips_df, on='trip_id').drop_duplicates(subset=['route_id','day_type','direction_id'])
@@ -176,7 +175,7 @@ def update_gtfs_static_files():
     if debug == False:
         # save to database
         route_stops_geo_data_frame.to_postgis('route_stops',engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
-    
+
     with open('logs.txt', 'a+') as f:
         process_end = timeit.default_timer()
         human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -184,6 +183,19 @@ def update_gtfs_static_files():
         total_time_rounded = round(total_time,2)
         print(human_readable_date+" | " + "route_stops" + " | " + str(total_time_rounded) + " seconds.", file=f)
     print("Done processing route stops.")
+
+def create_list_of_trips(trips,stop_times):
+    print('Creating list of trips')
+    global trips_list_df
+    # stop_times['day_type'] = stop_times['trip_id_event'].map(get_day_type_from_service_id)
+    # stop_times['day_type'] = stop_times['day_type'].fillna(stop_times['trip_id'].map(get_day_type_from_trip_id))
+    trips_list_df = stop_times.groupby('trip_id')['stop_sequence'].max().sort_values(ascending=False).reset_index()
+    trips_list_df = trips_list_df.merge(stop_times[['trip_id','stop_id','stop_sequence','route_code']], on=['trip_id','stop_sequence'])
+    # summarized_trips_df = trips[["route_id","trip_id","direction_id","service_id","agency_id"]]
+    # summarized_trips_df['day_type'] = summarized_trips_df['service_id'].map(get_day_type_from_service_id)
+    # trips_list_df = trips_list_df.merge(summarized_trips_df, on='trip_id').drop_duplicates(subset=['route_id','day_type','direction_id'])
+    # trips_list_df.to_csv('trips_list_df.csv')
+    return trips_list_df
 
 def get_lat_long_from_coordinates(geojson):
     this_geojson_geom = geojson['geometry']
@@ -331,7 +343,6 @@ def commit_logs_to_github_repo():
 
 if __name__ == "__main__":
     main()
-    if local == False:
-        commit_logs_to_github_repo()
+    commit_logs_to_github_repo()
     remove_temp_files()
 
