@@ -19,6 +19,8 @@ jobs:
         name: 🐍Setup Python environment🐍 
       - name: 🚩Install requirements🚩
         run : pip install -r requirements.txt
+      - name: Setup Cython script
+        run: python ./.scripts/setup.py build_ext --inplace
       - name: Update Database with latest data🛢
         run: python ./.scripts/gtfs_static_updater_future.py --db_uri ${{secrets.API_DB_URI}} --db_schema metro_api_future
         env:
