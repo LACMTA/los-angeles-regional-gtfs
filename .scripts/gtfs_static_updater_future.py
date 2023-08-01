@@ -21,7 +21,7 @@ from shapely.geometry import Point
 
 
 debug = False
-local = True
+local = False
 # from sqlalchemy.orm import Session,sessionmaker
 # from config import Config
 # from .database_connector import *
