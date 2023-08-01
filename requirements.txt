@@ -34,3 +34,4 @@ SQLAlchemy==1.4.42
 typing_extensions==4.7.1
 tzdata==2023.3
 urllib3==2.0.4
+cython
