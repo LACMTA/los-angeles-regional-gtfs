@@ -4,7 +4,6 @@ import sys, argparse
 import pandas as pd
 import json
 import os
-import gtfs_static_utils
 # from pathlib import Path
 # from sqlalchemy import create_engine
 import geopandas as gpd
@@ -125,7 +124,10 @@ def update_gtfs_static_files():
             # stops_combined_gdf.to_postgis(file,engine,schema=TARGET_SCHEMA,if_exists="replace",index=False)
             # stops_df = stops_combined_gdf
         elif file == "shapes":
-            shapes_combined_gdf = create_gdf_for_shapes(temp_df_bus,temp_df_rail)
+            temp_gdf_bus = gpd.GeoDataFrame(temp_df_bus, geometry=gpd.points_from_xy(temp_df_bus.shape_pt_lon, temp_df_bus.shape_pt_lat))   
+            temp_gdf_rail = gpd.GeoDataFrame(temp_df_rail, geometry=gpd.points_from_xy(temp_df_rail.shape_pt_lon, temp_df_rail.shape_pt_lat))
+            shapes_combined_gdf = gpd.GeoDataFrame(pd.concat([temp_gdf_bus, temp_gdf_rail],ignore_index=True),geometry='geometry')
+            shapes_combined_gdf.crs = 'EPSG:4326'
             if debug == False:
                 shapes_combined_gdf.to_postgis(file,engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
         else:
@@ -139,8 +141,7 @@ def update_gtfs_static_files():
             if file == "calendar":
                 calendar_df = combined_temp_df
             if debug == False:
-                gtfs_static_utils.update_dataframe_to_db(combined_temp_df,file,engine,TARGET_SCHEMA)
-                # combined_temp_df.to_sql(file,engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
+                combined_temp_df.to_sql(file,engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
         process_end = timeit.default_timer()
         
         with open('logs.txt', 'a+') as f:
@@ -148,11 +149,10 @@ def update_gtfs_static_files():
             total_time = process_end - process_start
             total_time_rounded = round(total_time,2)
             print(human_readable_date+" | " + file + " | " + str(total_time_rounded) + " seconds.", file=f)
+            print("Done with " + file)
             print("******************")
-    trips_list_df = gtfs_static_utils.create_list_of_trips(trips_df,stop_times_df)
-    summarized_trips_df = trips_df[["route_id","trip_id","direction_id","service_id","agency_id"]]
-    summarized_trips_df['day_type'] = summarized_trips_df['service_id'].map(get_day_type_from_service_id)
-    trips_list_df = trips_list_df.merge(summarized_trips_df, on='trip_id').drop_duplicates(subset=['route_id','day_type','direction_id'])
+    create_list_of_trips(trips_df,stop_times_df)
+
 
     trips_list_df.apply(lambda row: get_stop_times_for_trip_id(row), axis=1)
     stop_times_by_route_df = pd.concat(df_to_combine)
@@ -177,12 +177,7 @@ def get_lat_long_from_coordinates(geojson):
     this_geojson_geom = geojson['geometry']
     return Point(this_geojson_geom['coordinates'][0], this_geojson_geom['coordinates'][1])
 
-def create_gdf_for_shapes(temp_df_bus,temp_df_rail):
-    temp_gdf_bus = gpd.GeoDataFrame(temp_df_bus, geometry=gpd.points_from_xy(temp_df_bus.shape_pt_lon, temp_df_bus.shape_pt_lat))   
-    temp_gdf_rail = gpd.GeoDataFrame(temp_df_rail, geometry=gpd.points_from_xy(temp_df_rail.shape_pt_lon, temp_df_rail.shape_pt_lat))
-    shapes_combined_gdf = gpd.GeoDataFrame(pd.concat([temp_gdf_bus, temp_gdf_rail],ignore_index=True),geometry='geometry')
-    shapes_combined_gdf.crs = 'EPSG:4326'
-    return shapes_combined_gdf
+
 
 def get_stop_times_from_stop_id(this_row):
     # print('Getting stop times for stop id')
@@ -247,6 +242,17 @@ def get_day_type_from_trip_id(trip_id):
    this_service_id = trips_df.loc[trips_df['trip_id'] == trip_id, 'service_id'].iloc[0]
    return get_day_type_from_service_id(this_service_id)
 
+def create_list_of_trips(trips,stop_times):
+    print('Creating list of trips')
+    global trips_list_df
+    # stop_times['day_type'] = stop_times['trip_id_event'].map(get_day_type_from_service_id)
+    # stop_times['day_type'] = stop_times['day_type'].fillna(stop_times['trip_id'].map(get_day_type_from_trip_id))
+    trips_list_df = stop_times.groupby('trip_id')['stop_sequence'].max().sort_values(ascending=False).reset_index()
+    trips_list_df = trips_list_df.merge(stop_times[['trip_id','stop_id','stop_sequence','route_code']], on=['trip_id','stop_sequence'])
+    summarized_trips_df = trips[["route_id","trip_id","direction_id","service_id","agency_id"]]
+    summarized_trips_df['day_type'] = summarized_trips_df['service_id'].map(get_day_type_from_service_id)
+    trips_list_df = trips_list_df.merge(summarized_trips_df, on='trip_id').drop_duplicates(subset=['route_id','day_type','direction_id'])
+    # trips_list_df.to_csv('trips_list_df.csv')
 
 
 def encode_lat_lon_to_geojson(lat,lon):
