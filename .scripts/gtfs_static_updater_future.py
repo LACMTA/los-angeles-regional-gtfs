@@ -57,7 +57,7 @@ parser.add_argument('--db_schema', metavar='db_schema', type=str, nargs='+',help
 args = parser.parse_args()
 DB_URI = args.db_uri[0]
 TARGET_SCHEMA = args.db_schema[0]
-engine = create_engine(DB_URI, echo=False)
+engine = create_engine(DB_URI, echo=False, pool_size=20, max_overflow=0, pool_timeout=300, pool_recycle=3600, pool_pre_ping=True)
 Session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 session = Session()
