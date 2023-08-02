@@ -4,11 +4,11 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from shapely.geometry import Point
 
-def combine_dataframes(temp_df_bus,temp_df_rail):
+cpdef combine_dataframes(temp_df_bus,temp_df_rail):
     return pd.concat([temp_df_bus, temp_df_rail])
 
 
-def create_list_of_trips(trips,stop_times):
+cpdef create_list_of_trips(trips,stop_times):
     print('Creating list of trips')
     global trips_list_df
     # stop_times['day_type'] = stop_times['trip_id_event'].map(get_day_type_from_service_id)
@@ -21,7 +21,7 @@ def create_list_of_trips(trips,stop_times):
     # trips_list_df.to_csv('trips_list_df.csv')
     return trips_list_df
 
-def update_dataframe_to_db(combined_temp_df,target_table_name,engine,target_schema):
+cpdef update_dataframe_to_db(combined_temp_df,target_table_name,engine,target_schema):
     print('Updating dataframe to db')
     combined_temp_df.to_sql(target_table_name,engine,index=False,if_exists="replace",schema=target_schema)
 

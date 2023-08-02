@@ -352,3 +352,6 @@ if __name__ == "__main__":
     if local == False:
         commit_logs_to_github_repo()
     remove_temp_files()
+
+
+
