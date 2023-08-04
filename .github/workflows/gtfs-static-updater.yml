@@ -3,10 +3,11 @@ name: 📅Update Future GTFS Static in database 🚈🚌
 on:
   push:
       paths:
-      - 'lacmta/future/**.zip'
-      - 'lacmta-rail/current/**.zip'
-      branches:
-        - dev
+        - 'lacmta/future/**.zip'
+        - 'lacmta-rail/current/**.zip'
+      # branches:
+      #   - dev
+        
   workflow_dispatch:
 
 jobs:
@@ -29,8 +30,8 @@ jobs:
       - name: 📝 ️Validate GTFS Static files 
         run: |
           cd ./.scripts
-          python gtfs_static_validator.py --agency_id "lacmta" --target_state "current"
-          python gtfs_static_validator.py --agency_id "lacmta-rail" --target_state 'current"
+          python gtfs_static_validator.py --agency_id "lacmta" --folder_branch "current"
+          python gtfs_static_validator.py --agency_id "lacmta-rail" --folder_branch 'current"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           git add .
@@ -42,5 +43,3 @@ jobs:
         run: |
           cd ./.scripts
           python gtfs_static_updater.py --db_uri ${{secrets.API_DB_URI}} --db_schema "metro_api"
-        env:
-          DB_URI: ${{secrets.API_DB_URI}}
