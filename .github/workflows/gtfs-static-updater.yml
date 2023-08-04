@@ -41,7 +41,6 @@ jobs:
       - name: Update Database with latest data 🛢 
         run: |
           cd ./.scripts
-          python gtfs_static_updater.py --db_uri ${{secrets.API_DB_URI}} --db_schema ${{TARGET_DB_SCHEMA}}
+          python gtfs_static_updater.py --db_uri ${{secrets.API_DB_URI}} --db_schema "metro_api"
         env:
           DB_URI: ${{secrets.API_DB_URI}}
-          TARGET_DB_SCHEMA: "metro_api"
