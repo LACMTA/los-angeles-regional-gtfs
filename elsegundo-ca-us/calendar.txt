@@ -1,4 +1,5 @@
 service_id,service_name,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
-MTWRFSa,Break (No Sunday),1,1,1,1,1,1,0,20230609,20230823
-wkdy-20230823-20221231,Academic (Weekday),1,1,1,1,1,0,0,20220905,20221231
-wkdy-20230101-20230609,Academic (Weekday),1,1,1,1,1,0,0,20230101,20230609
+MTWRFSa-2023,Break (No Sunday),1,1,1,1,1,1,0,20230609,20230823
+wkdy-spring-2023,Academic (Weekday),1,1,1,1,1,0,0,20230101,20230609
+wkdy-fall-2023,Academic (Weekday),1,1,1,1,1,0,0,20230823,20231231
+wkdy-spring-2024,Academic (Weekday),1,1,1,1,1,0,0,20240101,20230607
