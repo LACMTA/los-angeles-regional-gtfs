@@ -1,27 +1,47 @@
-name: 📅Update GTFS Static in database 🚈🚌
+name: 📅Update Future GTFS Static in database 🚈🚌
 
 on:
   push:
       paths:
-      - './gtfs-static/current/**.zip'
-      # branches:
-      #   - main
+      - 'lacmta/future/**.zip'
+      - 'lacmta-rail/current/**.zip'
+      branches:
+        - dev
+  workflow_dispatch:
 
 jobs:
   deploy-to-current-db:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v3
         name: Checkout the repo
-      - name: ⛏️Unzip gtfs-static files⛏️
-        run: |
-          unzip extract-gtfs-static-zips.sh
       - uses: actions/setup-python@v2
-        name: 🐍Setup Python environment🐍 
-      - name: 🚩Install requirements🚩
-        run : pip install -r ./data-loading-service/requirements.txt
-      - name: Update Database with latest data🛢
-        run: python ./data-loading-service/app/gtfs_static_updater
+        name: 🐍 Setup Python environment 
+      - name: 🤐 Extract Zip files! 
+        run: |
+          cd ./.scripts
+          python gtfs_static_zip_extractor.py
+      - name: ☕ Set up JDK 15 
+        uses: actions/setup-java@v3
+        with:
+          java-version: '15'
+          distribution: 'adopt'
+      - name: 📝 ️Validate GTFS Static files 
+        run: |
+          cd ./.scripts
+          python gtfs_static_validator.py --agency_id lacmta --target_state current
+          python gtfs_static_validator.py --agency_id lacmta-rail --target_state current
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add .
+          git commit -m "[Auto] 📝Validate GTFS Static files - $(date)"
+          git push
+      - name: 🚩 Install Python requirements.txt
+        run : pip install -r requirements.txt
+      - name: 🛢 Update Database with latest data
+        run: |
+          cd ./.scripts
+          python gtfs_static_updater.py --db_uri ${{secrets.API_DB_URI}} --db_schema ${{TARGET_DB_SCHEMA}}
         env:
           DB_URI: ${{secrets.API_DB_URI}}
           TARGET_DB_SCHEMA: "metro_api"
