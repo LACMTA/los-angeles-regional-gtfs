@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>GTFS Schedule Validation Report</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8; width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            min-width: 800px;
+        }
+
+        .error:before {
+            content: "\1F534  ";
+        }
+
+        .warning:before {
+            content: "\1F7E0  ";
+        }
+
+        .info:before {
+            content: "\26AA  ";
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 1em 2em;
+        }
+
+        .version-update {
+          font-weight: bold;
+          color: red;
+        }
+
+        table {
+            width: 100%;
+        }
+        table th {
+            text-align: left;
+            border-bottom: 2px solid #000;
+            padding: 0.5em;
+        }
+        table td {
+            border-bottom: 1px solid #ddd;
+            padding: 0.5em;
+        }
+
+        table.accordion > tbody > tr.notice td, table.accordion > tbody > tr.view th {
+            cursor: auto;
+        }
+        table.accordion > tbody > tr.notice td:first-child,
+        table.accordion > tbody > tr.notice th:first-child {
+            position: relative;
+            padding-left: 20px;
+        }
+        table.accordion > tbody > tr.notice td:first-child:before,
+        table.accordion > tbody > tr.notice th:first-child:before {
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            width: 9px;
+            height: 16px;
+            margin-top: -8px;
+            color: #000;
+            content: "+";
+        }
+        table.accordion > tbody > tr.notice.open td:first-child:before,
+        table.accordion > tbody > tr.notice.open th:first-child:before {
+            content: "\2013";
+        }
+        table.accordion > tbody > tr.notice:hover {
+            background: #ddd;
+        }
+        table.accordion > tbody > tr.notice.open {
+            background: #ddd;
+            color: black;
+        }
+        table.accordion > tbody > tr.description {
+            display: none;
+        }
+        table.accordion > tbody > tr.description.open {
+            display: table-row;
+        }
+
+        .desc-content {
+            padding: 0.5em;
+            border-bottom: 5px solid #000;
+            border-top: 5px solid #000
+        }
+        .desc-content h3 {
+            margin-top: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+<h1>GTFS Schedule Validation Report</h1>
+
+
+
+<h2><span>42</span> notices reported
+    (<span>0</span> errors,
+    <span>37</span> warnings,
+    <span>5</span> infos)</h2>
+<p>This validation report was generated using the <a href="https://github.com/MobilityData/gtfs-validator">Canonical GTFS Schedule validator</a>.</p>
+<p>Use this report alongside the <a href="https://gtfs-validator.mobilitydata.org/rules.html">rules</a> page to get more details about the validation issues.</p>
+<table class="accordion">
+    <thead>
+    <tr>
+    <th>Notice Code</th><th>Severity</th><th>Total</th>
+    </tr>
+    </thead>
+    <tbody>
+    <span>
+        <span>
+            <tr class="notice">
+                <td >unknown_column</td>
+                <td class="info" >INFO</td>
+                <td >5</td>
+            </tr>
+            <tr class="description">
+                <td colspan="4">
+                    <div class="desc-content">
+                        <h3 >unknown_column</h3>
+                        <p> Please find this notice description <a href="https://gtfs-validator.mobilitydata.org/rules.html#unknown_column">here</a>.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    
+                                        <th >filename</th>
+                                    
+                                        <th >fieldName</th>
+                                    
+                                        <th >index</th>
+                                    
+                                </tr>
+                            </thead>
+                            <span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;stops.txt&quot;</td>
+                                
+                                        <td >&quot;tpis_name&quot;</td>
+                                
+                                        <td >10</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;stop_times.txt&quot;</td>
+                                
+                                        <td >&quot;route_code&quot;</td>
+                                
+                                        <td >9</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;stop_times.txt&quot;</td>
+                                
+                                        <td >&quot;destination_code&quot;</td>
+                                
+                                        <td >10</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;feed_info.txt&quot;</td>
+                                
+                                        <td >&quot;feed_id&quot;</td>
+                                
+                                        <td >1</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;feed_info.txt&quot;</td>
+                                
+                                        <td >&quot;feed_license&quot;</td>
+                                
+                                        <td >6</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </span>
+    </span><span>
+        <span>
+            <tr class="notice">
+                <td >expired_calendar</td>
+                <td class="warning" >WARNING</td>
+                <td >24</td>
+            </tr>
+            <tr class="description">
+                <td colspan="4">
+                    <div class="desc-content">
+                        <h3 >expired_calendar</h3>
+                        <p> Please find this notice description <a href="https://gtfs-validator.mobilitydata.org/rules.html#expired_calendar">here</a>.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    
+                                        <th >csvRowNumber</th>
+                                    
+                                        <th >serviceId</th>
+                                    
+                                </tr>
+                            </thead>
+                            <span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >6</td>
+                                
+                                        <td >&quot;RJUN23-801-1_Weekday-90&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >5</td>
+                                
+                                        <td >&quot;RJUN23-801-3_Sunday-90&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >17</td>
+                                
+                                        <td >&quot;RJUN23-803-1_Weekday-90&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >7</td>
+                                
+                                        <td >&quot;RJUN23-801-2_Saturday-90&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >11</td>
+                                
+                                        <td >&quot;RJUN23-802-3_Sunday-90&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >19</td>
+                                
+                                        <td >&quot;RJUN23-804-1_Weekday-90&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >9</td>
+                                
+                                        <td >&quot;RJUN23-802-1_Weekday-90&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >20</td>
+                                
+                                        <td >&quot;RJUN23-804-2_Saturday-91&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >2</td>
+                                
+                                        <td >&quot;RJUN23-801-1_Weekday-06&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >15</td>
+                                
+                                        <td >&quot;RJUN23-803-2_Saturday-90&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >3</td>
+                                
+                                        <td >&quot;RJUN23-801-1_Weekday-07&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >4</td>
+                                
+                                        <td >&quot;RJUN23-801-2_Saturday-03&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >14</td>
+                                
+                                        <td >&quot;RJUN23-803-1_Weekday-01&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >8</td>
+                                
+                                        <td >&quot;RJUN23-802-1_Weekday-16&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >25</td>
+                                
+                                        <td >&quot;RJUN23-807-3_Sunday-90&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >13</td>
+                                
+                                        <td >&quot;RJUN23-803-1_Weekday-07&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >22</td>
+                                
+                                        <td >&quot;RJUN23-807-1_Weekday-02&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >12</td>
+                                
+                                        <td >&quot;RJUN23-802-2_Saturday-90&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >18</td>
+                                
+                                        <td >&quot;RJUN23-804-1_Weekday-07&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >23</td>
+                                
+                                        <td >&quot;RJUN23-807-1_Weekday-90&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >24</td>
+                                
+                                        <td >&quot;RJUN23-807-2_Saturday-90&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >16</td>
+                                
+                                        <td >&quot;RJUN23-803-3_Sunday-90&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >10</td>
+                                
+                                        <td >&quot;RJUN23-802-2_Saturday-12&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >21</td>
+                                
+                                        <td >&quot;RJUN23-804-3_Sunday-91&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </span><span>
+            <tr class="notice">
+                <td >missing_recommended_field</td>
+                <td class="warning" >WARNING</td>
+                <td >10</td>
+            </tr>
+            <tr class="description">
+                <td colspan="4">
+                    <div class="desc-content">
+                        <h3 >missing_recommended_field</h3>
+                        <p> Please find this notice description <a href="https://gtfs-validator.mobilitydata.org/rules.html#missing_recommended_field">here</a>.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    
+                                        <th >filename</th>
+                                    
+                                        <th >csvRowNumber</th>
+                                    
+                                        <th >fieldName</th>
+                                    
+                                </tr>
+                            </thead>
+                            <span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;feed_info.txt&quot;</td>
+                                
+                                        <td >2</td>
+                                
+                                        <td >&quot;feed_start_date&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;feed_info.txt&quot;</td>
+                                
+                                        <td >2</td>
+                                
+                                        <td >&quot;feed_end_date&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;feed_info.txt&quot;</td>
+                                
+                                        <td >2</td>
+                                
+                                        <td >&quot;feed_version&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;feed_info.txt&quot;</td>
+                                
+                                        <td >2</td>
+                                
+                                        <td >&quot;feed_contact_email&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;routes.txt&quot;</td>
+                                
+                                        <td >2</td>
+                                
+                                        <td >&quot;agency_id&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;routes.txt&quot;</td>
+                                
+                                        <td >3</td>
+                                
+                                        <td >&quot;agency_id&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;routes.txt&quot;</td>
+                                
+                                        <td >4</td>
+                                
+                                        <td >&quot;agency_id&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;routes.txt&quot;</td>
+                                
+                                        <td >5</td>
+                                
+                                        <td >&quot;agency_id&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;routes.txt&quot;</td>
+                                
+                                        <td >6</td>
+                                
+                                        <td >&quot;agency_id&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;routes.txt&quot;</td>
+                                
+                                        <td >7</td>
+                                
+                                        <td >&quot;agency_id&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </span><span>
+            <tr class="notice">
+                <td >stop_without_stop_time</td>
+                <td class="warning" >WARNING</td>
+                <td >2</td>
+            </tr>
+            <tr class="description">
+                <td colspan="4">
+                    <div class="desc-content">
+                        <h3 >stop_without_stop_time</h3>
+                        <p> Please find this notice description <a href="https://gtfs-validator.mobilitydata.org/rules.html#stop_without_stop_time">here</a>.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    
+                                        <th >csvRowNumber</th>
+                                    
+                                        <th >stopId</th>
+                                    
+                                        <th >stopName</th>
+                                    
+                                </tr>
+                            </thead>
+                            <span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >391</td>
+                                
+                                        <td >&quot;80701&quot;</td>
+                                
+                                        <td >&quot;Aviation / Century Station&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span><span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >395</td>
+                                
+                                        <td >&quot;80702&quot;</td>
+                                
+                                        <td >&quot;Airport Metro Connector&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </span><span>
+            <tr class="notice">
+                <td >trip_coverage_not_active_for_next7_days</td>
+                <td class="warning" >WARNING</td>
+                <td >1</td>
+            </tr>
+            <tr class="description">
+                <td colspan="4">
+                    <div class="desc-content">
+                        <h3 >trip_coverage_not_active_for_next7_days</h3>
+                        <p> Please find this notice description <a href="https://gtfs-validator.mobilitydata.org/rules.html#trip_coverage_not_active_for_next7_days">here</a>.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    
+                                        <th >currentDate</th>
+                                    
+                                        <th >serviceWindowStartDate</th>
+                                    
+                                        <th >serviceWindowEndDate</th>
+                                    
+                                </tr>
+                            </thead>
+                            <span>
+                                <tbody>
+                                <tr>
+                                
+                                        <td >&quot;20230804&quot;</td>
+                                
+                                        <td >&quot;20230720&quot;</td>
+                                
+                                        <td >&quot;20230803&quot;</td>
+                                
+                                </tr>
+                                </tbody>
+                            </span>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </span>
+    </span>
+    </tbody>
+</table>
+<H2>Settings and version</H2>
+<p>Validator version: 4.1.0<p>Validation date and time: 2023-08-04 at 23:14:16 UTC<p>Parameters used (more about the available parameters in <a href="https://github.com/MobilityData/gtfs-validator/blob/master/docs/USAGE.md">USAGE.md</a>):</p>
+<table>
+    <thead>
+    <tr>
+        <th>Parameter description</th><th>Value</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>GTFS input (ZIP file, directory or URL)</td>
+        <td >file:///home/runner/work/los-angeles-regional-gtfs/los-angeles-regional-gtfs/.scripts/../lacmta-rail/current/gtfs_rail.zip</td>
+    </tr>
+    <tr>
+        <td>Output directory</td>
+        <td >../.validation/lacmta-rail/current</td>
+    </tr>
+    <tr>
+        <td>Number of threads used to run the validator</td>
+        <td >1</td>
+    </tr>
+    <tr>
+        <td>Country code (for phone validation)</td>
+        <td >The country code was not valid or was not provided.</td>
+    </tr>
+    <tr>
+        <td>Validation report name</td>
+        <td >report.json</td>
+    </tr>
+    <tr>
+        <td>System errors report name</td>
+        <td >system_errors.json</td>
+    </tr>
+    <tr>
+        <td>HTML report name</td>
+        <td >report.html</td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<footer class="footer text-center text-muted mt-5">
+    Made with ♥ by <a href="https://mobilitydata.org/">MobilityData</a>
+</footer>
+</body>
+<script>
+    $(function(){
+        $(".accordion tr.notice").on("click", function(){
+            $(this).toggleClass("open").next(".description").toggleClass("open");
+        });
+    });
+</script>
+</html>
