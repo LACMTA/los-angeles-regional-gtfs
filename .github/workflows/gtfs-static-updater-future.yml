@@ -16,13 +16,32 @@ jobs:
       - uses: actions/checkout@v3
         name: Checkout the repo
       - uses: actions/setup-python@v2
-        name: 🐍Setup Python environment🐍 
-      - name: 🚩Install requirements🚩
-        run : pip install -r requirements.txt
-      - name: Update Database with latest data🛢
+        name: 🐍 Setup Python environment
+      - name: 🤐 Extract Zip files!
         run: |
           cd ./.scripts
-          python gtfs_static_updater_future.py --db_uri ${{secrets.API_DB_URI}} --db_schema metro_api_future
+          python gtfs_static_zip_extractor.py
+      - name: ☕ Set up JDK 15
+        uses: actions/setup-java@v3
+        with:
+          java-version: '15'
+          distribution: 'adopt'
+      - name: 📝 Validate GTFS Static files
+        run: |
+          cd ./.scripts
+          python gtfs_static_validator.py --agency_id lacmta --target_state future
+          python gtfs_static_validator.py --agency_id lacmta-rail --target_state current
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add .
+          git commit -m "[Auto] 📝Validate GTFS Static files - $(date)"
+          git push
+      - name: 🚩 Install Python requirements.txt
+        run : pip install -r requirements.txt
+      - name: 🛢 Update Database with latest data
+        run: |
+          cd ./.scripts
+          python gtfs_static_updater.py --db_uri ${{secrets.API_DB_URI}} --db_schema ${{TARGET_DB_SCHEMA}}
         env:
           DB_URI: ${{secrets.API_DB_URI}}
           TARGET_DB_SCHEMA: "metro_api_future"
