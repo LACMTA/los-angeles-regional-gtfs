@@ -37,8 +37,8 @@ jobs:
           git commit -m "[Auto] 📝Validate GTFS Static files - $(date)"
           git push
       - name: 🚩 Install Python requirements.txt
-        run : pip install -r requirements.txt
-      - name: 🛢 Update Database with latest data
+        run: pip install -r requirements.txt
+      - name: Update Database with latest data 🛢
         run: |
           cd ./.scripts
           python gtfs_static_updater.py --db_uri ${{secrets.API_DB_URI}} --db_schema ${{TARGET_DB_SCHEMA}}
