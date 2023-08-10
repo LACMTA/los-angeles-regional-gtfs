@@ -5,8 +5,9 @@ on:
       paths:
         - 'lacmta/future/**.zip'
         - 'lacmta-rail/current/**.zip'
-      # branches:
-      #   - dev
+      branches:
+        - dev
+        - main
   workflow_dispatch:
 
 jobs:
