@@ -1,0 +1,1 @@
+{"notices":[{"code":"runtime_exception_in_validator_error","severity":"ERROR","totalNotices":1,"sampleNotices":[{"validator":"org.mobilitydata.gtfsvalidator.validator.ExpiredCalendarValidator","exception":"java.util.NoSuchElementException","message":""}]}]}
