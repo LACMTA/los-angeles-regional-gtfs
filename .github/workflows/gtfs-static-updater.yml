@@ -6,7 +6,6 @@ on:
         - 'lacmta/current-base/**.zip'
         - 'lacmta-rail/current/**.zip'
       branches:
-        - dev
         - main
         
   workflow_dispatch:
