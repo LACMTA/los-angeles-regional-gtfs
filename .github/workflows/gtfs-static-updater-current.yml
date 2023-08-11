@@ -1,4 +1,4 @@
-name: 📅Update Future GTFS Static in database 🚈🚌
+name: 📅Update Current GTFS Static in database 🚈🚌
 
 on:
   push:
