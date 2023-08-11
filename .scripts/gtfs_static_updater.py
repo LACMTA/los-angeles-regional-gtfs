@@ -97,7 +97,10 @@ def process_zip_files_for_agency_id(agency_id):
         if TARGET_SCHEMA == 'metro_api_future':
             target_zip_files = get_latest_modified_zip_file(r'../lacmta/', 'future')
         if TARGET_SCHEMA == 'metro_api':
-            target_zip_files = get_latest_modified_zip_file(r'../lacmta/', 'current')
+            try:
+                target_zip_files = get_latest_modified_zip_file(r'../lacmta/', 'current-base')
+            except:
+                target_zip_files = get_latest_modified_zip_file(r'../lacmta/', 'current')
     if agency_id == 'lacmta-rail':
         target_zip_files = get_latest_modified_zip_file(r'../lacmta-rail/', 'current')
     extract_zip_file_to_temp_directory(target_zip_files,agency_id)

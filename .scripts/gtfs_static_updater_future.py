@@ -96,7 +96,10 @@ def process_zip_files_for_agency_id(agency_id):
     if agency_id == 'lacmta':
         target_zip_files = get_latest_modified_zip_file(r'../lacmta/', 'future')
     if agency_id == 'lacmta-rail':
-        target_zip_files = get_latest_modified_zip_file(r'../lacmta-rail/', 'current')
+            try:
+                target_zip_files = get_latest_modified_zip_file(r'../lacmta/', 'current-base')
+            except:
+                target_zip_files = get_latest_modified_zip_file(r'../lacmta/', 'current')
     extract_zip_file_to_temp_directory(target_zip_files,agency_id)
 
 def extract_zip_file_to_temp_directory(zip_file,agency_id):
