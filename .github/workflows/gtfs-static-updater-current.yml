@@ -30,7 +30,7 @@ jobs:
         run: |
           cd ./.scripts
           python gtfs_static_validator.py --agency_id "lacmta" --folder_branch "current-base"
-          python gtfs_static_validator.py --agency_id "lacmta-rail" --folder_branch 'current"
+          python gtfs_static_validator.py --agency_id "lacmta-rail" --folder_branch "current"
           cd ..
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
