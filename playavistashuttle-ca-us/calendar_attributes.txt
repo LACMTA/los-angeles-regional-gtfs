@@ -1,5 +1,0 @@
-service_id,service_description
-Su,Year Round (Sunday only)
-FSa,Year Round (FSa)
-Sa,Year Round (Saturday only)
-wkdy,Year Round (Weekday)
