@@ -1,6 +1,8 @@
 # los-angeles-regional-gtfs
 
-Metro is hosting GTFS data on behalf of various regional agencies. Each folder contains the `*.txt` files and a `.zip` with all the files bundled together.  These files were originally put together by Trillium and then transferred to Metro.
+Metro is hosting GTFS data on behalf of various regional agencies. Each folder contains the `*.txt` files and a `.zip` with all the files bundled together.  These files were originally put together by Trillium on behalf of [Cal-ITP](https://calitp.org/) and then transferred to Metro.
+
+**As of September 2023**, Cal-ITP is in the process of working with each of these transit agencies toward the goal of each transit agency maintaining their GTFS data as much as they are able to. As such, some of these feeds in this repository may only be useful for historical reference and only available via the commit history.
 
 Here are the zip file permalinks:
 
@@ -37,7 +39,7 @@ Here are the zip file permalinks:
 
 ## Disclaimer
 
-While we will do our best to ensure the data is kept accurate and up to date, we cannot be held liable for any omissions and inaccuracies.
+LA Metro cannot be held liable for any omissions and inaccuracies.
 
 ## Python Notes
 
