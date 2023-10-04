@@ -157,7 +157,7 @@ def update_gtfs_static_files():
             combined_temp_df = gtfs_static_utils.combine_dataframes(temp_df_bus,temp_df_rail)
             if file == "stop_times":
                 combined_temp_df['rider_usage_code_before_coding'] = combined_temp_df['pickup_type'].astype(str) + combined_temp_df['drop_off_type'].astype(str)
-                combined_temp_df['rider_usage_code'] = combined_temp_df['rider_usage_code_before_coding'].apply(lambda x: '1' if x == '00' else '2' if x == '10' else '3' if x == '01' else '0' if x == '11' else '-1')
+                combined_temp_df['rider_usage_code'] = combined_temp_df['rider_usage_code_before_coding'].apply(lambda x: 1 if x == '00' else 2 if x == '10' else 3 if x == '01' else 0 if x == '11' else -1)
                 combined_temp_df.drop(columns=['rider_usage_code_before_coding'])
                 stop_times_df = combined_temp_df
             if file == "trips":

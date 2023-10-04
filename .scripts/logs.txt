@@ -1,0 +1,12 @@
+2023-10-04 15:44:26 | routes | 0.03 seconds.
+2023-10-04 15:44:26 | trips | 0.18 seconds.
+2023-10-04 15:44:27 | stops | 0.54 seconds.
+2023-10-04 15:44:27 | calendar | 0.02 seconds.
+2023-10-04 15:44:39 | shapes | 11.9 seconds.
+2023-10-04 15:44:43 | stop_times | 3.86 seconds.
+2023-10-04 15:45:42 | routes | 0.01 seconds.
+2023-10-04 15:45:42 | trips | 0.1 seconds.
+2023-10-04 15:45:43 | stops | 0.49 seconds.
+2023-10-04 15:45:43 | calendar | 0.01 seconds.
+2023-10-04 15:45:55 | shapes | 11.63 seconds.
+2023-10-04 15:46:20 | stop_times | 25.35 seconds.
