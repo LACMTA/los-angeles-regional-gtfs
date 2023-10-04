@@ -12,7 +12,7 @@ Here are the zip file permalinks:
 * [Bellflower](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/bellflower-ca-us/bellflower-ca-us.zip) - *updated 2/10/23*
 * [Bell Gardens](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/bellgardens-ca-us/bellgardens-ca-us.zip) - *updated 2/10/23*
 * [Calabasas](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/calabasas-ca-us/calabasas-ca-us.zip)
-* Catalina Flyer
+* ~[Catalina Flyer](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/1df1e2bc6df9db96b600287bf14fe418e10c84a6/catalinaflyer-ca-us/catalinaflyer-ca-us.zip)~ *Cal-ITP is no longer maintaining this feed as it is not provided by a public entity.*
 * [Compton](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/compton-ca-us/compton-ca-us.zip)
 * [Cudahy](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/cudahy-ca-us/cudahy-ca-us.zip)
 * [Downey](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/downey-ca-us/downey-ca-us.zip)

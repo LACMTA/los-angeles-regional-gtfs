@@ -1,2 +1,0 @@
-agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url,tts_agency_name
-1804,https://www.catalinainfo.com/catalina-flyer-schedules-fares.html,en,Catalina Flyer,(949) 673-5245,America/Los_Angeles,https://www.catalinainfo.com/catalina-flyer-schedules-fares.html,
