@@ -156,6 +156,9 @@ def update_gtfs_static_files():
         else:
             combined_temp_df = gtfs_static_utils.combine_dataframes(temp_df_bus,temp_df_rail)
             if file == "stop_times":
+                combined_temp_df['rider_usage_code_before_coding'] = combined_temp_df['pickup_type'].astype(str) + combined_temp_df['drop_off_type'].astype(str)
+                combined_temp_df['rider_usage_code'] = combined_temp_df['rider_usage_code_before_coding'].apply(lambda x: '1' if x == '00' else '2' if x == '10' else '3' if x == '01' else '0' if x == '11' else '-1')
+                combined_temp_df.drop(columns=['rider_usage_code_before_coding'])
                 stop_times_df = combined_temp_df
             if file == "trips":
                 trips_df = combined_temp_df
@@ -251,9 +254,6 @@ def update_stops_seperately(temp_df_bus,temp_df_rail,file):
     temp_df_bus['agency_id'] = 'LACMTA'
     temp_gdf_bus_stops = gpd.GeoDataFrame(temp_df_bus,geometry=gpd.points_from_xy(temp_df_bus.stop_lon, temp_df_bus.stop_lat))
     temp_gdf_bus_stops.set_crs(epsg=4326, inplace=True)
-    temp_df_bus['rider_usage_code_before_coding'] = temp_df_bus['pickup_type'].astype(str) + temp_df_bus['drop_off_type'].astype(str)
-    temp_df_bus['rider_usage_code'] = temp_df_bus['rider_usage_code_before_coding'].apply(lambda x: '1' if x == '00' else '2' if x == '10' else '3' if x == '01' else '0' if x == '11' else '-1')
-    temp_df_bus.drop(columns=['rider_usage_code_before_coding'])
 
     # temp_df_rail['geometry'] = [Point(xy) for xy in zip(temp_df_rail.stop_lon, temp_df_rail.stop_lat)] 
     temp_df_rail['agency_id'] = 'LACMTA_Rail'
@@ -268,9 +268,6 @@ def update_stops_seperately(temp_df_bus,temp_df_rail,file):
     temp_gdf_rail_stops['stop_code'] = temp_gdf_rail_stops['stop_code'].astype('str')
     temp_gdf_rail_stops['parent_station'] = temp_gdf_rail_stops['parent_station'].astype('str')
     temp_gdf_rail_stops['tpis_name'] = temp_gdf_rail_stops['tpis_name'].astype('str')
-    temp_gdf_rail_stops['rider_usage_code_before_coding'] = temp_gdf_rail_stops['pickup_type'].astype(str) + temp_gdf_rail_stops['drop_off_type'].astype(str)
-    temp_gdf_rail_stops['rider_usage_code'] = temp_gdf_rail_stops['rider_usage_code_before_coding'].apply(lambda x: '1' if x == '00' else '2' if x == '10' else '3' if x == '01' else '0' if x == '11' else '-1')
-    temp_gdf_rail_stops.drop(columns=['rider_usage_code_before_coding'])
     if debug == False:
         temp_gdf_rail_stops.to_postgis("stops",engine,schema=TARGET_SCHEMA,if_exists="replace",index=False)
         temp_gdf_bus_stops.to_postgis("stops",engine,schema=TARGET_SCHEMA,if_exists="append",index=False)
