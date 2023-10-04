@@ -1,3 +1,0 @@
-agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off,tts_route_short_name,tts_route_long_name
-1700,BeachShuttle,,Beach Shuttle,,3,https://playavista.com/shared/2017/05/Playa-Vista-Beach-Shuttle-Brochure.pdf?x72063,f67b11,000000,2,60,0,1,1,,
-1700,DailyShuttle,,Daily Shuttle,,3,https://playavista.com/shared/2018/03/playa-vista-daily-shuttle.pdf,f27e1c,000000,3,40,0,1,1,,
