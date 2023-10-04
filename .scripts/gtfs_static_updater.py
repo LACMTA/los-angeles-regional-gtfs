@@ -197,7 +197,7 @@ def update_gtfs_static_files():
         print("******************")
     join_trips_to_stop_times = pd.merge(trips_df, stop_times_df, on='trip_id', how='inner')
     simplified_trips_join_stop_times = join_trips_to_stop_times[['trip_id','route_id','direction_id','shape_id','stop_id', 'stop_sequence','route_code', 'pickup_type', 'drop_off_type']]
-    simplified_trips_join_stop_times_join_to_stops = pd.merge(simplified_trips_join_stop_times, gtfs_stops, on='stop_id', how='inner')
+    simplified_trips_join_stop_times_join_to_stops = pd.merge(simplified_trips_join_stop_times, stops_df, on='stop_id', how='inner')
     simplified_trips_join_stop_times_join_to_stops = simplified_trips_join_stop_times_join_to_stops[['trip_id','route_id','direction_id','shape_id','stop_id', 'stop_sequence','route_code', 'pickup_type', 'drop_off_type', 'stop_name']]
     simplified_trips_join_stop_times_join_to_stops
 
