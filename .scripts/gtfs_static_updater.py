@@ -159,10 +159,10 @@ def update_gtfs_static_files():
             cols = ['pickup_type','drop_off_type']
             combined_temp_df = gtfs_static_utils.combine_dataframes(temp_df_bus,temp_df_rail)
             combined_temp_df['rider_usage_code_before_coding'] = combined_temp_df[cols].apply(lambda row: ''.join(row.values.astype(str)), axis=1)
-            combined_temp_df['rider_usage_code'] = combined_temp_df['rider_usage_code_no_code'].apply(lambda x: 1 if x == '00' else 2 if x == '10' else 3 if x == '01' else 0 if x == '11' else -1)
+            combined_temp_df['rider_usage_code'] = combined_temp_df['rider_usage_code_before_coding'].apply(lambda x: 1 if x == '00' else 2 if x == '10' else 3 if x == '01' else 0 if x == '11' else -1)
             if 'bay_num' not in combined_temp_df.columns:
                 combined_temp_df['bay_num'] = ""
-            combined_temp_df.drop(columns=['rider_usage_code_no_code'])
+            combined_temp_df.drop(columns=['rider_usage_code_before_coding'])
             stop_times_df = combined_temp_df
             if debug == False:
                 gtfs_static_utils.update_dataframe_to_db(combined_temp_df,file,engine,TARGET_SCHEMA)
