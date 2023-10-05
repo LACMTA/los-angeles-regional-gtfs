@@ -1,3 +1,0 @@
-fare_id,route_id,origin_id,destination_id,contains_id
-4438,CatalinaFlyer,3663,3664,
-4438,CatalinaFlyer,3664,3663,

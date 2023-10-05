@@ -1,2 +1,0 @@
-service_id,service_description
-daily,Year Round (All days of week)
