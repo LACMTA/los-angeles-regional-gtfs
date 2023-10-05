@@ -195,17 +195,6 @@ def update_gtfs_static_files():
         total_time_rounded = round(total_time,2)
         print(human_readable_date+" | " + "trips_list" + " | " + str(total_time_rounded) + " seconds.", file=f)
         print("******************")
-    stops_df_temp = stops_df
-    stops_df_temp['stop_id'].astype(str)
-    join_trips_to_stop_times = pd.merge(trips_df, stops_df_temp, on='trip_id', how='inner')
-
-    simplified_trips_join_stop_times = join_trips_to_stop_times[['trip_id','route_id','direction_id','shape_id','stop_id', 'stop_sequence','route_code', 'pickup_type', 'drop_off_type']]
-    simplified_trips_join_stop_times['stop_id'].astype(str)
-
-    simplified_trips_join_stop_times_join_to_stops = pd.merge(simplified_trips_join_stop_times, stops_df_temp, on='stop_id', how='inner')
-    simplified_trips_join_stop_times_join_to_stops = simplified_trips_join_stop_times_join_to_stops[['trip_id','route_id','direction_id','shape_id','stop_id', 'stop_sequence','route_code', 'pickup_type', 'drop_off_type', 'stop_name']]
-    simplified_trips_join_stop_times_join_to_stops
-
     print("Processing route stops...")
     process_start = timeit.default_timer()
     route_stops_geo_data_frame = gpd.GeoDataFrame(stop_times_by_route_df, geometry=stop_times_by_route_df.apply(lambda x: get_lat_long_from_coordinates(x.geojson),axis=1))
