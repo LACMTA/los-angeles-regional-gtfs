@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 from shapely.geometry import Point
 
 cpdef combine_dataframes(temp_df_bus,temp_df_rail):
-    return pd.concat([temp_df_bus, temp_df_rail], axis=1,sort=False)
+    return pd.concat([temp_df_bus, temp_df_rail])
 
 
 cpdef create_list_of_trips(trips,stop_times):
