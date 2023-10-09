@@ -1,8 +1,8 @@
 service_id,date,holiday_name,exception_type
-Sa,20220530,Memorial Day,1
-Sa,20220221,Presidents Day,1
-Sa,20220101,New Years Day,2
-wkdy,20221124,Thanksgiving Day,2
-wkdy,20220905,Labor Day,2
-wkdy,20220530,Memorial Day,2
-wkdy,20220221,Presidents Day,2
+wkdy,20231123,Thanksgiving Day,2
+wkdy,20230529,Memorial Day,2
+wkdy,20230220,President's Day,2
+wkdy,20240101,New Year's Day,2
+wkdy,20241128,Thanksgiving Day,2
+wkdy,20240527,Memorial Day,2
+wkdy,20240219,President's Day,2
