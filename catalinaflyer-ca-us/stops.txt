@@ -1,3 +1,0 @@
-stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,position,direction,wheelchair_boarding,tts_stop_name
-2751240,,,Newport Beach,,33.6028311986186,-117.899246237566,3663,,0,,America/Los_Angeles,,,0,
-2751241,,,Catalina,,33.3447667724262,-118.322060998279,3664,,0,,America/Los_Angeles,,,0,

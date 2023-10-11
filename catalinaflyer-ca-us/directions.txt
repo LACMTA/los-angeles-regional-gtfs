@@ -1,3 +1,0 @@
-route_id,direction_id,direction
-CatalinaFlyer,1,Inbound
-CatalinaFlyer,0,Outbound

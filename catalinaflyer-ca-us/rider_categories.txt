@@ -1,4 +1,0 @@
-rider_category_id,rider_category_description
-2,Senior (60+ years)
-3,Child (3-12 years)
-15,Infant (Under 3 years)
