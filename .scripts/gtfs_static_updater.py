@@ -161,7 +161,7 @@ def update_gtfs_static_files():
             combined_temp_df['rider_usage_code_before_coding'] = combined_temp_df[cols].apply(lambda row: ''.join(row.values.astype(str)), axis=1)
             combined_temp_df['rider_usage_code'] = combined_temp_df['rider_usage_code_before_coding'].apply(lambda x: 1 if x == '00' else 2 if x == '10' else 3 if x == '01' else 0 if x == '11' else -1)
             if 'bay_num' not in combined_temp_df.columns:
-                combined_temp_df['bay_num'] = ""
+                combined_temp_df['bay_num'] = -1
             combined_temp_df.drop(columns=['rider_usage_code_before_coding'])
             stop_times_df = combined_temp_df
             if debug == False:
