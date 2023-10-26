@@ -22,6 +22,7 @@ jobs:
           activate-environment: metro
       - name: 🤐 Extract Zip files! 
         run: |
+          sudo apt-get install python3-distutils
           conda install gdal
           conda upgrade numpy
           conda install -c conda-forge fiona

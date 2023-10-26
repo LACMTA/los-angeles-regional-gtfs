@@ -12,7 +12,6 @@ geopandas==0.13.2
 google==3.0.0
 greenlet==2.0.2
 idna==3.4
-numpy==1.25.1
 packaging==23.1
 pandas==2.0.3
 polyline==2.0.0
