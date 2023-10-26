@@ -17,24 +17,18 @@ jobs:
         name: Checkout the repo
       - uses: actions/setup-python@v2
         name: 🐍 Setup Python environment 
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: base
       - name: 🤐 Extract Zip files! 
         run: |
+          conda install gdal
+          conda upgrade numpy
           cd ./.scripts
+          pip install -r requirements.txt
           python gtfs_static_zip_extractor.py
-      - name: 📝 ️Validate GTFS Static files 
-        run: |
-          cd ./.scripts
-          python gtfs_static_validator.py --agency_id "lacmta" --folder_branch "current-base"
-          python gtfs_static_validator.py --agency_id "lacmta-rail" --folder_branch "current"
-          cd ..
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          git add .
-          git commit -m "[Auto] 📝Validate GTFS Static files - $(date)"
-          git push
       - name: 🚩 Install Python requirements.txt
         run: |
-          pip install -r requirements.txt
       - name: Update Database with latest data 🛢 
         run: |
           cd ./.scripts
