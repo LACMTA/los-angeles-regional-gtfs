@@ -24,8 +24,8 @@ jobs:
         run: |
           conda install gdal
           conda upgrade numpy
-          cd ./.scripts
           pip install -r requirements.txt
+          cd ./.scripts
           python gtfs_static_zip_extractor.py
       - name: 🚩 Install Python requirements.txt
         run: |
