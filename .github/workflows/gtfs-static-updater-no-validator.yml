@@ -19,7 +19,7 @@ jobs:
         name: 🐍 Setup Python environment 
       - uses: conda-incubator/setup-miniconda@v2
         with:
-          activate-environment: base
+          activate-environment: metro
       - name: 🤐 Extract Zip files! 
         run: |
           conda install gdal
