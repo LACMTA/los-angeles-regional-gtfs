@@ -12,13 +12,13 @@ on:
 jobs:
   deploy-to-current-db:
     runs-on: ubuntu-latest
+    
+    container:
+      image: python:3.8
+
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
         name: Checkout the repo
-      - uses: actions/setup-python@v2
-        name: 🐍 Setup Python environment 
-        with:
-          python-version: '3.8'
       - name: 🤐 Extract Zip files! 
         run: |
           cd ./.scripts
