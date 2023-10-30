@@ -1,36 +1,38 @@
-name: 📅Update Future GTFS Static in database 🚈🚌
+name: 📅Update Current GTFS Static in database 🚈🚌
 
 on:
   push:
       paths:
-        - 'lacmta/future/**.zip'
+        - 'lacmta/current-base/**.zip'
         - 'lacmta-rail/current/**.zip'
       branches:
         - main
   workflow_dispatch:
 
 jobs:
-  deploy-to-future-db:
+  deploy-to-current-db:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         name: Checkout the repo
       - uses: actions/setup-python@v2
-        name: 🐍 Setup Python environment
-      - name: 🤐 Extract Zip files!
+        name: 🐍 Setup Python environment 
+        with:
+          python-version: '3.8'
+      - name: 🤐 Extract Zip files! 
         run: |
           cd ./.scripts
           python gtfs_static_zip_extractor.py
-      - name: ☕ Set up JDK 15
+      - name: ☕ Set up JDK 15 
         uses: actions/setup-java@v3
         with:
           java-version: '15'
           distribution: 'adopt'
-      - name: 📝 Validate GTFS Static files
+      - name: 📝 ️Validate GTFS Static files 
         run: |
           cd ./.scripts
-          python gtfs_static_validator.py --agency_id lacmta --folder_branch future
-          python gtfs_static_validator.py --agency_id lacmta-rail --folder_branch current
+          python gtfs_static_validator.py --agency_id "lacmta" --folder_branch "current-base"
+          python gtfs_static_validator.py --agency_id "lacmta-rail" --folder_branch "current"
           cd ..
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
@@ -38,8 +40,8 @@ jobs:
           git commit -m "[Auto] 📝Validate GTFS Static files - $(date)"
           git push
       - name: 🚩 Install Python requirements.txt
-        run: pip install -r requirements.txt
-      - name: Update Database with latest data 🛢
+        run: pip install -r ./.scripts/requirements.txt
+      - name: Update Database with latest data 🛢 
         run: |
           cd ./.scripts
           python gtfs_static_updater.py --db_uri ${{secrets.API_DB_URI}} --db_schema "metro_api_future"

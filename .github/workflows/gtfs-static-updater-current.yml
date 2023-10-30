@@ -17,6 +17,8 @@ jobs:
         name: Checkout the repo
       - uses: actions/setup-python@v2
         name: 🐍 Setup Python environment 
+        with:
+          python-version: '3.8'
       - name: 🤐 Extract Zip files! 
         run: |
           cd ./.scripts
@@ -38,7 +40,7 @@ jobs:
           git commit -m "[Auto] 📝Validate GTFS Static files - $(date)"
           git push
       - name: 🚩 Install Python requirements.txt
-        run: pip install -r requirements.txt
+        run: pip install -r ./.scripts/requirements.txt
       - name: Update Database with latest data 🛢 
         run: |
           cd ./.scripts
