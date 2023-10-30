@@ -11,16 +11,12 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      image: fwilhe2/act-runner:latest
+      image: python:3.8
 
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.8'
     - name: 🤐 Extract Zip files!
       run: |
         cd ./.scripts
