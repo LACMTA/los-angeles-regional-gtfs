@@ -1,0 +1,29 @@
+name: 📅 Nightly GTFS Rail Update
+
+on:
+  schedule:
+    - cron: '0 1 * * *' # Runs every day at 1 AM
+
+jobs:
+  update-gtfs-rail:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the repo
+        uses: actions/checkout@v2
+        with:
+          ref: 'main'
+
+      - name: Download GTFS Rail file
+        run: wget -O lacmta-rail/current/gtfs_rail.zip https://gitlab.com/LACMTA/gtfs_rail/raw/master/gtfs_rail.zip
+
+      - name: Setup git
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
+      - name: Commit and push
+        run: |
+          git add lacmta-rail/current/gtfs_rail.zip
+          git commit -m "[Auto] 📅 Nightly GTFS Rail Update - $(date)"
+          git push origin main

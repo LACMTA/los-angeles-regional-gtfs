@@ -34,11 +34,16 @@ jobs:
           python gtfs_static_validator.py --agency_id "lacmta" --folder_branch "current-base"
           python gtfs_static_validator.py --agency_id "lacmta-rail" --folder_branch "current"
           cd ..
+      - name: Setup git
+        run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
+      - name: Commit and push
+        run: |
           git add .
           git commit -m "[Auto] 📝Validate GTFS Static files - $(date)"
           git push
+        continue-on-error: true
       - name: 🚩 Install Python requirements.txt
         run: pip install -r ./.scripts/requirements.txt
       - name: Update Database with latest data 🛢 
