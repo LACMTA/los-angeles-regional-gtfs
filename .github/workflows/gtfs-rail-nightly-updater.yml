@@ -31,6 +31,7 @@ jobs:
           git add lacmta-rail/current/gtfs_rail.zip
           git commit -m "[Auto] 📅 Nightly GTFS Rail Update - $(date)"
           git push origin main
+        continue-on-error: true
 
       - name: Merge main into dev
         run: |
