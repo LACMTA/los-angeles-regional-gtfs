@@ -12,10 +12,9 @@ on:
 jobs:
   deploy-to-current-db:
     runs-on: ubuntu-latest
-
     container:
-      image: python:3.8
-
+      image: lacmta/geodb-base
+      
     steps:
       - uses: actions/checkout@v2
         name: Checkout the repo

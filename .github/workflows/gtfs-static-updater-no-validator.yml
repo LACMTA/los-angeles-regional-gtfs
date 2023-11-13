@@ -9,9 +9,8 @@ on:
 jobs:
   deploy-to-prod-db:
     runs-on: ubuntu-latest
-
     container:
-      image: python:3.8
+      image: lacmta/geodb-base
 
     steps:
     - name: Checkout code
