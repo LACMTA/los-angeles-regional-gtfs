@@ -1,2 +1,0 @@
-route_id,direction_id,direction
-74460,0,Loop
