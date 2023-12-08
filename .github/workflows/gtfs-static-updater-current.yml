@@ -14,7 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: lacmta/geodb-base
-      
     steps:
       - uses: actions/checkout@v2
         name: Checkout the repo
