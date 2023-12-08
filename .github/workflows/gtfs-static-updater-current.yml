@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-gtfs-rail:
+  update-gtfs-static-in-db:
     runs-on: ubuntu-latest
     container:
       image: lacmta/geodb-base
