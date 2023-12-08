@@ -68,7 +68,6 @@ def get_db():
         yield db
     finally:
         db.close()
-
 def process_zip_files_for_agency_id(agency_id):
     script_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
     target_zip_files = None
