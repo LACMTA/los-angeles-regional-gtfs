@@ -6,7 +6,6 @@ on:
 jobs:
   deploy-to-prod-db:
     runs-on: ubuntu-latest
-
     container:
       image: lacmta/geodb-base
 

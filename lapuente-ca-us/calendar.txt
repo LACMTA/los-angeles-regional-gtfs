@@ -1,4 +1,4 @@
 service_id,service_name,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
-wknd,Year Round Starting 6/1/21 (Weekend),0,0,0,0,0,1,1,20210601,20221231
-Sa,Year Round Starting 6/1/21 (Saturday only),0,0,0,0,0,1,0,20210601,20221231
-wkdy,Year Round Starting 6/1/21 (Weekday),1,1,1,1,1,0,0,20210601,20221231
+wknd,Year Round (Weekend),0,0,0,0,0,1,1,20230101,20241231
+Sa,Year Round (Saturday only),0,0,0,0,0,1,0,20230101,20241231
+wkdy,Year Round (Weekday),1,1,1,1,1,0,0,20230101,20241231
