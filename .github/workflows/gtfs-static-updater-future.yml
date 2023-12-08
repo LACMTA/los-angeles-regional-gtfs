@@ -1,9 +1,9 @@
-name: 📅Update Current GTFS Static in database 🚈🚌
+name: 📅Update Future GTFS Static in database 🚈🚌
 
 on:
   push:
       paths:
-        - 'lacmta/current-base/**.zip'
+        - 'lacmta/future/**.zip'
         - 'lacmta-rail/current/**.zip'
       branches:
         - main
@@ -14,7 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: lacmta/geodb-base
-      
     steps:
       - uses: actions/checkout@v2
         name: Checkout the repo

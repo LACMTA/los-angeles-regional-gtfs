@@ -23,8 +23,7 @@ print(os.listdir())
 
 import pandas as pd
 import json
-# from pathlib import Path
-# from sqlalchemy import create_engine
+import datetime
 import geopandas as gpd
 import geoalchemy2
 from io import StringIO
@@ -37,12 +36,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from shapely.geometry import Point
 
-
 debug = False
 local = False
-# from sqlalchemy.orm import Session,sessionmaker
-# from config import Config
-# from .database_connector import *
 
 list_of_gtfs_static_files = ["routes", "trips", "stops", "calendar", "shapes","stop_times"]
 
@@ -73,11 +68,19 @@ def get_db():
     finally:
         db.close()
 
-
-def get_latest_modified_zip_file(path,folder_branch):
-    target_path = path +"/" + folder_branch
-    if path is None:
-        print('No path provided.')
+def get_latest_modified_zip_file(path, target_schema, agency_id):
+    if target_schema == 'metro_api_future':
+        target_path = path + "/future"
+    elif target_schema == 'metro_api':
+        if agency_id == 'lacmta-rail':
+            target_path = path + "/current"
+        else:
+            target_path = path + "/current-base"
+    else:
+        print('Invalid target_schema provided.')
+        sys.exit(1)
+    if not os.path.exists(target_path):
+        print('No such directory: ' + target_path)
         sys.exit(1)
     try:
         return max([target_path+'/'+f for f in os.listdir(target_path) if f.endswith('.zip')], key=os.path.getmtime)
@@ -85,19 +88,23 @@ def get_latest_modified_zip_file(path,folder_branch):
         print('Error getting latest modified zip file: ' + str(e))
         sys.exit(1)
 
-
-
-
 def process_zip_files_for_agency_id(agency_id):
     target_zip_files = None
     if agency_id is None:
         print('No agency_id provided.')
         sys.exit(1)
     if agency_id == 'lacmta':
-        target_zip_files = get_latest_modified_zip_file(r'../lacmta/', 'future')
+        target_zip_files = get_latest_modified_zip_file(r'../lacmta/', TARGET_SCHEMA, agency_id)
+        replace_and_archive_file(target_zip_files, r'current gtfs-bus/current-base/gtfs_bus.zip', r'current gtfs-bus/current-base/archive')
     if agency_id == 'lacmta-rail':
-        target_zip_files = get_latest_modified_zip_file(r'../lacmta-rail/', 'current')
+        target_zip_files = get_latest_modified_zip_file(r'../lacmta-rail/', 'current', agency_id)
     extract_zip_file_to_temp_directory(target_zip_files,agency_id)
+
+def replace_and_archive_file(source_file, target_file, archive_dir):
+    if os.path.exists(target_file):
+        os.remove(target_file)
+    shutil.copy2(source_file, target_file)
+    shutil.copy2(source_file, archive_dir)
 
 def extract_zip_file_to_temp_directory(zip_file,agency_id):
     try:
@@ -130,19 +137,8 @@ def update_gtfs_static_files():
         temp_df_bus['agency_id'] = 'LACMTA'
         temp_df_rail = pd.read_csv(rail_file_path)
         temp_df_rail['agency_id'] = 'LACMTA_Rail'
-
-
-
-
         if file == "stops":
-            # pass
             stops_df = update_stops_seperately(temp_df_bus,temp_df_rail,file)
-            # temp_gdf_bus = gpd.GeoDataFrame(temp_df_bus, geometry=gpd.points_from_xy(temp_df_bus.stop_lon, temp_df_bus.stop_lat))
-            # temp_gdf_rail = gpd.GeoDataFrame(temp_df_rail, geometry=gpd.points_from_xy(temp_df_rail.stop_lon, temp_df_rail.stop_lat))
-            # stops_combined_gdf = gpd.GeoDataFrame(pd.concat([temp_gdf_bus, temp_gdf_rail], ignore_index=True),geometry='geometry')
-            # stops_combined_gdf.crs = 'EPSG:4326'
-            # stops_combined_gdf.to_postgis(file,engine,schema=TARGET_SCHEMA,if_exists="replace",index=False)
-            # stops_df = stops_combined_gdf
         elif file == "shapes":
             shapes_combined_gdf = create_gdf_for_shapes(temp_df_bus,temp_df_rail)
             if debug == False:
@@ -215,33 +211,22 @@ def create_gdf_for_shapes(temp_df_bus,temp_df_rail):
     return shapes_combined_gdf
 
 def get_stop_times_from_stop_id(this_row):
-    # print('Getting stop times for stop id')
     trips_by_route_df = trips_df.loc[trips_df['route_id'] == this_row.route_id]
-    
     stop_times_by_trip_df = stop_times_df[stop_times_df['trip_id'].isin(trips_by_route_df['trip_id'])]
 
     # get the stop times for this stop id
     this_stops_df = stop_times_by_trip_df.loc[stop_times_by_trip_df['stop_id'] == this_row.stop_id]
     this_stops_df = this_stops_df.sort_values(by=['departure_time'],ascending=True)
-    # simplified_this_stops_df = simplified_this_stops_df.to_json(orient='records')
-
     departure_times_array = this_stops_df['departure_time'].values.tolist()
-    # to check:
-    # print(simplified_this_stops_df)
-
-    # combined_stop_times_array.append(simplified_this_stops_df)
     return departure_times_array
-import json
-import datetime
+
 
 
 def update_stops_seperately(temp_df_bus,temp_df_rail,file):
-    # temp_df_bus['geometry'] = [Point(xy) for xy in zip(temp_df_bus.stop_lon, temp_df_bus.stop_lat)] 
     temp_df_bus['agency_id'] = 'LACMTA'
     temp_gdf_bus_stops = gpd.GeoDataFrame(temp_df_bus,geometry=gpd.points_from_xy(temp_df_bus.stop_lon, temp_df_bus.stop_lat))
     temp_gdf_bus_stops.set_crs(epsg=4326, inplace=True)
 
-    # temp_df_rail['geometry'] = [Point(xy) for xy in zip(temp_df_rail.stop_lon, temp_df_rail.stop_lat)] 
     temp_df_rail['agency_id'] = 'LACMTA_Rail'
     temp_gdf_bus_stops['stop_id'] = temp_gdf_bus_stops['stop_id'].astype('str')
     temp_gdf_bus_stops['stop_code'] = temp_gdf_bus_stops['stop_code'].astype('str')
@@ -273,7 +258,6 @@ def get_day_type_from_service_id(row):
         return 'sunday'
 
 def get_day_type_from_trip_id(trip_id):
-    # print('Getting day type from trip id')
    this_service_id = trips_df.loc[trips_df['trip_id'] == trip_id, 'service_id'].iloc[0]
    return get_day_type_from_service_id(this_service_id)
 
@@ -291,12 +275,8 @@ def encode_lat_lon_to_geojson(lat,lon):
 
 
 def get_stops_data_based_on_stop_id(stop_id):
-    # print('Getting stops data based on stop id')
     this_stops_df = stops_df.loc[stops_df['stop_id'] == str(stop_id)]
-    # print(this_stops_df[['stop_name','stop_lat','stop_lon']])
-    # new_object = this_stops_df[['stop_name','stop_lat','stop_lon']].to_dict('records')
     new_object = encode_lat_lon_to_geojson(this_stops_df['stop_lat'].values[0],this_stops_df['stop_lon'].values[0])
-    # print('stop_id',stop_id)
     return new_object
 
 
