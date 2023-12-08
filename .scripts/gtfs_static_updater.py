@@ -77,7 +77,7 @@ def process_zip_files_for_agency_id(agency_id):
     target_zip_files = None
     if agency_id is None:
         print('No agency_id provided.')
-        sys.exit(1)
+        sys.exit(0)
     if agency_id == 'lacmta':
         target_zip_files = get_latest_modified_zip_file(root_dir / 'lacmta/', 'metro_api', agency_id)
         replace_and_archive_file(target_zip_files, root_dir / 'lacmta/current-base/gtfs_bus.zip', root_dir / 'lacmta/current-base/archive')
