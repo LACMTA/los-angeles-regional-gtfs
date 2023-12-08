@@ -31,6 +31,7 @@ import zipfile
 import timeit
 import shutil
 
+from pathlib import Path
 from sqlalchemy import create_engine,MetaData
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -82,7 +83,6 @@ def process_zip_files_for_agency_id(agency_id):
         replace_and_archive_file(target_zip_files, root_dir / 'lacmta/current-base/gtfs_bus.zip', root_dir / 'lacmta/current-base/archive')
     if agency_id == 'lacmta-rail':
         target_zip_files = get_latest_modified_zip_file(root_dir / 'lacmta-rail/', 'metro_api', agency_id)
-
     extract_zip_file_to_temp_directory(agency_id)
 
 
