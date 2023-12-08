@@ -1,4 +1,4 @@
-name: 📅Update Current GTFS Static in database 🚈🚌
+name: 📅Update Current GTFS Static in database with no validator🚈🚌
 
 on:
   workflow_dispatch:
