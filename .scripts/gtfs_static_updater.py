@@ -85,7 +85,9 @@ def process_zip_files_for_agency_id(agency_id):
 
     extract_zip_file_to_temp_directory(agency_id)
 
+
 def get_latest_modified_zip_file(path, target_schema, agency_id):
+    
     print(path)
     print(target_schema)
     if target_schema == 'metro_api_future':
@@ -102,7 +104,12 @@ def get_latest_modified_zip_file(path, target_schema, agency_id):
         print('No such directory: ' + target_path)
         sys.exit(1)
     try:
-        return max([os.path.join(target_path, f) for f in os.listdir(target_path) if f.endswith('.zip') and f != 'gtfs_bus.zip'], key=os.path.getmtime)
+        zip_files = [os.path.join(target_path, f) for f in os.listdir(target_path) if f.endswith('.zip') and f != 'gtfs_bus.zip']
+        if zip_files:
+            return max(zip_files, key=os.path.getmtime)
+        else:
+            print("No zip files to process.")
+            sys.exit(0)  # Exit the script with a success status
     except Exception as e:
         print('Error getting latest modified zip file: ' + str(e))
         sys.exit(1)
