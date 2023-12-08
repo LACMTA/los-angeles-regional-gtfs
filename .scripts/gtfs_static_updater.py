@@ -31,6 +31,7 @@ import zipfile
 import timeit
 import shutil
 
+from pathlib import Path
 from sqlalchemy import create_engine,MetaData
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
@@ -68,17 +69,19 @@ def get_db():
         yield db
     finally:
         db.close()
+
 def process_zip_files_for_agency_id(agency_id):
-    script_dir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+    script_dir = Path(__file__).resolve().parent
+    root_dir = script_dir.parent
     target_zip_files = None
     if agency_id is None:
         print('No agency_id provided.')
         sys.exit(1)
     if agency_id == 'lacmta':
-        target_zip_files = get_latest_modified_zip_file(os.path.join(script_dir, 'lacmta/'), 'metro_api', agency_id)
-        replace_and_archive_file(target_zip_files, os.path.join(script_dir, 'lacmta/current-base/gtfs_bus.zip'), os.path.join(script_dir, 'lacmta/current-base/archive'))
+        target_zip_files = get_latest_modified_zip_file(root_dir / 'lacmta/', 'metro_api', agency_id)
+        replace_and_archive_file(target_zip_files, root_dir / 'lacmta/current-base/gtfs_bus.zip', root_dir / 'lacmta/current-base/archive')
     if agency_id == 'lacmta-rail':
-        target_zip_files = get_latest_modified_zip_file(os.path.join(script_dir, 'lacmta-rail/'), 'metro_api', agency_id)
+        target_zip_files = get_latest_modified_zip_file(root_dir / 'lacmta-rail/', 'metro_api', agency_id)
     extract_zip_file_to_temp_directory(target_zip_files,agency_id)
 
 def get_latest_modified_zip_file(path, target_schema, agency_id):
