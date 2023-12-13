@@ -1,4 +1,0 @@
-service_id,service_description
-c_67552_b_78015_d_63,Year-Round Service (No Sunday)
-c_67552_b_78015_d_32,Year-Round Service (Saturday only)
-c_67552_b_78015_d_31,Year-Round Service (Weekday)

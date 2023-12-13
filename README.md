@@ -25,7 +25,7 @@ Here are the zip file permalinks:
 * [La Campana (Bell)](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/lacampana-ca-us/lacampana-ca-us.zip)
 * La Puente
 * Lynwood
-* [Maywood](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/maywood-ca-us/maywood-ca-us.zip)
+* ~[Maywood](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/ba95a4550482dd26b564f6e6f66c0bf0da8f747e/maywood-ca-us/maywood-ca-us.zip)~ - This feed is now published by Cal-ITP. [GTFS zip file](https://gtfs.calitp.org/production/MaywoodGTFS.zip)
 * ~[Montebello](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/montebello-ca-us/montebello-ca-us.zip) - This feed is most likely out of date. Montebello currently publishes their feed to Google Maps through Avail.~  *Removed 3/2/2022*
   * Montebello is publishing their GTFS data through their vendor (Avail). Service changes at least 2-3 times a year.
   <br>[GTFS zip file](https://mbl.rideralerts.com/infopoint/gtfs-zip.ashx)
