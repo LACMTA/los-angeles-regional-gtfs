@@ -226,6 +226,47 @@ def update_gtfs_static_files():
         total_time_rounded = round(total_time,2)
         print(human_readable_date+" | " + "trips_list" + " | " + str(total_time_rounded) + " seconds.", file=f)
         print("******************")
+    print("Processing unique shape stop times...")
+    process_start = timeit.default_timer()
+
+    # Perform the joins
+    df = pd.merge(stop_times_df, trips_df, on='trip_id')
+    df = pd.merge(df, route_stops_geo_data_frame, on='route_id')
+    df = pd.merge(df, shapes_combined_gdf, on='shape_id')
+
+    # Get unique route_codes
+    unique_route_codes = df['route_code'].unique()
+
+    # Create an empty DataFrame to store the results
+    result_df = pd.DataFrame()
+
+    # Process each unique route_code
+    for route_code in unique_route_codes:
+        df_route_code = df[df['route_code'] == route_code]
+
+        # Get unique direction_ids for the current route_code
+        unique_direction_ids = df_route_code['direction_id'].unique()
+
+        # Process each unique direction_id
+        for direction_id in unique_direction_ids:
+            df_route = df_route_code[df_route_code['direction_id'] == direction_id]
+
+            # Sort the DataFrame
+            df_route = df_route.sort_values(['service_id', 'trip_id', 'stop_sequence'])
+
+            # Append the sorted DataFrame to the result DataFrame
+            result_df = result_df.append(df_route)
+
+    # Write the result DataFrame to a new table in the database
+    if debug == False:
+        result_df.to_sql('unique_shape_stop_times', engine, index=False, if_exists='replace', schema=TARGET_SCHEMA)
+    process_end = timeit.default_timer()
+    with open('../logs.txt', 'a+') as f:
+        human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        total_time = process_end - process_start
+        total_time_rounded = round(total_time,2)
+        print(human_readable_date+" | " + "unique_shape_stop_times" + " | " + str(total_time_rounded) + " seconds.", file=f)
+    print("Done processing unique shape stop times.")
     print("Processing route stops...")
     process_start = timeit.default_timer()
     route_stops_geo_data_frame = gpd.GeoDataFrame(stop_times_by_route_df, geometry=stop_times_by_route_df.apply(lambda x: get_lat_long_from_coordinates(x.geojson),axis=1))
