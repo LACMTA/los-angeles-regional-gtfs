@@ -35,8 +35,7 @@ from pathlib import Path
 from sqlalchemy import create_engine,MetaData
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
-from shapely.geometry import Point
-from pathlib import Path
+from shapely.geometry import Point, LineString
 
 debug = False
 local = False
@@ -226,7 +225,44 @@ def update_gtfs_static_files():
         total_time_rounded = round(total_time,2)
         print(human_readable_date+" | " + "trips_list" + " | " + str(total_time_rounded) + " seconds.", file=f)
         print("******************")
-    print("Processing unique shape stop times...")
+    print("Processing trip shapes...")
+    process_start = timeit.default_timer()
+    # Assuming shapes_df is a GeoDataFrame with the same structure as metro_api.shapes
+    shapes_df['geometry'] = shapes_df['geometry'].apply(LineString)
+
+    # Group by shape_id and create a LineString for each group
+    shapes_df = shapes_df.groupby('shape_id')['geometry'].apply(lambda x: LineString(x.tolist())).reset_index()
+
+    # Merge shapes_df with trips_df
+    trips_df = pd.merge(trips_df, shapes_df, on='shape_id', how='left')
+
+    # Create a GeoDataFrame
+    trip_shapes_gdf = gpd.GeoDataFrame(trips_df, geometry='geometry')
+
+    # Join trips_df with shapes_combined_gdf on shape_id
+    joined_df = pd.merge(trips_df, shapes_combined_gdf, on='shape_id')
+
+    # Use direction_id from the joined_df to populate the direction_id in the trip_shapes_gdf and trip_directions
+    trip_shapes_gdf = pd.merge(trip_shapes_gdf, joined_df[['shape_id', 'direction_id']], on='shape_id', how='left')
+    trip_directions = pd.merge(trip_directions, joined_df[['shape_id', 'direction_id']], on='shape_id', how='left')
+
+    # Now trip_shapes_gdf and trip_directions should have the direction_id column populated
+    if debug == False:
+        trip_shapes_gdf.to_postgis('trip_shapes', engine, index=False, if_exists='replace', schema=TARGET_SCHEMA)
+        trip_directions.to_sql('trip_directions', engine, index=False, if_exists='replace', schema=TARGET_SCHEMA)
+
+    with open('../logs.txt', 'a+') as f:
+        human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        total_time = process_end - process_start
+        total_time_rounded = round(total_time,2)
+        print(human_readable_date+" | " + "trip shapes and trip directions" + " | " + str(total_time_rounded) + " seconds.", file=f)
+        print("Done processing trip shapes.")
+
+    print("Processing trip_shape_stops_df ...")
+    trip_shape_stops_df = stop_times_df.groupby(['trip_id', 'shape_id'])['stop_id'].apply(list).reset_index()
+    if debug == False:
+        trip_shape_stops_df.to_sql('trip_shape_stops', engine, index=False, if_exists='replace', schema=TARGET_SCHEMA)
+    
     process_start = timeit.default_timer()
 
     # Perform the joins
@@ -267,6 +303,29 @@ def update_gtfs_static_files():
         total_time_rounded = round(total_time,2)
         print(human_readable_date+" | " + "unique_shape_stop_times" + " | " + str(total_time_rounded) + " seconds.", file=f)
     print("Done processing unique shape stop times.")
+
+    # Assuming stop_times_df is your DataFrame
+    max_stop_sequence_df = stop_times_df.groupby('trip_id')['stop_sequence'].max().reset_index()
+
+    # Rename the column to 'max_stop_sequence'
+    max_stop_sequence_df.rename(columns={'stop_sequence': 'max_stop_sequence'}, inplace=True)
+
+    # Assuming max_stop_sequence_df and trips_df are GeoDataFrames with 'trip_shape' as a geometry column
+    df = pd.merge(max_stop_sequence_df, trips_df, on='trip_id')
+
+    df_max_stop_sequence = df.loc[df.groupby(['route_id', 'direction_id'])['max_stop_sequence'].idxmax()]
+    df_grouped = df_max_stop_sequence.groupby(['route_id', 'direction_id'])['trip_shape'].first().reset_index()
+
+    df_grouped['trip_shape'] = df_grouped.apply(lambda row: 'shape_direction_0' if row['direction_id'] == 0 else 'shape_direction_1', axis=1)
+
+    route_overview = gpd.read_postgis('route_overview', engine, geom_col='geometry')
+    route_overview_updated = route_overview.merge(df_grouped, on='route_id', how='left')
+
+    # Make sure to replace 'your_sql_engine' with your actual SQL engine
+    if debug == False:
+        # save to database
+        route_overview_updated.to_postgis('route_overview', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
+
     print("Processing route stops...")
     process_start = timeit.default_timer()
     route_stops_geo_data_frame = gpd.GeoDataFrame(stop_times_by_route_df, geometry=stop_times_by_route_df.apply(lambda x: get_lat_long_from_coordinates(x.geojson),axis=1))
