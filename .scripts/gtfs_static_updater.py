@@ -227,14 +227,11 @@ def update_gtfs_static_files():
         print("******************")
     print("Processing trip shapes...")
     process_start = timeit.default_timer()
-    # Ensure each geometry is a list of points
-    shapes_combined_gdf['geometry'] = shapes_combined_gdf['geometry'].apply(lambda x: [x] if type(x) == Point else x)
-
-    # Now convert to LineString
-    shapes_combined_gdf['geometry'] = shapes_combined_gdf['geometry'].apply(LineString)
     # Group by shape_id and create a LineString for each group
-    shapes_combined_gdf = shapes_combined_gdf.groupby('shape_id')['geometry'].apply(lambda x: LineString(x.tolist())).reset_index()
+    shapes_combined_gdf = shapes_combined_gdf.groupby('shape_id').apply(lambda df: LineString(df.geometry.tolist())).reset_index()
 
+    # Rename the 0 column to geometry
+    shapes_combined_gdf.rename(columns={0: 'geometry'}, inplace=True)
     # Merge shapes_combined_gdf with trips_df
     trips_df = pd.merge(trips_df, shapes_combined_gdf, on='shape_id', how='left')
 
