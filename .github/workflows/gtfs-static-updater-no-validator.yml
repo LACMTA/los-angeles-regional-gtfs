@@ -6,6 +6,7 @@ on:
 jobs:
   deploy-to-prod-db:
     runs-on: ubuntu-latest
+    timeout-minutes: 300  # Set timeout to 2 hours
     container:
       image: lacmta/geodb-base
 
