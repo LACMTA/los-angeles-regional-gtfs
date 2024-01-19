@@ -267,8 +267,14 @@ def update_gtfs_static_files():
     
     process_start = timeit.default_timer()
 
-    # Perform the joins
-    df = pd.merge(stop_times_df, trips_df, on='trip_id')
+    # Assuming stop_times_df is your DataFrame
+    max_stop_sequence_df = stop_times_df.groupby('trip_id')['stop_sequence'].max().reset_index()
+
+    # Rename the column to 'max_stop_sequence'
+    max_stop_sequence_df.rename(columns={'stop_sequence': 'max_stop_sequence'}, inplace=True)
+
+    # Perform the joins using max_stop_sequence_df instead of stop_times_df
+    df = pd.merge(max_stop_sequence_df, trips_df, on='trip_id')
     df = pd.merge(df, route_stops_geo_data_frame, on='route_id')
     df = pd.merge(df, shapes_combined_gdf, on='shape_id')
 
@@ -290,7 +296,7 @@ def update_gtfs_static_files():
             df_route = df_route_code[df_route_code['direction_id'] == direction_id]
 
             # Sort the DataFrame
-            df_route = df_route.sort_values(['service_id', 'trip_id', 'stop_sequence'])
+            df_route = df_route.sort_values(['service_id', 'trip_id', 'max_stop_sequence'])
 
             # Append the sorted DataFrame to the result DataFrame
             result_df = result_df.append(df_route)
@@ -305,15 +311,6 @@ def update_gtfs_static_files():
         total_time_rounded = round(total_time,2)
         print(human_readable_date+" | " + "unique_shape_stop_times" + " | " + str(total_time_rounded) + " seconds.", file=f)
     print("Done processing unique shape stop times.")
-
-    # Assuming stop_times_df is your DataFrame
-    max_stop_sequence_df = stop_times_df.groupby('trip_id')['stop_sequence'].max().reset_index()
-
-    # Rename the column to 'max_stop_sequence'
-    max_stop_sequence_df.rename(columns={'stop_sequence': 'max_stop_sequence'}, inplace=True)
-
-    # Assuming max_stop_sequence_df and trips_df are GeoDataFrames with 'trip_shape' as a geometry column
-    df = pd.merge(max_stop_sequence_df, trips_df, on='trip_id')
 
     df_max_stop_sequence = df.loc[df.groupby(['route_id', 'direction_id'])['max_stop_sequence'].idxmax()]
     df_grouped = df_max_stop_sequence.groupby(['route_id', 'direction_id'])['trip_shape'].first().reset_index()
