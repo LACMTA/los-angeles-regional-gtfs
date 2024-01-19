@@ -240,7 +240,7 @@ def update_gtfs_static_files():
 
     # Join trips_df with shapes_combined_gdf on shape_id
     joined_df = pd.merge(trips_df, shapes_combined_gdf, on='shape_id')
-
+    trip_directions = joined_df[['trip_id', 'shape_id', 'direction_id']].copy()
     # Use direction_id from the joined_df to populate the direction_id in the trip_shapes_gdf and trip_directions
     trip_shapes_gdf = pd.merge(trip_shapes_gdf, joined_df[['shape_id', 'direction_id']], on='shape_id', how='left')
     trip_directions = pd.merge(trip_directions, joined_df[['shape_id', 'direction_id']], on='shape_id', how='left')
