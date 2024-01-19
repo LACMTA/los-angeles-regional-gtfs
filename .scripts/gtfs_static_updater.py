@@ -1,18 +1,3 @@
-try:
-    import gtfs_static_utils as gtfs_static_utils
-except ModuleNotFoundError:
-    # No Cython module found, compiling now.
-    # This is another method to compile Cython programs from within a snippet
-    from distutils.core import setup
-    from Cython.Build import cythonize
-
-    setup(
-        ext_modules= cythonize("gtfs_static_utils.pyx"),
-        # build_dir= "build",
-        script_args= ['build_ext', "--inplace"]
-    )
-    import gtfs_static_utils as gtfs_static_utils
-
 import sys, argparse
 
 # from calendar import calendar
@@ -68,6 +53,22 @@ def get_db():
         yield db
     finally:
         db.close()
+
+
+def combine_dataframes(temp_df_bus,temp_df_rail):
+    return pd.concat([temp_df_bus, temp_df_rail])
+
+def create_list_of_trips(trips,stop_times):
+    print('Creating list of trips')
+    trips_list_df = stop_times.groupby('trip_id')['stop_sequence'].max().sort_values(ascending=False).reset_index()
+    trips_list_df.set_index(['trip_id','stop_sequence'], inplace=True)
+    stop_times.set_index(['trip_id','stop_sequence'], inplace=True)
+    trips_list_df = trips_list_df.join(stop_times[['stop_id','route_code']])
+    return trips_list_df
+
+def update_dataframe_to_db(combined_temp_df,target_table_name,engine,target_schema):
+    print('Updating dataframe to db')
+    combined_temp_df.to_sql(target_table_name,engine,index=False,if_exists="replace",schema=target_schema, method='direct')
 
 
 def process_zip_files_for_agency_id(agency_id):
@@ -177,7 +178,7 @@ def update_gtfs_static_files():
             temp_df_rail['trip_id'] = temp_df_rail['trip_id'].astype(str)
             temp_df_bus['trip_id'] = temp_df_bus['trip_id'].astype(str)
             cols = ['pickup_type','drop_off_type']
-            combined_temp_df = gtfs_static_utils.combine_dataframes(temp_df_bus,temp_df_rail)
+            combined_temp_df = combine_dataframes(temp_df_bus,temp_df_rail)
             combined_temp_df['rider_usage_code_before_coding'] = combined_temp_df[cols].apply(lambda row: ''.join(row.values.astype(str)), axis=1)
             combined_temp_df['rider_usage_code'] = combined_temp_df['rider_usage_code_before_coding'].apply(lambda x: 1 if x == '00' else 2 if x == '10' else 3 if x == '01' else 0 if x == '11' else -1)
             if 'bay_num' not in combined_temp_df.columns:
@@ -185,10 +186,10 @@ def update_gtfs_static_files():
             combined_temp_df.drop(columns=['rider_usage_code_before_coding'])
             stop_times_df = combined_temp_df
             if debug == False:
-                gtfs_static_utils.update_dataframe_to_db(combined_temp_df,file,engine,TARGET_SCHEMA)
+                update_dataframe_to_db(combined_temp_df,file,engine,TARGET_SCHEMA)
 
         else:
-            combined_temp_df = gtfs_static_utils.combine_dataframes(temp_df_bus,temp_df_rail)
+            combined_temp_df = combine_dataframes(temp_df_bus,temp_df_rail)
 
             if file == "trips":
                 trips_df = combined_temp_df
@@ -197,7 +198,7 @@ def update_gtfs_static_files():
             if file == "calendar":
                 calendar_df = combined_temp_df
             if debug == False:
-                gtfs_static_utils.update_dataframe_to_db(combined_temp_df,file,engine,TARGET_SCHEMA)
+                update_dataframe_to_db(combined_temp_df,file,engine,TARGET_SCHEMA)
                 # combined_temp_df.to_sql(file,engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
         process_end = timeit.default_timer()
         
@@ -209,7 +210,7 @@ def update_gtfs_static_files():
             print("******************")
     print("Processing trip list")
     process_start = timeit.default_timer()
-    trips_list_df = gtfs_static_utils.create_list_of_trips(trips_df,stop_times_df)
+    trips_list_df = create_list_of_trips(trips_df,stop_times_df)
     summarized_trips_df = trips_df[["route_id","trip_id","direction_id","service_id","agency_id"]]
     summarized_trips_df['day_type'] = summarized_trips_df['service_id'].map(get_day_type_from_service_id)
     trips_list_df = trips_list_df.merge(summarized_trips_df, on='trip_id').drop_duplicates(subset=['route_id','day_type','direction_id'])
@@ -315,7 +316,15 @@ def update_gtfs_static_files():
     df_max_stop_sequence = df.loc[df.groupby(['route_id', 'direction_id'])['max_stop_sequence'].idxmax()]
     df_grouped = df_max_stop_sequence.groupby(['route_id', 'direction_id'])['trip_shape'].first().reset_index()
 
-    df_grouped['trip_shape'] = df_grouped.apply(lambda row: 'shape_direction_0' if row['direction_id'] == 0 else 'shape_direction_1', axis=1)
+    # Here we convert the 'trip_shape' to a LineString geometry
+    df_grouped['trip_shape'] = df_grouped['trip_shape'].apply(LineString)
+
+    # Create a new GeoDataFrame
+    df_grouped = gpd.GeoDataFrame(df_grouped, geometry='trip_shape')
+
+    # Create new geometry fields 'shape_direction_0' and 'shape_direction_1' based on the 'direction_id'
+    df_grouped['shape_direction_0'] = df_grouped.apply(lambda row: row['trip_shape'] if row['direction_id'] == 0 else None, axis=1)
+    df_grouped['shape_direction_1'] = df_grouped.apply(lambda row: row['trip_shape'] if row['direction_id'] == 1 else None, axis=1)
 
     route_overview = gpd.read_postgis('route_overview', engine, geom_col='geometry')
     route_overview_updated = route_overview.merge(df_grouped, on='route_id', how='left')
