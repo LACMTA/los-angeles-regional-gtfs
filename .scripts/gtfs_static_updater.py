@@ -227,9 +227,11 @@ def update_gtfs_static_files():
         print("******************")
     print("Processing trip shapes...")
     process_start = timeit.default_timer()
-    # Assuming shapes_df is a GeoDataFrame with the same structure as metro_api.shapes
-    shapes_combined_gdf['geometry'] = shapes_combined_gdf['geometry'].apply(LineString)
+    # Ensure each geometry is a list of points
+    shapes_combined_gdf['geometry'] = shapes_combined_gdf['geometry'].apply(lambda x: [x] if type(x) == Point else x)
 
+    # Now convert to LineString
+    shapes_combined_gdf['geometry'] = shapes_combined_gdf['geometry'].apply(LineString)
     # Group by shape_id and create a LineString for each group
     shapes_combined_gdf = shapes_combined_gdf.groupby('shape_id')['geometry'].apply(lambda x: LineString(x.tolist())).reset_index()
 
