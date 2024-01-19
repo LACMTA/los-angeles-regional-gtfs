@@ -215,7 +215,7 @@ def update_gtfs_static_files():
     summarized_trips_df['day_type'] = summarized_trips_df['service_id'].map(get_day_type_from_service_id)
     trips_list_df = trips_list_df.merge(summarized_trips_df, on='trip_id').drop_duplicates(subset=['route_id','day_type','direction_id'])
 
-    trips_list_df.apply(lambda row: get_stop_times_for_trip_id(row), axis=1)
+    trips_list_df.apply(lambda row: get_stop_times_for_trip_id(row,stop_times_df), axis=1)
     stop_times_by_route_df = pd.concat(df_to_combine)
     stop_times_by_route_df['departure_times'] = stop_times_by_route_df.apply(lambda row: get_stop_times_from_stop_id(row),axis=1)
     stop_times_by_route_df['route_code'].fillna(stop_times_by_route_df['route_id'], inplace=True)
@@ -429,7 +429,7 @@ def get_stops_data_based_on_stop_id(stop_id):
     return new_object
 
 
-def get_stop_times_for_trip_id(this_row):
+def get_stop_times_for_trip_id(this_row, stop_times_df):
     this_trips_df = stop_times_df.loc[stop_times_df['trip_id'] == this_row.trip_id]
     this_trips_df['route_id'] = this_row.route_id
     this_trips_df['direction_id'] = this_row.direction_id
