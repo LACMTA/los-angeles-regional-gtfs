@@ -68,7 +68,7 @@ def create_list_of_trips(trips,stop_times):
 
 def update_dataframe_to_db(combined_temp_df,target_table_name,engine,target_schema):
     print('Updating dataframe to db')
-    combined_temp_df.to_sql(target_table_name,engine,index=False,if_exists="replace",schema=target_schema, method='direct')
+    combined_temp_df.to_sql(target_table_name,engine,index=False,if_exists="replace",schema=target_schema)
 
 
 def process_zip_files_for_agency_id(agency_id):
