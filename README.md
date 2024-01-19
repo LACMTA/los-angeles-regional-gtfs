@@ -7,8 +7,12 @@ Metro is hosting GTFS data on behalf of various regional agencies. Each folder c
 Here are the zip file permalinks:
 
 * [Alhambra](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/alhambra-ca-us/alhambra-ca-us.zip) - *updated 2/10/23*
-* [Arcadia](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/arcadia-ca-us/arcadia-ca-us.zip) - *updated 2/10/23*
-  * Arcadia's app vendor, Passio, generates a GTFS but it does not pass the MobilityData validator.
+* ~[Arcadia](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/arcadia-ca-us/arcadia-ca-us.zip)~ *removed 1/12/24*
+  * Arcadia's app vendor, Passio, generates GTFS and GTFS-RT
+    <br />[GTFS Static Feed](https://passio3.com/ArcadiaCity/passioTransit/gtfs/google_transit.zip)
+    <br />[GTFS-RT Service Alerts](https://passio3.com/ArcadiaCity/passioTransit/gtfs/realtime/serviceAlerts)
+    <br />[GTFS-RT Trip Updates](https://passio3.com/ArcadiaCity/passioTransit/gtfs/realtime/tripUpdates)
+    <br />[GTFS-RT Vehicle Positions](https://passio3.com/ArcadiaCity/passioTransit/gtfs/realtime/vehiclePositions)
 * [Artesia](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/artesia-ca-us/artesia-ca-us.zip) - *updated 2/10/23*
 * [Baldwin Park](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/baldwinpark-ca-us/baldwinpark-ca-us.zip/) - *updated 2/10/23*
 * [Bellflower](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/bellflower-ca-us/bellflower-ca-us.zip) - *updated 2/10/23*
