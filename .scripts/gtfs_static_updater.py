@@ -242,6 +242,44 @@ def update_gtfs_static_files():
         total_time_rounded = round(total_time,2)
         print(human_readable_date+" | " + "trips_list" + " | " + str(total_time_rounded) + " seconds.", file=f)
         print("******************")
+    print("Processing route overview...")
+    # Load route_overview table from the database into a DataFrame
+    route_overview = pd.read_sql_table('route_overview', engine, schema=TARGET_SCHEMA)
+
+    # Filter trips_df for direction_id == 0 and direction_id == 1
+    trips_direction_0 = trips_df[trips_df['direction_id'] == 0]
+    trips_direction_1 = trips_df[trips_df['direction_id'] == 1]
+
+    # Group by route_code and select one trip_shape for each group
+    shape_direction_0 = trips_direction_0.groupby('route_code')['trip_shape'].first().reset_index()
+    shape_direction_1 = trips_direction_1.groupby('route_code')['trip_shape'].first().reset_index()
+
+    # Rename the trip_shape columns
+    shape_direction_0.rename(columns={'trip_shape': 'shape_direction_0'}, inplace=True)
+    shape_direction_1.rename(columns={'trip_shape': 'shape_direction_1'}, inplace=True)
+
+    # Merge with route_overview DataFrame
+    route_overview = pd.merge(route_overview, shape_direction_0, on='route_code', how='left')
+    route_overview = pd.merge(route_overview, shape_direction_1, on='route_code', how='left')
+
+    # Convert the new columns to GeoDataFrame
+    route_overview['shape_direction_0'] = gpd.GeoSeries(route_overview['shape_direction_0'])
+    route_overview['shape_direction_1'] = gpd.GeoSeries(route_overview['shape_direction_1'])
+
+    # Convert the DataFrame to a GeoDataFrame
+    route_overview_gdf = gpd.GeoDataFrame(route_overview, geometry='geometry')
+
+    # Update the route_overview table in the database
+    if debug == False:
+        route_overview_gdf.to_postgis('route_overview', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
+    process_end = timeit.default_timer()
+    with open('../logs.txt', 'a+') as f:
+        human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        total_time = process_end - process_start
+        total_time_rounded = round(total_time,2)
+        print(human_readable_date+" | " + "route_overview" + " | " + str(total_time_rounded) + " seconds.", file=f)
+        print("******************")
+    print("Done processing route overview.")
     print("Processing route stops...")
     process_start = timeit.default_timer()
     route_stops_geo_data_frame = gpd.GeoDataFrame(stop_times_by_route_df, geometry=stop_times_by_route_df.apply(lambda x: get_lat_long_from_coordinates(x.geojson),axis=1))
