@@ -61,7 +61,7 @@ session = Session()
 Base = declarative_base(metadata=MetaData(schema=TARGET_SCHEMA))
 
 df_to_combine = []
-
+route_overview_file_location = "../.scripts/route_overview.csv"
 
 def get_db():
     db = Session()
@@ -244,7 +244,7 @@ def update_gtfs_static_files():
         print("******************")
     print("Processing route overview...")
     # Load route_overview table from the database into a DataFrame
-    route_overview = pd.read_sql_table('route_overview', engine, schema=TARGET_SCHEMA)
+    route_overview = pd.read_csv(route_overview_file_location)
 
     # Filter trips_df for direction_id == 0 and direction_id == 1
     trips_direction_0 = trips_df[trips_df['direction_id'] == 0]
