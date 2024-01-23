@@ -259,50 +259,39 @@ def update_gtfs_static_files():
 
     print("Processing route overview...")
     # Load route_overview table from the database into a DataFrame
+    # Read the existing route_overview table
     route_overview = pd.read_csv(route_overview_file_location)
 
-    # Filter trips_df for direction_id == 0 and direction_id == 1
-    trips_direction_0 = trips_df[trips_df['direction_id'] == 0]
-    trips_direction_1 = trips_df[trips_df['direction_id'] == 1]
+    # Merge trips_df with trip_shapes_df to get the corresponding geometry for each shape_id
+    trips_with_geometry = pd.merge(trips_df, trip_shapes_df[['shape_id', 'geometry']], on='shape_id')
 
-    # Group by route_id and select one trip_shape for each group
-    shape_direction_0 = trips_direction_0.groupby('route_id')['shape_id'].first().reset_index()
-    shape_direction_1 = trips_direction_1.groupby('route_id')['shape_id'].first().reset_index()
+    # Group by route_id and direction_id and select one geometry for each group
+    geometry_by_route_and_direction = trips_with_geometry.groupby(['route_id', 'direction_id'])['geometry'].first().reset_index()
 
-    # Rename the shape_id columns
-    shape_direction_0.rename(columns={'shape_id': 'shape_direction_0'}, inplace=True)
-    shape_direction_1.rename(columns={'shape_id': 'shape_direction_1'}, inplace=True)
+    # Pivot the DataFrame to get one row for each route_id and one column for each direction_id
+    geometry_by_route_and_direction = geometry_by_route_and_direction.pivot(index='route_id', columns='direction_id', values='geometry').reset_index()
 
-    # Merge with trip_shapes_df to get the corresponding geometry for each shape_id
-    shape_direction_0 = pd.merge(shape_direction_0, trip_shapes_df[['shape_id', 'geometry']], left_on='shape_direction_0', right_on='shape_id')
-    shape_direction_1 = pd.merge(shape_direction_1, trip_shapes_df[['shape_id', 'geometry']], left_on='shape_direction_1', right_on='shape_id')
+    # Rename the columns
+    geometry_by_route_and_direction.columns = ['route_id', 'shape_direction_0', 'shape_direction_1']
 
-    # Drop the extra shape_id columns
-    shape_direction_0.drop(columns='shape_id', inplace=True)
-    shape_direction_1.drop(columns='shape_id', inplace=True)
-
-    # Rename the geometry columns
-    shape_direction_0.rename(columns={'geometry': 'geometry_direction_0'}, inplace=True)
-    shape_direction_1.rename(columns={'geometry': 'geometry_direction_1'}, inplace=True)
-
-    # Merge with route_overview DataFrame
-    route_overview = pd.merge(route_overview, shape_direction_0, on='route_id', how='left')
-    route_overview = pd.merge(route_overview, shape_direction_1, on='route_id', how='left')
+    # Merge the new geometry columns into the existing route_overview DataFrame
+    route_overview = pd.merge(route_overview, geometry_by_route_and_direction, on='route_id', how='left')
 
     # Convert the new columns to GeoSeries
-    route_overview['geometry_direction_0'] = gpd.GeoSeries(route_overview['geometry_direction_0'])
-    route_overview['geometry_direction_1'] = gpd.GeoSeries(route_overview['geometry_direction_1'])
+    route_overview['shape_direction_0'] = gpd.GeoSeries(route_overview['shape_direction_0'])
+    route_overview['shape_direction_1'] = gpd.GeoSeries(route_overview['shape_direction_1'])
 
     # Convert the DataFrame to a GeoDataFrame
-    route_overview_gdf = gpd.GeoDataFrame(route_overview, geometry='geometry_direction_0')
+    route_overview_gdf = gpd.GeoDataFrame(route_overview, geometry='shape_direction_0')
 
     # Set the other geometry column
-    route_overview_gdf['geometry_direction_1'] = route_overview['geometry_direction_1']
+    route_overview_gdf['shape_direction_1'] = route_overview['shape_direction_1']
 
     # Update the route_overview table in the database
     if debug == False:
         route_overview_gdf.to_postgis('route_overview', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
     process_end = timeit.default_timer()
+    
     with open('../logs.txt', 'a+') as f:
         human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         total_time = process_end - process_start
