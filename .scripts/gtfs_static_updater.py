@@ -251,12 +251,12 @@ def update_gtfs_static_files():
     trips_direction_1 = trips_df[trips_df['direction_id'] == 1]
 
     # Group by route_code and select one trip_shape for each group
-    shape_direction_0 = trips_direction_0.groupby('route_id')['trip_shape'].first().reset_index()
-    shape_direction_1 = trips_direction_1.groupby('route_id')['trip_shape'].first().reset_index()
+    shape_direction_0 = trips_direction_0.groupby('route_id')['shape_id'].first().reset_index()
+    shape_direction_1 = trips_direction_1.groupby('route_id')['shape_id'].first().reset_index()
 
-    # Rename the trip_shape columns
-    shape_direction_0.rename(columns={'trip_shape': 'shape_direction_0'}, inplace=True)
-    shape_direction_1.rename(columns={'trip_shape': 'shape_direction_1'}, inplace=True)
+    # Rename the shape_id columns
+    shape_direction_0.rename(columns={'shape_id': 'shape_direction_0'}, inplace=True)
+    shape_direction_1.rename(columns={'shape_id': 'shape_direction_1'}, inplace=True)
 
     # Merge with route_overview DataFrame
     route_overview = pd.merge(route_overview, shape_direction_0, on='route_id', how='left')
