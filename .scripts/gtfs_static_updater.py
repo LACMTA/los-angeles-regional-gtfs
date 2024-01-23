@@ -243,6 +243,26 @@ def update_gtfs_static_files():
         print(human_readable_date+" | " + "trips_list" + " | " + str(total_time_rounded) + " seconds.", file=f)
         print("******************")
     print("Done processing trip list.")
+
+
+
+    print("Processing trip stop times...")
+
+    # Assuming stop_times_df already contains 'trip_id', 'stop_id', 'stop_sequence', 'stop_name', etc.
+    # We just need to drop duplicates and set the index
+    stop_times_df.drop_duplicates(subset=['trip_id', 'stop_id'], inplace=True)
+
+    # Write the DataFrame to a new table in the PostgreSQL database
+    if debug == False:
+        stop_times_df.to_postgis('trip_stop_times', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
+    with open('../logs.txt', 'a+') as f:
+        process_end = timeit.default_timer()
+        human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        total_time = process_end - process_start
+        total_time_rounded = round(total_time,2)
+        print(human_readable_date+" | " + "trip_stop_times" + " | " + str(total_time_rounded) + " seconds.", file=f)
+        print("******************")
+    print("Done processing trip stop times.")
     print("Processing trip shapes...")
     process_start = timeit.default_timer()
     trip_shapes_df = shapes_combined_gdf.groupby(['shape_id', 'agency_id'])['geometry'].apply(lambda x: LineString(x.tolist())).reset_index()
@@ -261,27 +281,21 @@ def update_gtfs_static_files():
     # Load route_overview table from the database into a DataFrame
     # Read the existing route_overview table
     route_overview = pd.read_csv(route_overview_file_location)
-
     # Merge trips_df with trip_shapes_df to get the corresponding geometry for each shape_id
     trips_with_geometry = pd.merge(trips_df, trip_shapes_df[['shape_id', 'geometry']], on='shape_id')
-
     # Group by route_id and direction_id and select one geometry for each group
     geometry_by_route_and_direction = trips_with_geometry.groupby(['route_id', 'direction_id'])['geometry'].first().reset_index()
-
     # Pivot the DataFrame to get one row for each route_id and one column for each direction_id
     geometry_by_route_and_direction = geometry_by_route_and_direction.pivot(index='route_id', columns='direction_id', values='geometry').reset_index()
-
     # Rename the columns
     geometry_by_route_and_direction.columns = ['route_id', 'shape_direction_0', 'shape_direction_1']
     # Merge the new geometry columns into the existing route_overview DataFrame
     route_overview = pd.merge(route_overview, geometry_by_route_and_direction, on='route_id', how='left')
-
     # Convert the new columns to GeoSeries if they contain any non-null values
-    if route_overview['shape_direction_0'].notna().any():
+    if 'shape_direction_0' in route_overview.columns and route_overview['shape_direction_0'].notna().any():
         route_overview['shape_direction_0'] = gpd.GeoSeries(route_overview['shape_direction_0'])
-    if route_overview['shape_direction_1'].notna().any():
+    if 'shape_direction_1' in route_overview.columns and route_overview['shape_direction_1'].notna().any():
         route_overview['shape_direction_1'] = gpd.GeoSeries(route_overview['shape_direction_1'])
-
     # Convert the DataFrame to a GeoDataFrame
     route_overview_gdf = gpd.GeoDataFrame(route_overview, geometry='shape_direction_0')
 
@@ -300,6 +314,7 @@ def update_gtfs_static_files():
         print(human_readable_date+" | " + "route_overview" + " | " + str(total_time_rounded) + " seconds.", file=f)
         print("******************")
     print("Done processing route overview.")
+
     print("Processing route stops...")
     process_start = timeit.default_timer()
     route_stops_geo_data_frame = gpd.GeoDataFrame(stop_times_by_route_df, geometry=stop_times_by_route_df.apply(lambda x: get_lat_long_from_coordinates(x.geojson),axis=1))
