@@ -245,9 +245,9 @@ def update_gtfs_static_files():
     print("Done processing trip list.")
     print("Processing trip shapes...")
     process_start = timeit.default_timer()
-    shape_lines_df = shapes_combined_gdf.groupby(['shape_id', 'agency_id'])['geometry'].apply(lambda x: LineString(x.tolist())).reset_index()
+    trip_shapes_df = shapes_combined_gdf.groupby(['shape_id', 'agency_id'])['geometry'].apply(lambda x: LineString(x.tolist())).reset_index()
     if debug == False:
-        shape_lines_df.to_postgis('trip_shapes', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
+        trip_shapes_df.to_postgis('trip_shapes', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
     process_end = timeit.default_timer()
     with open('../logs.txt', 'a+') as f:
         human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
