@@ -245,7 +245,7 @@ def update_gtfs_static_files():
     print("Done processing trip list.")
     print("Processing trip shapes...")
     process_start = timeit.default_timer()
-    shape_lines_df = shapes_combined_gdf.groupby('shape_id')['geometry'].apply(lambda x: LineString(x.tolist())).reset_index()
+    shape_lines_df = shapes_combined_gdf.groupby(['shape_id', 'agency_id'])['geometry'].apply(lambda x: LineString(x.tolist())).reset_index()
     if debug == False:
         shape_lines_df.to_postgis('trip_shapes', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
     process_end = timeit.default_timer()
@@ -265,7 +265,7 @@ def update_gtfs_static_files():
     trips_direction_0 = trips_df[trips_df['direction_id'] == 0]
     trips_direction_1 = trips_df[trips_df['direction_id'] == 1]
 
-    # Group by route_code and select one trip_shape for each group
+    # Group by route_id and select one trip_shape for each group
     shape_direction_0 = trips_direction_0.groupby('route_id')['shape_id'].first().reset_index()
     shape_direction_1 = trips_direction_1.groupby('route_id')['shape_id'].first().reset_index()
 
@@ -273,26 +273,31 @@ def update_gtfs_static_files():
     shape_direction_0.rename(columns={'shape_id': 'shape_direction_0'}, inplace=True)
     shape_direction_1.rename(columns={'shape_id': 'shape_direction_1'}, inplace=True)
 
-    # Merge with trips_df to create trip_shapes_df
-    trip_shapes_df = pd.merge(trips_df, shape_lines_df, on='shape_id')
+    # Merge with trip_shapes_df to get the corresponding geometry for each shape_id
+    shape_direction_0 = pd.merge(shape_direction_0, trip_shapes_df[['shape_id', 'geometry']], left_on='shape_direction_0', right_on='shape_id')
+    shape_direction_1 = pd.merge(shape_direction_1, trip_shapes_df[['shape_id', 'geometry']], left_on='shape_direction_1', right_on='shape_id')
 
-    # Update the 'geometry' and 'agency_id' columns in trip_shapes_df
-    trip_shapes_df['geometry'] = trip_shapes_df['geometry_y']
-    trip_shapes_df['agency_id'] = trip_shapes_df['agency_id_x']
+    # Drop the extra shape_id columns
+    shape_direction_0.drop(columns='shape_id', inplace=True)
+    shape_direction_1.drop(columns='shape_id', inplace=True)
+
+    # Rename the geometry columns
+    shape_direction_0.rename(columns={'geometry': 'geometry_direction_0'}, inplace=True)
+    shape_direction_1.rename(columns={'geometry': 'geometry_direction_1'}, inplace=True)
 
     # Merge with route_overview DataFrame
     route_overview = pd.merge(route_overview, shape_direction_0, on='route_id', how='left')
     route_overview = pd.merge(route_overview, shape_direction_1, on='route_id', how='left')
 
     # Convert the new columns to GeoSeries
-    route_overview['shape_direction_0'] = gpd.GeoSeries(route_overview['shape_direction_0'])
-    route_overview['shape_direction_1'] = gpd.GeoSeries(route_overview['shape_direction_1'])
+    route_overview['geometry_direction_0'] = gpd.GeoSeries(route_overview['geometry_direction_0'])
+    route_overview['geometry_direction_1'] = gpd.GeoSeries(route_overview['geometry_direction_1'])
 
     # Convert the DataFrame to a GeoDataFrame
-    route_overview_gdf = gpd.GeoDataFrame(route_overview, geometry='shape_direction_0')
+    route_overview_gdf = gpd.GeoDataFrame(route_overview, geometry='geometry_direction_0')
 
     # Set the other geometry column
-    route_overview_gdf['shape_direction_1'] = route_overview['shape_direction_1']
+    route_overview_gdf['geometry_direction_1'] = route_overview['geometry_direction_1']
 
     # Update the route_overview table in the database
     if debug == False:
