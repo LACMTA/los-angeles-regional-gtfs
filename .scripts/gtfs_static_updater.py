@@ -273,13 +273,14 @@ def update_gtfs_static_files():
 
     # Rename the columns
     geometry_by_route_and_direction.columns = ['route_id', 'shape_direction_0', 'shape_direction_1']
-
     # Merge the new geometry columns into the existing route_overview DataFrame
     route_overview = pd.merge(route_overview, geometry_by_route_and_direction, on='route_id', how='left')
 
-    # Convert the new columns to GeoSeries
-    route_overview['shape_direction_0'] = gpd.GeoSeries(route_overview['shape_direction_0'])
-    route_overview['shape_direction_1'] = gpd.GeoSeries(route_overview['shape_direction_1'])
+    # Convert the new columns to GeoSeries if they contain any non-null values
+    if route_overview['shape_direction_0'].notna().any():
+        route_overview['shape_direction_0'] = gpd.GeoSeries(route_overview['shape_direction_0'])
+    if route_overview['shape_direction_1'].notna().any():
+        route_overview['shape_direction_1'] = gpd.GeoSeries(route_overview['shape_direction_1'])
 
     # Convert the DataFrame to a GeoDataFrame
     route_overview_gdf = gpd.GeoDataFrame(route_overview, geometry='shape_direction_0')
@@ -291,7 +292,7 @@ def update_gtfs_static_files():
     if debug == False:
         route_overview_gdf.to_postgis('route_overview', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
     process_end = timeit.default_timer()
-    
+
     with open('../logs.txt', 'a+') as f:
         human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         total_time = process_end - process_start
