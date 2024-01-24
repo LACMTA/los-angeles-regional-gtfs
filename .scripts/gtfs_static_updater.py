@@ -243,9 +243,6 @@ def update_gtfs_static_files():
         print(human_readable_date+" | " + "trips_list" + " | " + str(total_time_rounded) + " seconds.", file=f)
         print("******************")
     print("Done processing trip list.")
-
-
-
     print("Processing trip stop times...")
 
     # Assuming stop_times_df already contains 'trip_id', 'stop_id', 'stop_sequence', 'stop_name', etc.
@@ -254,7 +251,7 @@ def update_gtfs_static_files():
 
     # Write the DataFrame to a new table in the PostgreSQL database
     if debug == False:
-        stop_times_df.to_postgis('trip_stop_times', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
+        stop_times_df.to_sql('trip_stop_times', engine, if_exists='replace', index=True, schema=TARGET_SCHEMA)
     with open('../logs.txt', 'a+') as f:
         process_end = timeit.default_timer()
         human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
