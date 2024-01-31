@@ -275,33 +275,13 @@ def update_gtfs_static_files():
     print("Done processing trip shapes.")
 
     print("Processing route overview...")
-    # Load route_overview table from the database into a DataFrame
     # Read the existing route_overview table
     route_overview = pd.read_csv(route_overview_file_location)
-    # Merge trips_df with trip_shapes_df to get the corresponding geometry for each shape_id
-    trips_with_geometry = pd.merge(trips_df, trip_shapes_df[['shape_id', 'geometry']], on='shape_id')
-    # Group by route_id and direction_id and select one geometry for each group
-    geometry_by_route_and_direction = trips_with_geometry.groupby(['route_id', 'direction_id'])['geometry'].first().reset_index()
-    # Pivot the DataFrame to get one row for each route_id and one column for each direction_id
-    geometry_by_route_and_direction = geometry_by_route_and_direction.pivot(index='route_id', columns='direction_id', values='geometry').reset_index()
-    # Rename the columns
-    geometry_by_route_and_direction.columns = ['route_id', 'shape_direction_0', 'shape_direction_1']
-    # Merge the new geometry columns into the existing route_overview DataFrame
-    route_overview = pd.merge(route_overview, geometry_by_route_and_direction, on='route_id', how='left')
-    # Convert the new columns to GeoSeries if they contain any non-null values
-    if 'shape_direction_0' in route_overview.columns and route_overview['shape_direction_0'].notna().any():
-        route_overview['shape_direction_0'] = gpd.GeoSeries(route_overview['shape_direction_0'])
-    if 'shape_direction_1' in route_overview.columns and route_overview['shape_direction_1'].notna().any():
-        route_overview['shape_direction_1'] = gpd.GeoSeries(route_overview['shape_direction_1'])
-    # Convert the DataFrame to a GeoDataFrame
-    route_overview_gdf = gpd.GeoDataFrame(route_overview, geometry='shape_direction_0')
-
-    # Set the other geometry column
-    route_overview_gdf['shape_direction_1'] = route_overview['shape_direction_1']
 
     # Update the route_overview table in the database
     if debug == False:
-        route_overview_gdf.to_postgis('route_overview', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
+        route_overview.to_sql('route_overview', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
+
     process_end = timeit.default_timer()
 
     with open('../logs.txt', 'a+') as f:
@@ -327,6 +307,27 @@ def update_gtfs_static_files():
         total_time_rounded = round(total_time,2)
         print(human_readable_date+" | " + "route_stops" + " | " + str(total_time_rounded) + " seconds.", file=f)
     print("Done processing route stops.")
+
+    print("Processing route stops grouped...")
+    route_stops_grouped = route_stops_geo_data_frame.groupby(['route_code', 'agency_id']).apply(process_group).reset_index()
+
+    if debug == False:
+        # save to database
+        route_stops_grouped.to_postgis('route_stops_grouped',engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
+    with open('../logs.txt', 'a+') as f:
+        process_end = timeit.default_timer()
+        human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        total_time = process_end - process_start
+        total_time_rounded = round(total_time,2)
+        print(human_readable_date+" | " + "route_stops_grouped" + " | " + str(total_time_rounded) + " seconds.", file=f)
+        print("******************")
+    print("Done processing route stops grouped.")
+
+def process_group(group):
+    payload = group.to_dict('records')
+    shape_direction_0 = group[group['direction_id'] == 0]['geometry'].unary_union
+    shape_direction_1 = group[group['direction_id'] == 1]['geometry'].unary_union
+    return pd.Series({'payload': payload, 'shape_direction_0': shape_direction_0, 'shape_direction_1': shape_direction_1})
 
 def get_lat_long_from_coordinates(geojson):
     this_geojson_geom = geojson['geometry']
