@@ -6,7 +6,8 @@ Metro is hosting GTFS data on behalf of various regional agencies. Each folder c
 
 Here are the zip file permalinks:
 
-* [Alhambra](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/alhambra-ca-us/alhambra-ca-us.zip) - *updated 2/10/23*
+* ~[Alhambra](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/alhambra-ca-us/alhambra-ca-us.zip)~ - *removed 1/31/24* 
+  *  This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.cityofalhambra.org/DocumentCenter/View/4979/alhambra-ca-us) 
 * ~[Arcadia](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/arcadia-ca-us/arcadia-ca-us.zip)~ *removed 1/12/24*
   * Arcadia's app vendor, Passio, generates GTFS and GTFS-RT
     <br />[GTFS Static Feed](https://passio3.com/ArcadiaCity/passioTransit/gtfs/google_transit.zip)
