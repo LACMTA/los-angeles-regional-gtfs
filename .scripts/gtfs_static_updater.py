@@ -343,6 +343,9 @@ def get_stop_times_from_stop_id(this_row):
     trips_by_route_df = trips_df.loc[trips_df['route_id'] == this_row.route_id]
     stop_times_by_trip_df = stop_times_df[stop_times_df['trip_id'].isin(trips_by_route_df['trip_id'])]
 
+    # filter for pickup_type = 0 and drop_off_type = 0
+    stop_times_by_trip_df = stop_times_by_trip_df[(stop_times_by_trip_df['pickup_type'] == 0) & (stop_times_by_trip_df['drop_off_type'] == 0)]
+
     # get the stop times for this stop id
     this_stops_df = stop_times_by_trip_df.loc[stop_times_by_trip_df['stop_id'] == this_row.stop_id]
     this_stops_df = this_stops_df.sort_values(by=['departure_time'],ascending=True)
