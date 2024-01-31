@@ -1,5 +1,0 @@
-route_id,direction_id,direction
-BlueLine,1,Northbound
-BlueLine,0,Southbound
-GreenLine,1,Counterclockwise
-GreenLine,0,Clockwise

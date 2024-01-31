@@ -1,2 +1,0 @@
-agency_id,fare_id,price,currency_type,payment_method,transfers,transfer_duration
-1669,4246,0.25,USD,0,0,0
