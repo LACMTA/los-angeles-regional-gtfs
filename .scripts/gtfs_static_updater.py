@@ -1,24 +1,8 @@
-try:
-    import gtfs_static_utils as gtfs_static_utils
-except ModuleNotFoundError:
-    # No Cython module found, compiling now.
-    # This is another method to compile Cython programs from within a snippet
-    from distutils.core import setup
-    from Cython.Build import cythonize
-
-    setup(
-        ext_modules= cythonize("gtfs_static_utils.pyx"),
-        # build_dir= "build",
-        script_args= ['build_ext', "--inplace"]
-    )
-    import gtfs_static_utils as gtfs_static_utils
-
 import sys, argparse
 
 # from calendar import calendar
 import os
-print(os.getcwd())
-print(os.listdir())
+
 # exit()
 
 import pandas as pd
@@ -37,6 +21,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from shapely.geometry import Point, LineString
 from pathlib import Path
+from shapely import wkt
 
 debug = False
 local = False
@@ -226,7 +211,7 @@ def update_gtfs_static_files():
             print("******************")
     print("Processing trip list")
     process_start = timeit.default_timer()
-    trips_list_df = gtfs_static_utils.create_list_of_trips(trips_df,stop_times_df)
+    trips_list_df = create_list_of_trips(trips_df,stop_times_df)
     summarized_trips_df = trips_df[["route_id","trip_id","direction_id","service_id","agency_id"]]
     summarized_trips_df['day_type'] = summarized_trips_df['service_id'].map(get_day_type_from_service_id)
     trips_list_df = trips_list_df.merge(summarized_trips_df, on='trip_id').drop_duplicates(subset=['route_id','day_type','direction_id'])
@@ -311,9 +296,12 @@ def update_gtfs_static_files():
     print("Processing route stops grouped...")
     route_stops_grouped = route_stops_geo_data_frame.groupby(['route_code', 'agency_id']).apply(process_group).reset_index()
 
+    # Create a GeoDataFrame
+    gdf = gpd.GeoDataFrame(route_stops_grouped, geometry='shape_direction_0')
+
     if debug == False:
         # save to database
-        route_stops_grouped.to_postgis('route_stops_grouped',engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
+        gdf.to_postgis('route_stops_grouped', engine, index=False, if_exists="replace", schema=TARGET_SCHEMA)
     with open('../logs.txt', 'a+') as f:
         process_end = timeit.default_timer()
         human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
