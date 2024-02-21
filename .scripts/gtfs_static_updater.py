@@ -37,6 +37,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from shapely.geometry import Point, LineString
 from pathlib import Path
+from shapely import wkt
 
 debug = False
 local = False
@@ -311,9 +312,12 @@ def update_gtfs_static_files():
     print("Processing route stops grouped...")
     route_stops_grouped = route_stops_geo_data_frame.groupby(['route_code', 'agency_id']).apply(process_group).reset_index()
 
+    # Create a GeoDataFrame
+    gdf = gpd.GeoDataFrame(route_stops_grouped, geometry='shape_direction_0')
+
     if debug == False:
         # save to database
-        route_stops_grouped.to_postgis('route_stops_grouped',engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
+        gdf.to_postgis('route_stops_grouped', engine, index=False, if_exists="replace", schema=TARGET_SCHEMA)
     with open('../logs.txt', 'a+') as f:
         process_end = timeit.default_timer()
         human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
