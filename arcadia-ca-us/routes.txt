@@ -1,4 +1,0 @@
-agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off,tts_route_short_name,tts_route_long_name
-1670,BlueLine,,Blue Line,,3,,143d70,ffffff,0,,0,1,1,,
-1670,RedLine,,Red Line,,3,,a42f38,ffffff,1,,0,1,1,,
-1670,GreenLine,,Green Line,,3,,0b693c,ffffff,2,,0,1,1,,

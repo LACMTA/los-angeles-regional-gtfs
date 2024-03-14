@@ -1,4 +1,0 @@
-fare_id,route_id,origin_id,destination_id,contains_id
-4304,RedLine,,,
-4304,BlueLine,,,
-4304,GreenLine,,,

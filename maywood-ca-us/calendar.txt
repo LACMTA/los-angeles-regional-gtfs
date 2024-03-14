@@ -1,4 +1,0 @@
-service_id,service_name,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
-c_67552_b_78015_d_63,Year-Round Service (No Sunday),1,1,1,1,1,1,0,20221001,20231001
-c_67552_b_78015_d_32,Year-Round Service (Saturday only),0,0,0,0,0,1,0,20221001,20231001
-c_67552_b_78015_d_31,Year-Round Service (Weekday),1,1,1,1,1,0,0,20221001,20231001
