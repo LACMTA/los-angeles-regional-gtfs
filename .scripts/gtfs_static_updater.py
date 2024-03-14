@@ -14,6 +14,7 @@ from io import StringIO
 import zipfile
 import timeit
 import shutil
+from sqlalchemy import text
 
 from pathlib import Path
 from sqlalchemy import create_engine,MetaData
@@ -136,15 +137,17 @@ def extract_zip_file_to_temp_directory(agency_id):
 def combine_dataframes(temp_df_bus,temp_df_rail):
     return pd.concat([temp_df_bus, temp_df_rail])
 
-def create_list_of_trips(trips,stop_times):
+def create_list_of_trips(trips, stop_times):
     print('Creating list of trips')
-    global trips_list_df
-    trips_list_df = stop_times.groupby('trip_id')['stop_sequence'].max()
-    trips_list_df.sort_values(ascending=False, inplace=True)
-    trips_list_df = trips_list_df.to_frame()
-    trips_list_df.reset_index(inplace=True)
-    stop_times_subset = stop_times[['trip_id','stop_id','stop_sequence','route_code']].set_index(['trip_id','stop_sequence'])
-    trips_list_df = trips_list_df.join(stop_times_subset, on=['trip_id','stop_sequence'])
+    # Group by 'trip_id' and get the max 'stop_sequence' for each group
+    max_stop_sequence = stop_times.groupby('trip_id')['stop_sequence'].idxmax()
+
+    # Use loc to get the rows with the max 'stop_sequence' for each 'trip_id'
+    trips_list_df = stop_times.loc[max_stop_sequence]
+
+    # Reset the index
+    trips_list_df.reset_index(drop=True, inplace=True)
+
     return trips_list_df
 
 def update_dataframe_to_db(combined_temp_df,target_table_name,engine,target_schema):
@@ -222,81 +225,49 @@ def update_gtfs_static_files():
     if debug == False:
         shape_exclusions_gdf.to_postgis('shape_exclusions', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
     print("Done processing shape exclusions.")
+    
     process_end = timeit.default_timer()
-    print("Processing trip list")
+
+    print("Processing trip shapes with exclusions...")
     process_start = timeit.default_timer()
-
-    # Use vectorized operations instead of apply where possible
-    trips_list_df = create_list_of_trips(trips_df, stop_times_df)
-    summarized_trips_df = trips_df[["route_id", "trip_id", "direction_id", "service_id", "agency_id"]]
-
-    # Use .loc to avoid SettingWithCopyWarning
-    summarized_trips_df.loc[:, 'day_type'] = summarized_trips_df['service_id'].map(get_day_type_from_service_id)
-
-    trips_list_df = trips_list_df.merge(summarized_trips_df, on='trip_id').drop_duplicates(subset=['route_id', 'day_type', 'direction_id'])
-
-    # Avoid chaining operations
-    df_to_combine = trips_list_df.apply(lambda row: get_stop_times_for_trip_id(row), axis=1).tolist()  # Convert to list
-    stop_times_by_route_df = pd.concat(df_to_combine)
-
-    stop_times_by_route_df['departure_times'] = stop_times_by_route_df.apply(lambda row: get_stop_times_from_stop_id(row), axis=1)
-    stop_times_by_route_df['route_code'].fillna(stop_times_by_route_df['route_id'], inplace=True)
-    process_end = timeit.default_timer()
-    with open('../logs.txt', 'a+') as f:
-        human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        total_time = process_end - process_start
-        total_time_rounded = round(total_time, 2)
-        print(human_readable_date + " | " + "trips_list" + " | " + str(total_time_rounded) + " seconds.", file=f)
-
-    print("Done processing trip list.")
-
-    print("Processing trip stop times...")
-    # Assuming stop_times_df already contains 'trip_id', 'stop_id', 'stop_sequence', 'stop_name', etc.
-    # We just need to drop duplicates and set the index
-    stop_times_df.drop_duplicates(subset=['trip_id', 'stop_id'], inplace=True)
-
-    # Write the DataFrame to a new table in the PostgreSQL database
-    if debug == False:
-        stop_times_df.to_sql('trip_stop_times', engine, if_exists='replace', index=True, schema=TARGET_SCHEMA)
-    with open('../logs.txt', 'a+') as f:
-        process_end = timeit.default_timer()
-        human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        total_time = process_end - process_start
-        total_time_rounded = round(total_time,2)
-        print(human_readable_date+" | " + "trip_stop_times" + " | " + str(total_time_rounded) + " seconds.", file=f)
-        print("******************")
-    print("Done processing trip stop times.")
-    print("Processing trip shapes...")
-    process_start = timeit.default_timer()
-
-    # Group by 'shape_id' and 'agency_id' and create LineString
-    trip_shapes_df = shapes_combined_gdf.groupby(['shape_id', 'agency_id'])['geometry'].apply(lambda x: LineString(x.tolist())).reset_index()
-
     # Merge with trips_df to get route_id
-    trip_shapes_df = trip_shapes_df.merge(trips_df[['shape_id', 'route_id']], on='shape_id', how='left')
+    shapes_combined_gdf = shapes_combined_gdf.merge(trips_df[['shape_id', 'route_id']], on='shape_id', how='left')
 
     # Merge with route_overview to get route_code
-    trip_shapes_df = trip_shapes_df.merge(route_overview[['route_id', 'route_code']], on='route_id', how='left')
+    shapes_combined_gdf = shapes_combined_gdf.merge(route_overview[['route_id', 'route_code']], on='route_id', how='left')
+    # Ensure that 'route_code' is a string
+    shapes_combined_gdf['route_code'] = shapes_combined_gdf['route_code'].astype(str)
+
+    # Group by 'shape_id' and 'route_code' and create LineString
+    trip_shapes_df = shapes_combined_gdf.groupby(['shape_id', 'route_code'])['geometry'].apply(lambda x: LineString(x.tolist())).reset_index()
+
+    # Remove duplicate shapes
+    trip_shapes_df.drop_duplicates(subset=['shape_id', 'geometry'], inplace=True)
+
+    # Set the CRS to EPSG:4326
+    trip_shapes_df.set_crs(epsg=4326, inplace=True)
+
+    # check if this is a valid gdf:
+    try:
+        trip_shapes_df.is_valid.all()
+        print("Valid GDF looks like this: ")
+        print(trip_shapes_df.head())
+        print(trip_shapes_df.shape)
+    except Exception as e:
+        print(e)
+        pass
 
     if debug == False:
         trip_shapes_df.to_postgis('trip_shapes', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
-        trip_shapes_df.to_postgis('trip_shapes_original', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
-
-
-    process_end = timeit.default_timer()
     with open('../logs.txt', 'a+') as f:
         human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        process_end = timeit.default_timer()
         total_time = process_end - process_start
         total_time_rounded = round(total_time,2)
-        print(human_readable_date+" | " + "trip_shapes" + " | " + str(total_time_rounded) + " seconds.", file=f)
+        print(human_readable_date+" | " + " trip shapes with exclusions" + " | " + str(total_time_rounded) + " seconds.", file=f)
         print("******************")
-
     print("Done processing trip shapes.")
-
     print("Processing route overview...")
-    # Read the existing route_overview table
-
-
     # Update the route_overview table in the database
     if debug == False:
         route_overview.to_sql('route_overview', engine, if_exists='replace', index=False, schema=TARGET_SCHEMA)
@@ -311,45 +282,19 @@ def update_gtfs_static_files():
         print("******************")
     print("Done processing route overview.")
 
-    print("Processing route stops...")
-    process_start = timeit.default_timer()
-    route_stops_geo_data_frame = gpd.GeoDataFrame(stop_times_by_route_df, geometry=stop_times_by_route_df.apply(lambda x: get_lat_long_from_coordinates(x.geojson),axis=1))
-    route_stops_geo_data_frame.set_crs(epsg=4326, inplace=True)
-    if debug == False:
-        # save to database
-        route_stops_geo_data_frame.to_postgis('route_stops',engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
-    
-    with open('../logs.txt', 'a+') as f:
-        process_end = timeit.default_timer()
-        human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        total_time = process_end - process_start
-        total_time_rounded = round(total_time,2)
-        print(human_readable_date+" | " + "route_stops" + " | " + str(total_time_rounded) + " seconds.", file=f)
-    print("Done processing route stops.")
-
-    print("Processing route stops grouped...")
-    route_stops_grouped = route_stops_geo_data_frame.groupby(['route_code', 'agency_id']).apply(process_group).reset_index()
-
-    # Create a GeoDataFrame
-    gdf = gpd.GeoDataFrame(route_stops_grouped, geometry='shape_direction_0')
-
-    if debug == False:
-        # save to database
-        gdf.to_postgis('route_stops_grouped', engine, index=False, if_exists="replace", schema=TARGET_SCHEMA)
-    with open('../logs.txt', 'a+') as f:
-        process_end = timeit.default_timer()
-        human_readable_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        total_time = process_end - process_start
-        total_time_rounded = round(total_time,2)
-        print(human_readable_date+" | " + "route_stops_grouped" + " | " + str(total_time_rounded) + " seconds.", file=f)
-        print("******************")
-    print("Done processing route stops grouped.")
-
 def process_group(group):
-    payload = group.to_dict('records')
-    shape_direction_0 = group[group['direction_id'] == 0]['geometry'].unary_union
-    shape_direction_1 = group[group['direction_id'] == 1]['geometry'].unary_union
-    return pd.Series({'payload': payload, 'shape_direction_0': shape_direction_0, 'shape_direction_1': shape_direction_1})
+    # Create a new row for each unique combination of day_type and direction_id
+    new_rows = []
+    for (day_type, direction_id), sub_group in group.groupby(['day_type', 'direction_id']):
+        payload = sub_group.to_dict('records')
+        shape_direction = sub_group['geometry'].unary_union
+        new_rows.append({
+            'day_type': day_type,
+            'direction_id': direction_id,
+            'payload': payload,
+            'shape_direction': shape_direction
+        })
+    return pd.DataFrame(new_rows)
 
 def get_lat_long_from_coordinates(geojson):
     this_geojson_geom = geojson['geometry']
@@ -432,14 +377,13 @@ def get_stops_data_based_on_stop_id(stop_id):
     new_object = encode_lat_lon_to_geojson(this_stops_df['stop_lat'].values[0],this_stops_df['stop_lon'].values[0])
     return new_object
 
-
 def get_stop_times_for_trip_id(this_row):
-    this_trips_df = stop_times_df.loc[stop_times_df['trip_id'] == this_row.trip_id]
-    this_trips_df['route_id'] = this_row.route_id
-    this_trips_df['direction_id'] = this_row.direction_id
-    this_trips_df['day_type'] = this_row.day_type
-    this_trips_df['geojson'] = this_trips_df.apply(lambda x: get_stops_data_based_on_stop_id(x.stop_id),axis=1)
-    this_trips_df['stop_name'] = this_trips_df.apply(lambda x: stops_df.loc[stops_df['stop_id'] == str(x.stop_id)]['stop_name'].values[0],axis=1)
+    this_trips_df = stop_times_df.loc[stop_times_df['trip_id'] == this_row.trip_id].copy()
+    this_trips_df.loc[:, 'route_id'] = this_row.route_id
+    this_trips_df.loc[:, 'direction_id'] = this_row.direction_id
+    this_trips_df.loc[:, 'day_type'] = this_row.day_type
+    this_trips_df.loc[:, 'geojson'] = this_trips_df.apply(lambda x: get_stops_data_based_on_stop_id(x.stop_id),axis=1)
+    this_trips_df.loc[:, 'stop_name'] = this_trips_df.apply(lambda x: stops_df.loc[stops_df['stop_id'] == str(x.stop_id)]['stop_name'].values[0],axis=1)
     simplified_df = this_trips_df[['route_id','route_code','stop_id','day_type','stop_sequence','direction_id','stop_name','geojson','agency_id']]
     
     df_to_combine.append(simplified_df)

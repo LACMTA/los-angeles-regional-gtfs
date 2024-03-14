@@ -245,3 +245,33 @@ date | gtfs_static_file | duration
 2024-02-23 02:58:22 | stop_times | 505.26 seconds.
 2024-02-23 03:21:59 |  trip shapes with exclusions | 1415.15 seconds.
 2024-02-23 03:22:00 | route_overview | 1416.63 seconds.
+2024-02-27 15:37:31 | routes | 1.44 seconds.
+2024-02-27 15:37:40 | trips | 9.08 seconds.
+2024-02-27 15:37:42 | stops | 1.92 seconds.
+2024-02-27 15:37:43 | calendar | 0.64 seconds.
+2024-02-27 15:37:54 | shapes | 11.3 seconds.
+2024-02-27 15:47:13 | stop_times | 558.31 seconds.
+2024-02-27 16:11:20 | routes | 1.49 seconds.
+2024-02-27 16:11:26 | trips | 5.88 seconds.
+2024-02-27 16:11:28 | stops | 2.12 seconds.
+2024-02-27 16:11:29 | calendar | 0.7 seconds.
+2024-02-27 16:11:41 | shapes | 11.36 seconds.
+2024-02-27 16:20:41 | stop_times | 539.26 seconds.
+2024-02-27 16:43:03 |  trip shapes with exclusions | 1339.25 seconds.
+2024-02-27 16:43:04 | route_overview | 1341.19 seconds.
+2024-02-27 22:33:57 | routes | 2.84 seconds.
+2024-02-27 22:34:07 | trips | 10.07 seconds.
+2024-02-28 00:42:40 | stops | 7712.74 seconds.
+2024-02-28 00:42:42 | calendar | 1.51 seconds.
+2024-02-28 00:43:12 | shapes | 30.02 seconds.
+2024-02-28 00:55:15 | stop_times | 723.27 seconds.
+2024-02-28 01:24:48 |  trip shapes with exclusions | 1769.1 seconds.
+2024-02-28 01:24:50 | route_overview | 1771.33 seconds.
+2024-02-29 13:40:31 | routes | 2.9 seconds.
+2024-02-29 13:40:37 | trips | 5.96 seconds.
+2024-02-29 13:40:39 | stops | 1.89 seconds.
+2024-02-29 13:40:40 | calendar | 0.78 seconds.
+2024-02-29 13:40:51 | shapes | 11.46 seconds.
+2024-02-29 13:49:25 | stop_times | 512.88 seconds.
+2024-02-29 14:10:09 |  trip shapes with exclusions | 1241.85 seconds.
+2024-02-29 14:10:10 | route_overview | 1243.02 seconds.
