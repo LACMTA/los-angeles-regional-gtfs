@@ -1,2 +1,0 @@
-agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url,tts_agency_name
-1673,https://www.bellflower.org/civicax/filebank/blobdload.aspx?BlobID=26756,en,Bellflower Bus,,America/Los_Angeles,,

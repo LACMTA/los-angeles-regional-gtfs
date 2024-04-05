@@ -1,3 +1,0 @@
-route_id,direction_id,direction
-SouthRoute,0,Loop
-NorthRoute,0,Loop

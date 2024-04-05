@@ -1,4 +1,0 @@
-rider_category_id,rider_category_name,min_age,max_age,eligibility_url
-senior,Seniors Age 62 and Over,62,,https://www.cityofsouthgate.org/City-Services/Transportation/Phone-A-Ride
-disabled,Persons with Disabilities,,,https://www.cityofsouthgate.org/City-Services/Transportation/Phone-A-Ride
-student,"High School, College, & Vocational Students",,,https://www.cityofsouthgate.org/City-Services/Transportation/GATE-Buses

@@ -1,3 +1,0 @@
-route_id,direction_id,direction
-EastsideRoute,0,Loop
-WestsideRoute,0,Loop
