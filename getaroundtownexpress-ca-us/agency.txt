@@ -1,2 +1,0 @@
-agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url,tts_agency_name
-1721,https://www.cityofsouthgate.org/218/GATE-Get-Around-Town-Express,en,Get Around Town Express,323-563-5754,America/Los_Angeles,,

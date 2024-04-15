@@ -1,2 +1,0 @@
-service_id,service_description
-c_45719_b_55702_d_31,Weekday Regular (Weekday)

@@ -1,3 +1,0 @@
-route_id,direction_id,direction
-Route2,0,Loop
-Route1,0,Loop

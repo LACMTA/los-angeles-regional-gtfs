@@ -1,9 +1,0 @@
-service_id,date,holiday_name,exception_type
-c_45719_b_55702_d_31,20230529,Memorial Day,2
-c_45719_b_55702_d_31,20230331,Cesar Chavez Day,2
-c_45719_b_55702_d_31,20230220,President's Day,2
-c_45719_b_55702_d_31,20230116,Martin Luther King Jr. Day,2
-c_45719_b_55702_d_31,20221125,Day After Thanksgiving,2
-c_45719_b_55702_d_31,20221124,Thanksgiving Day,2
-c_45719_b_55702_d_31,20221111,Veteran's Day,2
-c_45719_b_55702_d_31,20220905,Labor Day,2

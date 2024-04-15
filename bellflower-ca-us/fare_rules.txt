@@ -1,3 +1,0 @@
-fare_id,route_id,origin_id,destination_id,contains_id
-4261,NorthRoute,,,
-4261,SouthRoute,,,

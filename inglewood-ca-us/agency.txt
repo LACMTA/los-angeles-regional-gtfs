@@ -1,2 +1,0 @@
-agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url,tts_agency_name
-4664,https://www.cityofinglewood.org/796/Transportation,en,I-Line Shuttle,310-412-4378,America/Los_Angeles,,
