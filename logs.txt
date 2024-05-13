@@ -275,3 +275,17 @@ date | gtfs_static_file | duration
 2024-02-29 13:49:25 | stop_times | 512.88 seconds.
 2024-02-29 14:10:09 |  trip shapes with exclusions | 1241.85 seconds.
 2024-02-29 14:10:10 | route_overview | 1243.02 seconds.
+2024-03-14 17:10:33 | routes | 1.76 seconds.
+2024-03-14 20:57:34 | trips | 13620.72 seconds.
+2024-03-14 20:57:36 | stops | 2.2 seconds.
+2024-03-14 20:57:38 | calendar | 1.31 seconds.
+2024-03-14 20:57:51 | shapes | 13.15 seconds.
+2024-03-14 21:08:22 | stop_times | 631.03 seconds.
+2024-03-15 02:32:46 | routes | 3.07 seconds.
+2024-03-15 02:32:54 | trips | 8.48 seconds.
+2024-03-15 02:32:56 | stops | 1.74 seconds.
+2024-03-15 02:32:57 | calendar | 0.76 seconds.
+2024-03-15 02:33:09 | shapes | 11.91 seconds.
+2024-03-15 02:41:36 | stop_times | 507.25 seconds.
+2024-03-15 03:02:50 |  trip shapes with exclusions | 1272.3 seconds.
+2024-03-15 03:02:51 | route_overview | 1273.42 seconds.
