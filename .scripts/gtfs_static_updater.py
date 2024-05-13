@@ -134,6 +134,11 @@ def extract_zip_file_to_temp_directory(agency_id):
 
 #### END FILE EXTRACTION ####
 
+# Function to remove consecutive duplicates
+def remove_consecutive_duplicates(x):
+    new_list = [x[i] for i in range(len(x)) if i == 0 or x[i] != x[i-1]]
+    return new_list
+
 def combine_dataframes(temp_df_bus,temp_df_rail):
     return pd.concat([temp_df_bus, temp_df_rail])
 
@@ -239,8 +244,8 @@ def update_gtfs_static_files():
     shapes_combined_gdf['route_code'] = shapes_combined_gdf['route_code'].astype(str)
 
     # Group by 'shape_id' and 'route_code' and create LineString
-    trip_shapes_df = shapes_combined_gdf.groupby(['shape_id', 'route_code'])['geometry'].apply(lambda x: LineString(x.tolist())).reset_index()
-
+    trip_shapes_df = shapes_combined_gdf.groupby(['shape_id', 'route_code'])['geometry'].apply(
+        lambda x: LineString(remove_consecutive_duplicates(x.tolist()))).reset_index()
     # Remove duplicate shapes
     trip_shapes_df.drop_duplicates(subset=['shape_id', 'geometry'], inplace=True)
 
