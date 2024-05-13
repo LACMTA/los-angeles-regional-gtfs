@@ -1,6 +1,0 @@
-service_id,service_name,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
-TWRF-20220906-20221231,School Year Shuttles (TuWThF),0,1,1,1,1,0,0,20220906,20221231
-M-20220906-20221231,School Year Shuttles (Monday only),1,0,0,0,0,0,0,20220906,20221231
-TWRF-20210816-20220529,School Year Shuttles (TuWThF),0,1,1,1,1,0,0,20210816,20220529
-M-20210816-20220529,School Year Shuttles (Monday only),1,0,0,0,0,0,0,20210816,20220529
-wkdy,Year Round (Weekday),1,1,1,1,1,0,0,20200101,20221231

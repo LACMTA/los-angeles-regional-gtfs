@@ -1,2 +1,0 @@
-agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url,tts_agency_name
-1664,https://www.cityofglendora.org/departments-services/transportation,en,Glendora Transportation Division,(626) 852-4814,America/Los_Angeles,,

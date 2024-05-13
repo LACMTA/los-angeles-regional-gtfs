@@ -1,4 +1,0 @@
-rider_category_id,rider_category_name,min_age,max_age,eligibility_url
-senior,Seniors Age 55 and Over,55,,https://www.cityofrosemead.org/cms/One.aspx?portalId=10035075&pageId=10972255
-disabled,Persons with Disabilities,,,https://www.cityofrosemead.org/cms/One.aspx?portalId=10035075&pageId=10972255
-children,Children Age 4 and Under,,4,https://www.cityofrosemead.org/cms/One.aspx?portalId=10035075&pageId=10972255

@@ -1,9 +1,0 @@
-fare_product_id,fare_product_name,rider_category_id,fare_container_id,bundle_amount,duration_start,duration_amount,duration_unit,duration_type,offset_amount,offset_unit,service_id,timeframe_id,timeframe_type,cap_required,eligible_cap_id,amount,min_amount,max_amount,currency
-oneway_general,One-Way Fare General Public,,,,,,,,,,,,,,,1.00,,,USD
-oneway_senior,One-Way Fare Seniors Age 62 and Over,senior,,,,,,,,,,,,,,0.50,,,USD
-oneway_disabled,One-Way Fare Persons with Disabilities,disabled,,,,,,,,,,,,,,0.50,,,USD
-oneway_student,One-Way Fare Students K-12,student,,,,,,,,,,,,,,0.75,,,USD
-oneway_general,One-Way Fare General Public,,tap_general,,,,,,,,,,,,,1.00,,,USD
-oneway_senior,One-Way Fare Seniors Age 62 and Over,senior,tap_senior,,,,,,,,,,,,,0.50,,,USD
-oneway_disabled,One-Way Fare Persons with Disabilities,disabled,tap_disabled,,,,,,,,,,,,,0.50,,,USD
-oneway_student,One-Way Fare Students K-12,student,tap_student,,,,,,,,,,,,,0.75,,,USD

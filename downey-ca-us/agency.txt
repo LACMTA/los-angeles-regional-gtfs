@@ -1,2 +1,0 @@
-agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url,tts_agency_name
-1682,https://www.downeyca.org/our-city/departments/parks-recreation/transit/downeylink-transit-system,en,DowneyLINK,,America/Los_Angeles,,

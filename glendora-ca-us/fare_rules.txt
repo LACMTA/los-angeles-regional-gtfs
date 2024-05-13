@@ -1,7 +1,0 @@
-fare_id,route_id,origin_id,destination_id,contains_id
-4245,GoldLineCommuterShuttleSouth,,,
-4245,GoldLineCommuterShuttleNorth,,,
-4245,MetrolinkCommuterShuttle,,,
-4245,MiddayShuttle:Orange,,,
-4245,MiddayShuttle:Green,,,
-4245,MiddayShuttle:Tripper,,,
