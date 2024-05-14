@@ -24,3 +24,4 @@ jobs:
       run: |
           cd ./.scripts
           python gtfs_static_updater.py --db_uri "${{secrets.API_DB_URI}}" --db_schema "metro_api"
+      shell: bash
