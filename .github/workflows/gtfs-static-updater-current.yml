@@ -7,6 +7,10 @@ on:
 #         - 'lacmta-rail/current/**.zip'
 #       branches:
 #         - main
+  workflow_run:
+    workflows: ["gtfs-rail-nightly-updater"]
+    types:
+      - completed
   workflow_dispatch:
 
 jobs:
