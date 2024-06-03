@@ -26,7 +26,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
       - name: Add Git safe directory exception
-        run: git config --global --add core.protectedDirectories '!/__w/los-angeles-regional-gtfs/los-angeles-regional-gtfs'
+        run: git config --global safe.directory '*'
       - name: Commit and push
         run: |
           git add lacmta-rail/current/gtfs_rail.zip
