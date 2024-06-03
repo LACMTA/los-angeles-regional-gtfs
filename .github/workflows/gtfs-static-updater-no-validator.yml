@@ -8,6 +8,10 @@ on:
     branches:
       - main
   workflow_dispatch:
+  workflow_run:
+    workflows: ["gtfs-rail-nightly-updater"]
+    types:
+          - completed
 
 jobs:
   deploy-to-prod-db:
