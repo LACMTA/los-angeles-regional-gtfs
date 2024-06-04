@@ -33,7 +33,8 @@ jobs:
           git commit -m "[Auto] 📅 Nightly GTFS Rail Update - $(date)"
           git push origin main
         continue-on-error: true
-
+      - name: Fetch all branches
+        run: git fetch --all
       - name: Merge main into dev
         run: |
           git checkout dev
