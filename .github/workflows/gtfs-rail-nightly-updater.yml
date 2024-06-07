@@ -41,3 +41,24 @@ jobs:
           git merge main
           git push origin dev
         continue-on-error: true
+  deploy-to-prod-db:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300  # Set timeout to 2 hours
+    container:
+      image: lacmta/geodb-base
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: 🤐 Extract Zip files!
+      run: |
+        cd ./.scripts
+        python gtfs_static_zip_extractor.py
+    - name: 🚩 Install Python requirements.txt
+      run: pip install -r ./.scripts/requirements.txt
+    - name: Update Database with latest data 🛢
+      run: |
+        cd ./.scripts
+        python gtfs_static_updater.py --db_uri "${{secrets.API_DB_URI}}" --db_schema "metro_api"
+      shell: bash
