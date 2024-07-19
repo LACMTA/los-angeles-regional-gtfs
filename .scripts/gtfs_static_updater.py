@@ -27,7 +27,7 @@ from shapely import wkt
 debug = False
 local = False
 
-list_of_gtfs_static_files = ["routes", "trips", "stops", "calendar", "shapes","stop_times"]
+list_of_gtfs_static_files = ["routes", "trips", "stops", "calendar", "shapes","stop_times","fare_attributes","fare_rules"]
 
 # Argument parser for database connections
 parser = argparse.ArgumentParser(description='Process database URI.')
@@ -165,6 +165,8 @@ def update_gtfs_static_files():
     global calendar_dates_df
     global calendar_df
     global stops_df
+    global fare_attributes_df
+    global fare_rules_df
     route_overview = pd.read_csv(route_overview_file_location)
     for file in list_of_gtfs_static_files:
         print("******************")
@@ -208,6 +210,10 @@ def update_gtfs_static_files():
                 calendar_dates_df = combined_temp_df
             if file == "calendar":
                 calendar_df = combined_temp_df
+            if file == "fare_attributes":
+                fare_attributes_df = combined_temp_df
+            if file == "fare_rules":
+                fare_attributes_df = combined_temp_df
             if debug == False:
                 update_dataframe_to_db(combined_temp_df,file,engine,TARGET_SCHEMA)
                 # combined_temp_df.to_sql(file,engine,index=False,if_exists="replace",schema=TARGET_SCHEMA)
