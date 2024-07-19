@@ -1,3 +1,0 @@
-import importlib
-import gtfs_static_updater_future
-importlib.reload(gtfs_static_updater_future)
