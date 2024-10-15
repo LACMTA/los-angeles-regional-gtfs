@@ -1,2 +1,0 @@
-agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url,tts_agency_name
-1685,https://www.cityofcudahy.com/DocumentCenter/View/319/Cudahy-Area-Rapid-Transit-CART-Schedule-PDF,en,Cudahy Area Rapid Transit,,America/Los_Angeles,,

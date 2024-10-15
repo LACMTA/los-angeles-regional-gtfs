@@ -1,2 +1,0 @@
-agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url,tts_agency_name
-1674,https://www.cityofcalabasas.com/government/public-works/transportation-transit-division/shuttle-and-trolley-services,en,Calabasas Transit System,(818) 715-1115,America/Los_Angeles,,

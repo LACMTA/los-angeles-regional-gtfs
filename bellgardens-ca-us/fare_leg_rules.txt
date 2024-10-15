@@ -1,4 +1,0 @@
-leg_group_id,fare_leg_name,network_id,from_area_id,to_area_id,from_timeframe_id,to_timeframe_id,min_distance,max_distance,distance_type,service_id,fare_product_id
-BellGardens,,,,,,,,,,,oneway_general
-BellGardens,,,,,,,,,,,oneway_senior
-BellGardens,,,,,,,,,,,oneway_disabled

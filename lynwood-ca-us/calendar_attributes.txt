@@ -1,4 +1,0 @@
-service_id,service_description
-wknd,Year Round (Weekend)
-wkdy,Year Round (Weekday)
-daily,Year Round (All days of week)

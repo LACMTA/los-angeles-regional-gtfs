@@ -1,2 +1,0 @@
-agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url,tts_agency_name
-1667,https://www.bellgardens.org/government/city-departments/public-works/transportation/fixed-route-bus,en,Bell Gardens Trolley,,America/Los_Angeles,,

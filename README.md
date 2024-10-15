@@ -15,14 +15,18 @@ Here are the zip file permalinks:
     <br />[GTFS-RT Trip Updates](https://passio3.com/ArcadiaCity/passioTransit/gtfs/realtime/tripUpdates)
     <br />[GTFS-RT Vehicle Positions](https://passio3.com/ArcadiaCity/passioTransit/gtfs/realtime/vehiclePositions)
 * [Artesia](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/artesia-ca-us/artesia-ca-us.zip) - *updated 2/10/23*
-* [Baldwin Park](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/baldwinpark-ca-us/baldwinpark-ca-us.zip/) - *updated 2/10/23*
+* ~[Baldwin Park](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/bdc25a003719c5ee66f1381d04e6d47638dfad6d/baldwinpark-ca-us/baldwinpark-ca-us.zip/)~ - *removed 10/14/23*
+  * Baldwin Park's vendor, TecTransIT, maintains their feed: [GTFS Static Feed](https://baldwinpark.tectransit.com/api/public/fixedRoute/gtfs)
 * ~[Bellflower](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/380bac38edd59144ffe9a23e440b56b7fbacc7e9/bellflower-ca-us/bellflower-ca-us.zip)~ - *removed 4/4/24*
   * This feed is now published by Cal-ITP. [GTFS zip file](https://gtfs.calitp.org/production/BellflowerGTFS.zip)
-* [Bell Gardens](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/bellgardens-ca-us/bellgardens-ca-us.zip) - *updated 2/10/23*
-* [Calabasas](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/calabasas-ca-us/calabasas-ca-us.zip)
+* ~[Bell Gardens](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/bdc25a003719c5ee66f1381d04e6d47638dfad6d/bellgardens-ca-us/bellgardens-ca-us.zip)~ - *removed 10/14/23*
+  * Bell Garden's vendor, Information Processing Service, maintains their feed: [GTFS Static Feed](https://www.ips-systems.com/GTFS/Schedule/21)
+* ~[Calabasas](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/bdc25a003719c5ee66f1381d04e6d47638dfad6d/calabasas-ca-us/calabasas-ca-us.zip)~ - *removed 10/14/23*
+  * This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.cityofsouthgate.org/files/sharedassets/public/v/1/city-services/documents/southgategtfs-2023-01-18.zip) 
 * ~[Catalina Flyer](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/1df1e2bc6df9db96b600287bf14fe418e10c84a6/catalinaflyer-ca-us/catalinaflyer-ca-us.zip)~ *Cal-ITP is no longer maintaining this feed as it is not provided by a public entity.*
 * [Compton](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/compton-ca-us/compton-ca-us.zip)
-* [Cudahy](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/cudahy-ca-us/cudahy-ca-us.zip)
+* ~[Cudahy](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/bdc25a003719c5ee66f1381d04e6d47638dfad6d/cudahy-ca-us/cudahy-ca-us.zip)~  - *removed 10/14/23*
+  * This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.cityofcudahy.com/DocumentCenter/View/2041)
 * ~[Downey](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/380bac38edd59144ffe9a23e440b56b7fbacc7e9/downey-ca-us/downey-ca-us.zip)~ - *removed 4/4/24*
   * Downey's vendor, GMV Synchromatics, generates GTFS and GTFS-RT
     <br />[GTFS Static Feed](https://ridedowneylink.com/gtfs)
@@ -39,7 +43,8 @@ Here are the zip file permalinks:
   *  This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.cityofinglewood.org/gtfs) 
 * [La Campana (Bell)](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/lacampana-ca-us/lacampana-ca-us.zip)
 * La Puente
-* Lynwood
+* ~[Lynwood](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/bdc25a003719c5ee66f1381d04e6d47638dfad6d/lynwood-ca-us/lynwood-ca-us.zip)~ - *removed 10/14/23*
+  * Lynwood's vendor, Information Processing Service, maintains their feed: [GTFS Static Feed](https://www.ips-systems.com/GTFS/Schedule/53)
 * ~[Maywood](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/ba95a4550482dd26b564f6e6f66c0bf0da8f747e/maywood-ca-us/maywood-ca-us.zip)~ - *removed 11/16/23*
   * This feed is now published by Cal-ITP. [GTFS zip file](https://gtfs.calitp.org/production/MaywoodGTFS.zip)
 * ~[Montebello](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/14f09a256ac3f8b999b3ed7e701a21bb63bf5e1d/montebello-ca-us/montebello-ca-us.zip) - This feed is most likely out of date. Montebello currently publishes their feed to Google Maps through Avail.~  *Removed 3/2/2022*
@@ -56,7 +61,8 @@ Here are the zip file permalinks:
     <br />[GTFS-RT Trip Updates](https://passio3.com/rosemead/passioTransit/gtfs/realtime/tripUpdates)
     <br />[GTFS-RT Vehicle Positions](https://passio3.com/rosemead/passioTransit/gtfs/realtime/vehiclePositions)
 * [Sierra Madre](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/sierramadre-ca-us/sierramadre-ca-us.zip)
-* [West Covina](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/westcovina-ca-us/westcovina-ca-us.zip)
+* ~[West Covina](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/bdc25a003719c5ee66f1381d04e6d47638dfad6d/westcovina-ca-us/westcovina-ca-us.zip)~ - *removed 10/14/23*
+  * This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.westcovina.org/home/showpublisheddocument/23146/638487700215330000)
 
 ## Disclaimer
 
