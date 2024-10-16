@@ -1,5 +1,0 @@
-agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off,tts_route_short_name,tts_route_long_name
-1743,RouteA-Red,,Route A - Red,,3,,cf5858,,1,30,0,1,1,,
-1743,RouteB-Green,,Route B - Green,,3,,9bb682,,2,25,0,1,1,,
-1743,RouteC-Purple,,Route C - Purple,,3,,b172b2,,3,,0,1,1,,
-1743,RouteD-Blue,,Route D - Blue,,3,,5076d5,,4,30,0,1,1,,

@@ -1,8 +1,0 @@
-stop_id,stop_code,platform_code,stop_name,stop_desc,stop_lat,stop_lon,zone_id,stop_url,location_type,parent_station,stop_timezone,position,direction,wheelchair_boarding,tts_stop_name
-2712688,,,Santa Ana St & Park Ave - Cudahy City Hall,,33.9596217427544,-118.174558102071,,,0,,America/Los_Angeles,,,0,
-2712689,,,Atlantic Ave & Elizabeth St,,33.9630332032663,-118.186194922294,,,0,,America/Los_Angeles,,,0,
-2712690,,,Clara St & Atlantic Ave,,33.9656365361799,-118.186697774185,,,0,,America/Los_Angeles,,,0,
-2712691,,,Atlantic Ave & Live Oak St,,33.9677414111609,-118.187373448077,,,0,,America/Los_Angeles,,,0,
-2712692,,,Elizabeth St & Otis Ave,,33.9640554437233,-118.194687121803,,,0,,America/Los_Angeles,,,0,
-2712693,,,Atlantic Ave & Santa Ana St,,33.9610970605002,-118.185977177202,,,0,,America/Los_Angeles,,,0,
-2712694,,,Cecelia St & Wilcox Ave,,33.9579518395426,-118.179315931619,,,0,,America/Los_Angeles,,,0,

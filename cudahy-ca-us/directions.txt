@@ -1,2 +1,0 @@
-route_id,direction_id,direction
-CART,0,Loop

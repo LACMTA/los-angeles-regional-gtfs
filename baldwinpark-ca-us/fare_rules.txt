@@ -1,4 +1,0 @@
-fare_id,route_id,origin_id,destination_id,contains_id
-4447,TealLine,,,
-4447,PumpkinLine,,,
-4447,ExpressLine,,,

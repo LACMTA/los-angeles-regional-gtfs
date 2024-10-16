@@ -1,8 +1,0 @@
-route_id,direction_id,direction
-RouteD-Blue,0,Loop
-RouteC-Purple,1,Westbound
-RouteC-Purple,0,Loop
-RouteB-Green,0,Loop
-RouteB-Green,0,Eastbound
-RouteA-Red,1,Westbound
-RouteA-Red,0,Loop

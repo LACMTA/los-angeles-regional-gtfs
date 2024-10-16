@@ -1,5 +1,0 @@
-service_id,service_description
-W,Year Round (Wednesday only)
-Sa,Year Round (Saturday only)
-wkdy,Year Round (Weekday)
-MTRF,Year Round (MTuThF)

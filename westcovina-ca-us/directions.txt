@@ -1,6 +1,0 @@
-route_id,direction_id,direction
-GreenLine,1,Southbound
-GreenLine,0,Northbound
-BlueLine,0,Loop
-RedLine,0,Loop
-RedLine,0,Eastbound

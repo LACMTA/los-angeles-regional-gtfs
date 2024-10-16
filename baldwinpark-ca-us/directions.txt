@@ -1,5 +1,0 @@
-route_id,direction_id,direction
-ExpressLine,0,Southbound
-ExpressLine,0,Northbound 
-PumpkinLine,0,Loop
-TealLine,0,Loop
