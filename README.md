@@ -22,7 +22,7 @@ Here are the zip file permalinks:
 * ~[Bell Gardens](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/bdc25a003719c5ee66f1381d04e6d47638dfad6d/bellgardens-ca-us/bellgardens-ca-us.zip)~ - *removed 10/14/23*
   * Bell Garden's vendor, Information Processing Service, maintains their feed: [GTFS Static Feed](https://www.ips-systems.com/GTFS/Schedule/21)
 * ~[Calabasas](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/bdc25a003719c5ee66f1381d04e6d47638dfad6d/calabasas-ca-us/calabasas-ca-us.zip)~ - *removed 10/14/23*
-  * This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.cityofsouthgate.org/files/sharedassets/public/v/1/city-services/documents/southgategtfs-2023-01-18.zip) 
+  * This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.cityofcalabasas.com/home/showpublisheddocument/31620/638611519891730000) 
 * ~[Catalina Flyer](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/1df1e2bc6df9db96b600287bf14fe418e10c84a6/catalinaflyer-ca-us/catalinaflyer-ca-us.zip)~ *Cal-ITP is no longer maintaining this feed as it is not provided by a public entity.*
 * [Compton](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/compton-ca-us/compton-ca-us.zip)
 * ~[Cudahy](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/bdc25a003719c5ee66f1381d04e6d47638dfad6d/cudahy-ca-us/cudahy-ca-us.zip)~  - *removed 10/14/23*
