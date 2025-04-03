@@ -1,2 +1,0 @@
-route_id,direction_id,direction
-LaCampanaBus,0,Loop
