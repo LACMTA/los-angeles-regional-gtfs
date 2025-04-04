@@ -1,2 +1,0 @@
-route_id,direction_id,direction
-HuntingtonParkExpress,0,Loop

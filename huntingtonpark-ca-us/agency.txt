@@ -1,2 +1,0 @@
-agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url,tts_agency_name
-1668,https://www.hpca.gov/DocumentCenter/View/5466/HP-Express-Brochure-2016sc?bidId=,en,Huntington Park Express,,America/Los_Angeles,,
