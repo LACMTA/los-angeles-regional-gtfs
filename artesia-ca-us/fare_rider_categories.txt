@@ -1,1 +1,0 @@
-fare_id,rider_category_id,price
