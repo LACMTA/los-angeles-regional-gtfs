@@ -14,7 +14,8 @@ Here are the zip file permalinks:
     <br />[GTFS-RT Service Alerts](https://passio3.com/ArcadiaCity/passioTransit/gtfs/realtime/serviceAlerts)
     <br />[GTFS-RT Trip Updates](https://passio3.com/ArcadiaCity/passioTransit/gtfs/realtime/tripUpdates)
     <br />[GTFS-RT Vehicle Positions](https://passio3.com/ArcadiaCity/passioTransit/gtfs/realtime/vehiclePositions)
-* [Artesia](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/artesia-ca-us/artesia-ca-us.zip) - *updated 2/10/23*
+* ~[Artesia](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/ae2c7b2f6b22ebba13a9443262eadaf1e0a7e3be/artesia-ca-us/artesia-ca-us.zip)~ - *removed 11/24/14*
+  * This feed is now published by Cal-ITP. [GTFS zip file](https://gtfs.calitp.org/production/ArtesiaGTFS.zip)
 * ~[Baldwin Park](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/bdc25a003719c5ee66f1381d04e6d47638dfad6d/baldwinpark-ca-us/baldwinpark-ca-us.zip/)~ - *removed 10/14/23*
   * Baldwin Park's vendor, TecTransIT, maintains their feed: [GTFS Static Feed](https://baldwinpark.tectransit.com/api/public/fixedRoute/gtfs)
 * ~[Bellflower](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/380bac38edd59144ffe9a23e440b56b7fbacc7e9/bellflower-ca-us/bellflower-ca-us.zip)~ - *removed 4/4/24*
@@ -38,10 +39,12 @@ Here are the zip file permalinks:
   *  This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.cityofsouthgate.org/files/sharedassets/public/v/1/city-services/documents/southgategtfs-2023-01-18.zip) 
 * ~[Glendora](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/380bac38edd59144ffe9a23e440b56b7fbacc7e9/glendora-ca-us/glendora-ca-us.zip)~ - *removed 4/4/24* 
   *  This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.cityofglendora.org/home/showpublisheddocument/29632/638422252087370000) 
-* [Huntington Park](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/huntingtonpark-ca-us/huntingtonpark-ca-us.zip)
+* ~[Huntington Park](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/ae2c7b2f6b22ebba13a9443262eadaf1e0a7e3be/huntingtonpark-ca-us/huntingtonpark-ca-us.zip)~ - *removed 1/16/25* 
+  *  This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.hpca.gov/DocumentCenter/View/11702) 
 * ~[Inglewood](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/380bac38edd59144ffe9a23e440b56b7fbacc7e9/inglewood-ca-us/inglewood-ca-us.zip)~ - *removed 4/5/24* 
   *  This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.cityofinglewood.org/gtfs) 
-* [La Campana (Bell)](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/lacampana-ca-us/lacampana-ca-us.zip)
+* ~[La Campana (Bell)](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/ae2c7b2f6b22ebba13a9443262eadaf1e0a7e3be/lacampana-ca-us/lacampana-ca-us.zip)~ - *removed 1/29/25* 
+  *  This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.cityofbell.org/home/showpublisheddocument/19057/638737574606208813)*
 * La Puente
 * ~[Lynwood](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/bdc25a003719c5ee66f1381d04e6d47638dfad6d/lynwood-ca-us/lynwood-ca-us.zip)~ - *removed 10/14/23*
   * Lynwood's vendor, Information Processing Service, maintains their feed: [GTFS Static Feed](https://www.ips-systems.com/GTFS/Schedule/53)
