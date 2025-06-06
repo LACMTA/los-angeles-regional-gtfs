@@ -1,2 +1,0 @@
-runs_id,service_id,block_id,run_number,piece_number,start_trip_id,start_stop_id,end_trip_id,end_stop_id
-100000,c_67566_b_78088_d_56,1296493,1,1,t_5369821_b_78088_tn_0,4149246,t_5370448_b_78088_tn_0,4149257
