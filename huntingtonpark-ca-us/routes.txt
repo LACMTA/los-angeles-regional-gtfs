@@ -1,2 +1,0 @@
-agency_id,route_id,route_short_name,route_long_name,route_desc,route_type,route_url,route_color,route_text_color,route_sort_order,min_headway_minutes,eligibility_restricted,continuous_pickup,continuous_drop_off,tts_route_short_name,tts_route_long_name
-1668,HuntingtonParkExpress,,Huntington Park Express,,3,https://www.hpca.gov/DocumentCenter/View/5466/HP-Express-Brochure-2016sc?bidId=,1e7f9f,000000,2,25,0,1,1,,
