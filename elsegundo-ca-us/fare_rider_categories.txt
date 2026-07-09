@@ -1,2 +1,0 @@
-fare_id,rider_category_id,price
-4408,15,0.00

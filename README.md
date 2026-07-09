@@ -25,7 +25,8 @@ Here are the zip file permalinks:
 * ~[Calabasas](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/bdc25a003719c5ee66f1381d04e6d47638dfad6d/calabasas-ca-us/calabasas-ca-us.zip)~ - *removed 10/14/23*
   * This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.cityofcalabasas.com/home/showpublisheddocument/31620/638611519891730000) 
 * ~[Catalina Flyer](https://github.com/LACMTA/los-angeles-regional-gtfs/blob/1df1e2bc6df9db96b600287bf14fe418e10c84a6/catalinaflyer-ca-us/catalinaflyer-ca-us.zip)~ *Cal-ITP is no longer maintaining this feed as it is not provided by a public entity.*
-* [Compton](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/compton-ca-us/compton-ca-us.zip)
+* ~[Compton](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/c12cfeddc98e124826b872e84215153d9b41853d/compton-ca-us/compton-ca-us.zip)~ *- removed 7/9/26*
+	* This Feed is now hosted on the agency website: [GTFS Static Feed](https://rapid.nationalrtap.org/GTFSFileManagement/UserUploadFiles/13657/20251205-GTFSDec25adjdate.zip)
 * ~[Cudahy](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/bdc25a003719c5ee66f1381d04e6d47638dfad6d/cudahy-ca-us/cudahy-ca-us.zip)~  - *removed 10/14/23*
   * This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.cityofcudahy.com/DocumentCenter/View/2041)
 * ~[Downey](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/380bac38edd59144ffe9a23e440b56b7fbacc7e9/downey-ca-us/downey-ca-us.zip)~ - *removed 4/4/24*
@@ -34,7 +35,8 @@ Here are the zip file permalinks:
     <br />[GTFS-RT Service Alerts](https://ridedowneylink.com/gtfs-rt/alerts)
     <br />[GTFS-RT Trip Updates](https://ridedowneylink.com/gtfs-rt/tripupdates)
     <br />[GTFS-RT Vehicle Positions](https://ridedowneylink.com/gtfs-rt/vehiclepositions)
-* El Segundos
+* ~El Segundo Shuttles~ *- removed 7/9/26*
+	* El Segundo no longer operates fixed-route service. There was a summer beach shuttle that ran during 2025, but it has ceased further operations.
 * ~[Get Around Town Express (South Gate)](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/380bac38edd59144ffe9a23e440b56b7fbacc7e9/getaroundtownexpress-ca-us/getaroundtownexpress-ca-us.zip)~ - *removed 4/5/24* 
   *  This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.cityofsouthgate.org/files/sharedassets/public/v/1/city-services/documents/southgategtfs-2023-01-18.zip) 
 * ~[Glendora](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/380bac38edd59144ffe9a23e440b56b7fbacc7e9/glendora-ca-us/glendora-ca-us.zip)~ - *removed 4/4/24* 
@@ -63,7 +65,8 @@ Here are the zip file permalinks:
     <br />[GTFS-RT Service Alerts](https://passio3.com/rosemead/passioTransit/gtfs/realtime/serviceAlerts)
     <br />[GTFS-RT Trip Updates](https://passio3.com/rosemead/passioTransit/gtfs/realtime/tripUpdates)
     <br />[GTFS-RT Vehicle Positions](https://passio3.com/rosemead/passioTransit/gtfs/realtime/vehiclePositions)
-* [Sierra Madre](https://raw.githubusercontent.com/LACMTA/los-angeles-regional-gtfs/main/sierramadre-ca-us/sierramadre-ca-us.zip)
+* ~[Sierra Madre](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/c12cfeddc98e124826b872e84215153d9b41853d/sierramadre-ca-us/sierramadre-ca-us.zip)~ *- removed 7/9/2026*
+	* This service is no longer running as of at least 2/10/26.
 * ~[West Covina](https://github.com/LACMTA/los-angeles-regional-gtfs/raw/bdc25a003719c5ee66f1381d04e6d47638dfad6d/westcovina-ca-us/westcovina-ca-us.zip)~ - *removed 10/14/23*
   * This Feed is now hosted on the agency website: [GTFS Static Feed](https://www.westcovina.org/home/showpublisheddocument/23146/638487700215330000)
 

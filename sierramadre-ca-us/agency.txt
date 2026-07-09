@@ -1,2 +1,0 @@
-agency_id,agency_url,agency_lang,agency_name,agency_phone,agency_timezone,agency_fare_url,tts_agency_name
-1742,https://www.cityofsierramadre.com/services/transportation/gateway_coach,en,Sierra Madre Gateway Coach,,America/Los_Angeles,,
