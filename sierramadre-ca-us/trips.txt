@@ -1,9 +1,0 @@
-route_id,service_id,trip_id,trip_short_name,trip_headsign,direction_id,block_id,shape_id,bikes_allowed,wheelchair_accessible,trip_type,drt_max_travel_time,drt_avg_travel_time,drt_advance_book_min,drt_pickup_message,drt_drop_off_message,continuous_pickup_message,continuous_drop_off_message,tts_trip_headsign,tts_trip_short_name
-GatewayCoach,wkdy,Gateway-Coach_Westbound-wkdy_4_13:30,,Gateway Coach,0,160137,p_1274268,,,,,,,,,,,,
-GatewayCoach,wkdy,Gateway-Coach_Westbound-wkdy_3_12:40,,Gateway Coach,0,160137,p_1274268,,,,,,,,,,,,
-GatewayCoach,wkdy,Gateway-Coach_Westbound-wkdy_2_11:50,,Gateway Coach,0,160137,p_1274268,,,,,,,,,,,,
-GatewayCoach,wkdy,Gateway-Coach_Westbound-wkdy_1_11:00,,Gateway Coach,0,160137,p_1274268,,,,,,,,,,,,
-GatewayCoach,wkdy,Gateway-Coach_Eastbound-wkdy_4_13:55,,Gateway Coach,1,160137,p_1274324,,,,,,,,,,,,
-GatewayCoach,wkdy,Gateway-Coach_Eastbound-wkdy_3_13:05,,Gateway Coach,1,160137,p_1274269,,,,,,,,,,,,
-GatewayCoach,wkdy,Gateway-Coach_Eastbound-wkdy_2_12:15,,Gateway Coach,1,160137,p_1274269,,,,,,,,,,,,
-GatewayCoach,wkdy,Gateway-Coach_Eastbound-wkdy_1_11:24,,Gateway Coach,1,160137,p_1274269,,,,,,,,,,,,

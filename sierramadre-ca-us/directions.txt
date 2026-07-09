@@ -1,3 +1,0 @@
-route_id,direction_id,direction
-GatewayCoach,1,Eastbound
-GatewayCoach,0,Westbound
